@@ -1,0 +1,3 @@
+/Users/emanuelerucci/Desktop/Sapienza/Materie/RobProg2025/robotprogramming_2024_25/exercises/rp_02_inheritance/simple_simulator/build/CMakeFiles/simple_simulator_test.dir
+/Users/emanuelerucci/Desktop/Sapienza/Materie/RobProg2025/robotprogramming_2024_25/exercises/rp_02_inheritance/simple_simulator/build/CMakeFiles/edit_cache.dir
+/Users/emanuelerucci/Desktop/Sapienza/Materie/RobProg2025/robotprogramming_2024_25/exercises/rp_02_inheritance/simple_simulator/build/CMakeFiles/rebuild_cache.dir
