@@ -23,18 +23,12 @@ struct CarRobot: public WorldItem{
     void draw() override;
 
     void setVelocity(float velocity) {
-        float max_velocity = 10.0; // Maximum velocity
-        if (velocity < 0) {            v = 0; // Prevent negative velocity
-        } else if (velocity > max_velocity) {
-            v = max_velocity; // Cap to maximum velocity
-        } else {
-            v = velocity;
-        }   
+        v = velocity;
     }
 
     void setSteeringAngle(float steering_angle) {
         // Ensure steering angle is within a reasonable range(-1.6, 1.6)
-        float max_steering_angle = 1.4;
+        float max_steering_angle = 0.7;
         if (steering_angle < -max_steering_angle) {
             phi = -max_steering_angle;
         } else if (steering_angle > max_steering_angle) {
@@ -43,4 +37,9 @@ struct CarRobot: public WorldItem{
             phi = steering_angle;
         }
     }
+
+   void setPose(const Pose& new_pose) {
+        pose = new_pose;
+    }
+
 };

@@ -27,7 +27,8 @@ int main(int argc, char **argv)
   w.addItem(&c);
   Lidar lr(&c);
   w.addItem(&lr);
-  c.pose = Pose(20, 20, M_PI / 2);
+
+  c.pose = Pose(25, 20, M_PI / 2);
 
   int k;
   //  c.v = 0.1; // Example input for car robot
@@ -55,19 +56,9 @@ int main(int argc, char **argv)
     case 1:
       c.setVelocity(c.v - 0.1);
       break; // down arrow
-#else
-    case 81:
-      c.setSteeringAngle(c.phi + 0.05);
-      break; // left arrow (Linux/Windows)
-    case 82:
-      c.setVelocity(c.v + 0.1);
-      break; // up arrow
-    case 83:
-      c.setSteeringAngle(c.phi - 0.05);
-      break; // right arrow
-    case 84:
-      c.setVelocity(c.v - 0.1);
-      break; // down arrow
+    case 114: // 'r' reset initial Pose
+      c.setPose(Pose(25, 20, M_PI / 2));
+      break; // 'r' key for reset
 #endif
     case 32:
       c.setVelocity(0);

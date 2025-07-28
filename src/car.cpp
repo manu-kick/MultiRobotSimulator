@@ -2,13 +2,10 @@
 #include <cmath>
 #include <opencv2/imgproc.hpp> // for cv::line and cv::rectangle
 
-
-
 void CarRobot::timeTick(float dt)
-{   
+{
     cout << "phi: " << phi << " v: " << v << endl;
 
-    
     // Compute change in orientation
     float dtheta = (v / L) * std::tan(phi) * dt;
 
@@ -30,8 +27,61 @@ void CarRobot::timeTick(float dt)
 
 bool CarRobot::collides(const Point &p)
 {
+    // Car pose (rear axle center)
+    float theta = pose.rotation();
+    Point rear = p;
+    Point dir(std::cos(theta), std::sin(theta));
+    Point front (rear.x + dir.x * L, rear.y + dir.y * L);
+    Point center((rear.x + front.x) / 2, (rear.y + front.y) / 2);
+    float cos_theta = std::cos(theta);
+    float sin_theta = std::sin(theta);
+
+    float wheel_length = L / 4.0f;
+    float wheel_width = d / 4.0f;
+    float hull_length = L;
+    float hull_width = 2 * d;
+
+    // Hull corners in local frame (with wheel padding)
+    std::vector<Point> local_hull = {
+        {(-hull_length / 2) - wheel_length, (-hull_width / 2) - wheel_width},
+        {(hull_length / 2) + wheel_length, (-hull_width / 2) - wheel_width},
+        {(hull_length / 2) + wheel_length, (hull_width / 2) + wheel_width},
+        {(-hull_length / 2) - wheel_length, (hull_width / 2) + wheel_width}
+    };
+
+    // Convert to image space polygon
+    std::vector<cv::Point> hull_px;
+    for (const Point &local : local_hull)
+    {
+        float wx = center.x + local.x * cos_theta - local.y * sin_theta;
+        float wy = center.y + local.x * sin_theta + local.y * cos_theta;
+        IndexPair ip = world->worldToIndices(Point(wx, wy));
+        hull_px.push_back(cv::Point(ip.c, ip.r));
+    }
+
+    // Compute bounding box in image space
+    cv::Rect bbox = cv::boundingRect(hull_px);
+
+    for (int r = bbox.y; r < bbox.y + bbox.height; ++r)
+    {
+        for (int c = bbox.x; c < bbox.x + bbox.width; ++c)
+        {
+            cv::Point test_pt(c, r);
+            // Check if inside hull polygon
+            if (cv::pointPolygonTest(hull_px, test_pt, false) >= 0)
+            {
+                IndexPair ip(r, c);
+                if (!world->isInside(ip))
+                    return true;
+                if (world->at(ip) < 127)
+                    return true;
+            }
+        }
+    }
+
     return false;
 }
+
 
 void CarRobot::draw()
 {
@@ -42,7 +92,7 @@ void CarRobot::draw()
     float scale = world->inv_res;
 
     // Direction vectors
-    Point dir(std::cos(theta), std::sin(theta)); // heading (forward)mo ve
+    Point dir(std::cos(theta), std::sin(theta));    // heading (forward)mo ve
     Point ortho(-std::sin(theta), std::cos(theta)); // lateral (left/right)
 
     Point front(rear.x + dir.x * L, rear.y + dir.y * L);
@@ -125,4 +175,37 @@ void CarRobot::draw()
         cv::Scalar(255, 0, 0), // blue color (BGR
         -1                     // filled
     );
+
+    // Draw the Hull
+    float hull_length = L;    // full car length
+    float hull_width = 2 * d; // full car width
+
+    // Center of hull is halfway between front and rear
+    Point center((rear.x + front.x) / 2, (rear.y + front.y) / 2);
+
+    float cos_theta = std::cos(theta);
+    float sin_theta = std::sin(theta);
+
+    std::vector<cv::Point> hull_pts;
+    std::vector<Point> local_hull = {
+        {(-hull_length / 2)- (wheel_length), (-hull_width / 2) - (wheel_width)},
+        {(hull_length / 2)+ (wheel_length), -hull_width / 2 - (wheel_width)},
+        {(hull_length / 2)+ (wheel_length), hull_width / 2 + (wheel_width)},
+        {(-hull_length / 2)- (wheel_length), hull_width / 2 + (wheel_width)},
+    };
+
+    for (const Point &local : local_hull)
+    {
+        float wx = center.x + local.x * cos_theta - local.y * sin_theta;
+        float wy = center.y + local.x * sin_theta + local.y * cos_theta;
+        IndexPair ip = world->worldToIndices(Point(wx, wy));
+        hull_pts.push_back(cv::Point(ip.c, ip.r));
+    }
+
+    // Green line linking the hull points
+    cv::line(world->_display_image, hull_pts[0], hull_pts[1], cv::Scalar(0, 255, 0), 2);
+    cv::line(world->_display_image, hull_pts[1], hull_pts[2], cv::Scalar(0, 255, 0), 2);
+    cv::line(world->_display_image, hull_pts[2], hull_pts[3], cv::Scalar(0, 255, 0), 2);
+    cv::line(world->_display_image, hull_pts[3], hull_pts[0], cv::Scalar(0, 255, 0), 2);    
+    // cv::fillConvexPoly(world->_display_image, hull_pts, cv::Scalar(0, 255, 0));
 }
