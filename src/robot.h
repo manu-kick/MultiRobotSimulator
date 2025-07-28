@@ -15,6 +15,5 @@ struct Robot: public WorldItem {
   bool collides(const Point& p);
   
   void draw() override;
-
 };
 

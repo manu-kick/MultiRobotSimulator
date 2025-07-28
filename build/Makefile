@@ -57,10 +57,10 @@ RM = /opt/homebrew/Cellar/cmake/3.27.8/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/emanuelerucci/Desktop/Sapienza/Materie/RobProg2025/robotprogramming_2024_25/exercises/rp_02_inheritance/simple_simulator
+CMAKE_SOURCE_DIR = /Users/emanuelerucci/Desktop/Sapienza/Materie/RobProg2025/simulator
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/emanuelerucci/Desktop/Sapienza/Materie/RobProg2025/robotprogramming_2024_25/exercises/rp_02_inheritance/simple_simulator/build
+CMAKE_BINARY_DIR = /Users/emanuelerucci/Desktop/Sapienza/Materie/RobProg2025/simulator/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/emanuelerucci/Desktop/Sapienza/Materie/RobProg2025/robotprogramming_2024_25/exercises/rp_02_inheritance/simple_simulator/build/CMakeFiles /Users/emanuelerucci/Desktop/Sapienza/Materie/RobProg2025/robotprogramming_2024_25/exercises/rp_02_inheritance/simple_simulator/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/emanuelerucci/Desktop/Sapienza/Materie/RobProg2025/simulator/build/CMakeFiles /Users/emanuelerucci/Desktop/Sapienza/Materie/RobProg2025/simulator/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/emanuelerucci/Desktop/Sapienza/Materie/RobProg2025/robotprogramming_2024_25/exercises/rp_02_inheritance/simple_simulator/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/emanuelerucci/Desktop/Sapienza/Materie/RobProg2025/simulator/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -128,6 +128,30 @@ simple_simulator_test: cmake_check_build_system
 simple_simulator_test/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_simulator_test.dir/build.make CMakeFiles/simple_simulator_test.dir/build
 .PHONY : simple_simulator_test/fast
+
+src/car.o: src/car.cpp.o
+.PHONY : src/car.o
+
+# target to build an object file
+src/car.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_simulator_test.dir/build.make CMakeFiles/simple_simulator_test.dir/src/car.cpp.o
+.PHONY : src/car.cpp.o
+
+src/car.i: src/car.cpp.i
+.PHONY : src/car.i
+
+# target to preprocess a source file
+src/car.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_simulator_test.dir/build.make CMakeFiles/simple_simulator_test.dir/src/car.cpp.i
+.PHONY : src/car.cpp.i
+
+src/car.s: src/car.cpp.s
+.PHONY : src/car.s
+
+# target to generate assembly for a file
+src/car.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_simulator_test.dir/build.make CMakeFiles/simple_simulator_test.dir/src/car.cpp.s
+.PHONY : src/car.cpp.s
 
 src/lidar.o: src/lidar.cpp.o
 .PHONY : src/lidar.o
@@ -234,6 +258,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... simple_simulator_test"
+	@echo "... src/car.o"
+	@echo "... src/car.i"
+	@echo "... src/car.s"
 	@echo "... src/lidar.o"
 	@echo "... src/lidar.i"
 	@echo "... src/lidar.s"

@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/simple_simulator_test.dir/src/car.cpp.o"
+  "CMakeFiles/simple_simulator_test.dir/src/car.cpp.o.d"
   "CMakeFiles/simple_simulator_test.dir/src/lidar.cpp.o"
   "CMakeFiles/simple_simulator_test.dir/src/lidar.cpp.o.d"
   "CMakeFiles/simple_simulator_test.dir/src/robot.cpp.o"

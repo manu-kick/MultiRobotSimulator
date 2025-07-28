@@ -1,4 +1,4 @@
-# Install script for directory: /Users/emanuelerucci/Desktop/Sapienza/Materie/RobProg2025/robotprogramming_2024_25/exercises/rp_02_inheritance/simple_simulator
+# Install script for directory: /Users/emanuelerucci/Desktop/Sapienza/Materie/RobProg2025/simulator
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/emanuelerucci/Desktop/Sapienza/Materie/RobProg2025/robotprogramming_2024_25/exercises/rp_02_inheritance/simple_simulator/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Users/emanuelerucci/Desktop/Sapienza/Materie/RobProg2025/simulator/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

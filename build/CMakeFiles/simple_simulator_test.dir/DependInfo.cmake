@@ -8,10 +8,11 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/Users/emanuelerucci/Desktop/Sapienza/Materie/RobProg2025/robotprogramming_2024_25/exercises/rp_02_inheritance/simple_simulator/src/lidar.cpp" "CMakeFiles/simple_simulator_test.dir/src/lidar.cpp.o" "gcc" "CMakeFiles/simple_simulator_test.dir/src/lidar.cpp.o.d"
-  "/Users/emanuelerucci/Desktop/Sapienza/Materie/RobProg2025/robotprogramming_2024_25/exercises/rp_02_inheritance/simple_simulator/src/robot.cpp" "CMakeFiles/simple_simulator_test.dir/src/robot.cpp.o" "gcc" "CMakeFiles/simple_simulator_test.dir/src/robot.cpp.o.d"
-  "/Users/emanuelerucci/Desktop/Sapienza/Materie/RobProg2025/robotprogramming_2024_25/exercises/rp_02_inheritance/simple_simulator/src/simple_simulator_test.cpp" "CMakeFiles/simple_simulator_test.dir/src/simple_simulator_test.cpp.o" "gcc" "CMakeFiles/simple_simulator_test.dir/src/simple_simulator_test.cpp.o.d"
-  "/Users/emanuelerucci/Desktop/Sapienza/Materie/RobProg2025/robotprogramming_2024_25/exercises/rp_02_inheritance/simple_simulator/src/world.cpp" "CMakeFiles/simple_simulator_test.dir/src/world.cpp.o" "gcc" "CMakeFiles/simple_simulator_test.dir/src/world.cpp.o.d"
+  "/Users/emanuelerucci/Desktop/Sapienza/Materie/RobProg2025/simulator/src/car.cpp" "CMakeFiles/simple_simulator_test.dir/src/car.cpp.o" "gcc" "CMakeFiles/simple_simulator_test.dir/src/car.cpp.o.d"
+  "/Users/emanuelerucci/Desktop/Sapienza/Materie/RobProg2025/simulator/src/lidar.cpp" "CMakeFiles/simple_simulator_test.dir/src/lidar.cpp.o" "gcc" "CMakeFiles/simple_simulator_test.dir/src/lidar.cpp.o.d"
+  "/Users/emanuelerucci/Desktop/Sapienza/Materie/RobProg2025/simulator/src/robot.cpp" "CMakeFiles/simple_simulator_test.dir/src/robot.cpp.o" "gcc" "CMakeFiles/simple_simulator_test.dir/src/robot.cpp.o.d"
+  "/Users/emanuelerucci/Desktop/Sapienza/Materie/RobProg2025/simulator/src/simple_simulator_test.cpp" "CMakeFiles/simple_simulator_test.dir/src/simple_simulator_test.cpp.o" "gcc" "CMakeFiles/simple_simulator_test.dir/src/simple_simulator_test.cpp.o.d"
+  "/Users/emanuelerucci/Desktop/Sapienza/Materie/RobProg2025/simulator/src/world.cpp" "CMakeFiles/simple_simulator_test.dir/src/world.cpp.o" "gcc" "CMakeFiles/simple_simulator_test.dir/src/world.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

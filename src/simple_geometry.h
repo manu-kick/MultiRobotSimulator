@@ -37,6 +37,7 @@ struct Pose {
                   y+s*other.x+c*other.y);
   }
   inline Point translation() {return Point(x,y);}
+  inline float rotation() const { return theta; }
 };
 
 struct IndexPair {

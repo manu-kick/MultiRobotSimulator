@@ -1,3 +1,4 @@
+# set(CMAKE_CXX_STANDARD 17)
 CMAKE_MINIMUM_REQUIRED(VERSION 2.6)
 
 PROJECT(simple_simulator)
@@ -27,6 +28,7 @@ add_executable(simple_simulator_test
   src/world.cpp
   src/robot.cpp
   src/lidar.cpp
+  src/car.cpp
 
 #   src/test_manu.cpp
   )

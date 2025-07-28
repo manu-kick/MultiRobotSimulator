@@ -6,51 +6,77 @@
 #include "world.h"
 #include "robot.h"
 #include "lidar.h"
+#include "car.h"
 
 using namespace std;
-  
-int main(int argc, char** argv){
-  float res=0.05;
-  float delay=0.1;
+
+int main(int argc, char **argv)
+{
+  float res = 0.05;
+  float delay = 0.1;
   World w(0.05);
   w.loadFromImage(argv[1]);
   // Lidar l(&w);
   // l.pose=Pose(res*w.rows/2, res*w.cols/2, 0);
   // w.addItem(&l);
 
-  Robot r(&w,0.2);
-  w.addItem(&r);
+  // Robot r(&w, 0.2);
+  // w.addItem(&r);
 
-  Lidar lr(&r);
+  CarRobot c(&w);
+  w.addItem(&c);
+  Lidar lr(&c);
   w.addItem(&lr);
-  r.pose=Pose(10, 10, M_PI/2);
-  
-  int k;
+  c.pose = Pose(20, 20, M_PI / 2);
 
-  while (1) {
+  int k;
+  //  c.v = 0.1; // Example input for car robot
+  // c.phi = 0.05; // Example input for steering angle
+
+  while (1)
+  {
     w.timeTick(delay);
     w.show();
-    k=cv::waitKeyEx(delay*1000)&255;
-    //print the variable type of k (int char or whatever)
-    cerr << "k: " << k << " type: " << typeid(k).name() << endl;
 
-    switch (k) {
-    #ifdef __APPLE__
-      case 2: r.rv+=0.05; break; // left arrow
-      case 0: r.tv+=0.1; break;  // up arrow
-      case 3: r.rv-=0.05; break; // right arrow
-      case 1: r.tv-=0.1; break;  // down arrow
-    #else
-      case 81: r.rv+=0.05; break;  // left arrow (Linux/Windows)
-      case 82: r.tv+=0.1; break;   // up arrow
-      case 83: r.rv-=0.05; break;  // right arrow
-      case 84: r.tv-=0.1; break;   // down arrow
-    #endif
-      case 32: r.tv=0; r.rv=0; break; // spacebar
-      case 27: return 0;
-      default:;
-      }
-    cerr << "k: " << (int) k << endl;
+    k = cv::waitKeyEx(delay * 1000) & 255;
+
+    switch (k)
+    {
+#ifdef __APPLE__
+    case 2:
+      c.setSteeringAngle(c.phi + 0.05);
+      break; // left arrow
+    case 0:
+      c.setVelocity(c.v + 0.1);
+      break; // up arrow
+    case 3:
+      c.setSteeringAngle(c.phi - 0.05);
+      break; // right arrow
+    case 1:
+      c.setVelocity(c.v - 0.1);
+      break; // down arrow
+#else
+    case 81:
+      c.setSteeringAngle(c.phi + 0.05);
+      break; // left arrow (Linux/Windows)
+    case 82:
+      c.setVelocity(c.v + 0.1);
+      break; // up arrow
+    case 83:
+      c.setSteeringAngle(c.phi - 0.05);
+      break; // right arrow
+    case 84:
+      c.setVelocity(c.v - 0.1);
+      break; // down arrow
+#endif
+    case 32:
+      c.setVelocity(0);
+      c.setSteeringAngle(0);
+      break; // spacebar
+    case 27:
+      return 0;
+    default:;
+    }
+    cerr << "k: " << (int)k << endl;
   }
 }
-

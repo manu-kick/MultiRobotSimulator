@@ -1,8 +1,8 @@
 CMakeFiles/simple_simulator_test.dir/src/lidar.cpp.o: \
-  /Users/emanuelerucci/Desktop/Sapienza/Materie/RobProg2025/robotprogramming_2024_25/exercises/rp_02_inheritance/simple_simulator/src/lidar.cpp \
-  /Users/emanuelerucci/Desktop/Sapienza/Materie/RobProg2025/robotprogramming_2024_25/exercises/rp_02_inheritance/simple_simulator/src/lidar.h \
-  /Users/emanuelerucci/Desktop/Sapienza/Materie/RobProg2025/robotprogramming_2024_25/exercises/rp_02_inheritance/simple_simulator/src/world.h \
-  /Users/emanuelerucci/Desktop/Sapienza/Materie/RobProg2025/robotprogramming_2024_25/exercises/rp_02_inheritance/simple_simulator/src/simple_geometry.h \
+  /Users/emanuelerucci/Desktop/Sapienza/Materie/RobProg2025/simulator/src/lidar.cpp \
+  /Users/emanuelerucci/Desktop/Sapienza/Materie/RobProg2025/simulator/src/lidar.h \
+  /Users/emanuelerucci/Desktop/Sapienza/Materie/RobProg2025/simulator/src/world.h \
+  /Users/emanuelerucci/Desktop/Sapienza/Materie/RobProg2025/simulator/src/simple_geometry.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/cstdint \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__assert \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__assertion_handler \

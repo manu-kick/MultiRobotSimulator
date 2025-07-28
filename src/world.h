@@ -75,6 +75,7 @@ public:
     }
     return p;
   }
+  
   Pose pose;
   virtual void draw(){};
   virtual void timeTick(float dt)=0;
