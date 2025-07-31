@@ -20,19 +20,21 @@ int main(int argc, char **argv)
   // l.pose=Pose(res*w.rows/2, res*w.cols/2, 0);
   // w.addItem(&l);
 
-  // Robot r(&w, 0.2);
-  // w.addItem(&r);
+  Robot r(&w, 2);
+  w.addItem(&r);
+  r.pose = Pose(25, 20, M_PI / 2);
+  // Lidar lr(&r);
+  // w.addItem(&lr);
 
-  CarRobot c(&w);
-  w.addItem(&c);
-  Lidar lr(&c);
-  w.addItem(&lr);
-
-  c.pose = Pose(25, 20, M_PI / 2);
+  // CarRobot c(&w);
+  // w.addItem(&c);
+  // Lidar lr(&c);
+  // w.addItem(&lr);
+  // c.pose = Pose(25, 20, M_PI / 2);
 
   int k;
-  //  c.v = 0.1; // Example input for car robot
-  // c.phi = 0.05; // Example input for steering angle
+  cout << "Press ESC to exit, spacebar to stop, 'r' to reset pose." << endl;
+  
 
   while (1)
   {
@@ -45,24 +47,31 @@ int main(int argc, char **argv)
     {
 #ifdef __APPLE__
     case 2:
-      c.setSteeringAngle(c.phi + 0.05);
+      // c.setSteeringAngle(c.phi + 0.05);
+      r.rv += 0.1; // left arrow
       break; // left arrow
     case 0:
-      c.setVelocity(c.v + 0.1);
+      // c.setVelocity(c.v + 0.1);
+      r.tv += 0.1; // up arrow
       break; // up arrow
     case 3:
-      c.setSteeringAngle(c.phi - 0.05);
+      // c.setSteeringAngle(c.phi - 0.05);
+      r.rv -= 0.1; // right arrow
       break; // right arrow
     case 1:
-      c.setVelocity(c.v - 0.1);
+      // c.setVelocity(c.v - 0.1);
+      r.tv -= 0.1; // down arrow
       break; // down arrow
     case 114: // 'r' reset initial Pose
-      c.setPose(Pose(25, 20, M_PI / 2));
+      // c.setPose(Pose(25, 20, M_PI / 2));
+      r.pose = Pose(25, 20, M_PI / 2);
       break; // 'r' key for reset
 #endif
     case 32:
-      c.setVelocity(0);
-      c.setSteeringAngle(0);
+      // c.setVelocity(0);
+      // c.setSteeringAngle(0);
+      r.tv = 0;
+      r.rv = 0;
       break; // spacebar
     case 27:
       return 0;

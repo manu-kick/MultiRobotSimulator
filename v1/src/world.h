@@ -52,7 +52,6 @@ public:
   void show();
   cv::Mat _display_image;
   cv::Mat original_image;
-
 };
 
 class WorldItem{
