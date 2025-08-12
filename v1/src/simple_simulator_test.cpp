@@ -23,8 +23,8 @@ int main(int argc, char **argv)
   Robot r(&w, 2);
   w.addItem(&r);
   r.pose = Pose(25, 20, M_PI / 2);
-  // Lidar lr(&r);
-  // w.addItem(&lr);
+  Lidar lr(&r);
+  w.addItem(&lr);
 
   // CarRobot c(&w);
   // w.addItem(&c);

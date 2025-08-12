@@ -1,0 +1,20 @@
+{
+"name" : "test",
+"version": "1.0.0",
+"description": "Test configuration for the simulator",
+"scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+},
+"author": "",
+"license": "ISC",
+
+
+"robots" : [
+    {
+        "id": "robot1"
+    },
+    {
+        "id": "robot2"
+    }
+]
+}
