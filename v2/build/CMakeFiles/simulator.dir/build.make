@@ -83,14 +83,78 @@ CMakeFiles/simulator.dir/src/simulator.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/simulator.dir/src/simulator.cpp.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/emanuelerucci/Desktop/Sapienza/Materie/RobProg2025/simulator/v2/src/simulator.cpp -o CMakeFiles/simulator.dir/src/simulator.cpp.s
 
+CMakeFiles/simulator.dir/src/world.cpp.o: CMakeFiles/simulator.dir/flags.make
+CMakeFiles/simulator.dir/src/world.cpp.o: /Users/emanuelerucci/Desktop/Sapienza/Materie/RobProg2025/simulator/v2/src/world.cpp
+CMakeFiles/simulator.dir/src/world.cpp.o: CMakeFiles/simulator.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/emanuelerucci/Desktop/Sapienza/Materie/RobProg2025/simulator/v2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/simulator.dir/src/world.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/simulator.dir/src/world.cpp.o -MF CMakeFiles/simulator.dir/src/world.cpp.o.d -o CMakeFiles/simulator.dir/src/world.cpp.o -c /Users/emanuelerucci/Desktop/Sapienza/Materie/RobProg2025/simulator/v2/src/world.cpp
+
+CMakeFiles/simulator.dir/src/world.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/simulator.dir/src/world.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/emanuelerucci/Desktop/Sapienza/Materie/RobProg2025/simulator/v2/src/world.cpp > CMakeFiles/simulator.dir/src/world.cpp.i
+
+CMakeFiles/simulator.dir/src/world.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/simulator.dir/src/world.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/emanuelerucci/Desktop/Sapienza/Materie/RobProg2025/simulator/v2/src/world.cpp -o CMakeFiles/simulator.dir/src/world.cpp.s
+
+CMakeFiles/simulator.dir/src/freeflying.cpp.o: CMakeFiles/simulator.dir/flags.make
+CMakeFiles/simulator.dir/src/freeflying.cpp.o: /Users/emanuelerucci/Desktop/Sapienza/Materie/RobProg2025/simulator/v2/src/freeflying.cpp
+CMakeFiles/simulator.dir/src/freeflying.cpp.o: CMakeFiles/simulator.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/emanuelerucci/Desktop/Sapienza/Materie/RobProg2025/simulator/v2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/simulator.dir/src/freeflying.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/simulator.dir/src/freeflying.cpp.o -MF CMakeFiles/simulator.dir/src/freeflying.cpp.o.d -o CMakeFiles/simulator.dir/src/freeflying.cpp.o -c /Users/emanuelerucci/Desktop/Sapienza/Materie/RobProg2025/simulator/v2/src/freeflying.cpp
+
+CMakeFiles/simulator.dir/src/freeflying.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/simulator.dir/src/freeflying.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/emanuelerucci/Desktop/Sapienza/Materie/RobProg2025/simulator/v2/src/freeflying.cpp > CMakeFiles/simulator.dir/src/freeflying.cpp.i
+
+CMakeFiles/simulator.dir/src/freeflying.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/simulator.dir/src/freeflying.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/emanuelerucci/Desktop/Sapienza/Materie/RobProg2025/simulator/v2/src/freeflying.cpp -o CMakeFiles/simulator.dir/src/freeflying.cpp.s
+
+CMakeFiles/simulator.dir/src/lidar.cpp.o: CMakeFiles/simulator.dir/flags.make
+CMakeFiles/simulator.dir/src/lidar.cpp.o: /Users/emanuelerucci/Desktop/Sapienza/Materie/RobProg2025/simulator/v2/src/lidar.cpp
+CMakeFiles/simulator.dir/src/lidar.cpp.o: CMakeFiles/simulator.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/emanuelerucci/Desktop/Sapienza/Materie/RobProg2025/simulator/v2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/simulator.dir/src/lidar.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/simulator.dir/src/lidar.cpp.o -MF CMakeFiles/simulator.dir/src/lidar.cpp.o.d -o CMakeFiles/simulator.dir/src/lidar.cpp.o -c /Users/emanuelerucci/Desktop/Sapienza/Materie/RobProg2025/simulator/v2/src/lidar.cpp
+
+CMakeFiles/simulator.dir/src/lidar.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/simulator.dir/src/lidar.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/emanuelerucci/Desktop/Sapienza/Materie/RobProg2025/simulator/v2/src/lidar.cpp > CMakeFiles/simulator.dir/src/lidar.cpp.i
+
+CMakeFiles/simulator.dir/src/lidar.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/simulator.dir/src/lidar.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/emanuelerucci/Desktop/Sapienza/Materie/RobProg2025/simulator/v2/src/lidar.cpp -o CMakeFiles/simulator.dir/src/lidar.cpp.s
+
+CMakeFiles/simulator.dir/src/car.cpp.o: CMakeFiles/simulator.dir/flags.make
+CMakeFiles/simulator.dir/src/car.cpp.o: /Users/emanuelerucci/Desktop/Sapienza/Materie/RobProg2025/simulator/v2/src/car.cpp
+CMakeFiles/simulator.dir/src/car.cpp.o: CMakeFiles/simulator.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/emanuelerucci/Desktop/Sapienza/Materie/RobProg2025/simulator/v2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/simulator.dir/src/car.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/simulator.dir/src/car.cpp.o -MF CMakeFiles/simulator.dir/src/car.cpp.o.d -o CMakeFiles/simulator.dir/src/car.cpp.o -c /Users/emanuelerucci/Desktop/Sapienza/Materie/RobProg2025/simulator/v2/src/car.cpp
+
+CMakeFiles/simulator.dir/src/car.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/simulator.dir/src/car.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/emanuelerucci/Desktop/Sapienza/Materie/RobProg2025/simulator/v2/src/car.cpp > CMakeFiles/simulator.dir/src/car.cpp.i
+
+CMakeFiles/simulator.dir/src/car.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/simulator.dir/src/car.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/emanuelerucci/Desktop/Sapienza/Materie/RobProg2025/simulator/v2/src/car.cpp -o CMakeFiles/simulator.dir/src/car.cpp.s
+
 # Object files for target simulator
 simulator_OBJECTS = \
-"CMakeFiles/simulator.dir/src/simulator.cpp.o"
+"CMakeFiles/simulator.dir/src/simulator.cpp.o" \
+"CMakeFiles/simulator.dir/src/world.cpp.o" \
+"CMakeFiles/simulator.dir/src/freeflying.cpp.o" \
+"CMakeFiles/simulator.dir/src/lidar.cpp.o" \
+"CMakeFiles/simulator.dir/src/car.cpp.o"
 
 # External object files for target simulator
 simulator_EXTERNAL_OBJECTS =
 
 simulator: CMakeFiles/simulator.dir/src/simulator.cpp.o
+simulator: CMakeFiles/simulator.dir/src/world.cpp.o
+simulator: CMakeFiles/simulator.dir/src/freeflying.cpp.o
+simulator: CMakeFiles/simulator.dir/src/lidar.cpp.o
+simulator: CMakeFiles/simulator.dir/src/car.cpp.o
 simulator: CMakeFiles/simulator.dir/build.make
 simulator: /opt/homebrew/lib/libopencv_gapi.4.12.0.dylib
 simulator: /opt/homebrew/lib/libopencv_stitching.4.12.0.dylib
@@ -150,7 +214,7 @@ simulator: /opt/homebrew/lib/libopencv_imgproc.4.12.0.dylib
 simulator: /opt/homebrew/lib/libopencv_core.4.12.0.dylib
 simulator: /opt/homebrew/lib/libjsoncpp.26.dylib
 simulator: CMakeFiles/simulator.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/emanuelerucci/Desktop/Sapienza/Materie/RobProg2025/simulator/v2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable simulator"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/emanuelerucci/Desktop/Sapienza/Materie/RobProg2025/simulator/v2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable simulator"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/simulator.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

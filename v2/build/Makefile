@@ -129,6 +129,78 @@ simulator/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/simulator.dir/build.make CMakeFiles/simulator.dir/build
 .PHONY : simulator/fast
 
+src/car.o: src/car.cpp.o
+.PHONY : src/car.o
+
+# target to build an object file
+src/car.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simulator.dir/build.make CMakeFiles/simulator.dir/src/car.cpp.o
+.PHONY : src/car.cpp.o
+
+src/car.i: src/car.cpp.i
+.PHONY : src/car.i
+
+# target to preprocess a source file
+src/car.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simulator.dir/build.make CMakeFiles/simulator.dir/src/car.cpp.i
+.PHONY : src/car.cpp.i
+
+src/car.s: src/car.cpp.s
+.PHONY : src/car.s
+
+# target to generate assembly for a file
+src/car.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simulator.dir/build.make CMakeFiles/simulator.dir/src/car.cpp.s
+.PHONY : src/car.cpp.s
+
+src/freeflying.o: src/freeflying.cpp.o
+.PHONY : src/freeflying.o
+
+# target to build an object file
+src/freeflying.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simulator.dir/build.make CMakeFiles/simulator.dir/src/freeflying.cpp.o
+.PHONY : src/freeflying.cpp.o
+
+src/freeflying.i: src/freeflying.cpp.i
+.PHONY : src/freeflying.i
+
+# target to preprocess a source file
+src/freeflying.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simulator.dir/build.make CMakeFiles/simulator.dir/src/freeflying.cpp.i
+.PHONY : src/freeflying.cpp.i
+
+src/freeflying.s: src/freeflying.cpp.s
+.PHONY : src/freeflying.s
+
+# target to generate assembly for a file
+src/freeflying.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simulator.dir/build.make CMakeFiles/simulator.dir/src/freeflying.cpp.s
+.PHONY : src/freeflying.cpp.s
+
+src/lidar.o: src/lidar.cpp.o
+.PHONY : src/lidar.o
+
+# target to build an object file
+src/lidar.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simulator.dir/build.make CMakeFiles/simulator.dir/src/lidar.cpp.o
+.PHONY : src/lidar.cpp.o
+
+src/lidar.i: src/lidar.cpp.i
+.PHONY : src/lidar.i
+
+# target to preprocess a source file
+src/lidar.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simulator.dir/build.make CMakeFiles/simulator.dir/src/lidar.cpp.i
+.PHONY : src/lidar.cpp.i
+
+src/lidar.s: src/lidar.cpp.s
+.PHONY : src/lidar.s
+
+# target to generate assembly for a file
+src/lidar.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simulator.dir/build.make CMakeFiles/simulator.dir/src/lidar.cpp.s
+.PHONY : src/lidar.cpp.s
+
 src/simulator.o: src/simulator.cpp.o
 .PHONY : src/simulator.o
 
@@ -153,6 +225,30 @@ src/simulator.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/simulator.dir/build.make CMakeFiles/simulator.dir/src/simulator.cpp.s
 .PHONY : src/simulator.cpp.s
 
+src/world.o: src/world.cpp.o
+.PHONY : src/world.o
+
+# target to build an object file
+src/world.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simulator.dir/build.make CMakeFiles/simulator.dir/src/world.cpp.o
+.PHONY : src/world.cpp.o
+
+src/world.i: src/world.cpp.i
+.PHONY : src/world.i
+
+# target to preprocess a source file
+src/world.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simulator.dir/build.make CMakeFiles/simulator.dir/src/world.cpp.i
+.PHONY : src/world.cpp.i
+
+src/world.s: src/world.cpp.s
+.PHONY : src/world.s
+
+# target to generate assembly for a file
+src/world.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simulator.dir/build.make CMakeFiles/simulator.dir/src/world.cpp.s
+.PHONY : src/world.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -162,9 +258,21 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... simulator"
+	@echo "... src/car.o"
+	@echo "... src/car.i"
+	@echo "... src/car.s"
+	@echo "... src/freeflying.o"
+	@echo "... src/freeflying.i"
+	@echo "... src/freeflying.s"
+	@echo "... src/lidar.o"
+	@echo "... src/lidar.i"
+	@echo "... src/lidar.s"
 	@echo "... src/simulator.o"
 	@echo "... src/simulator.i"
 	@echo "... src/simulator.s"
+	@echo "... src/world.o"
+	@echo "... src/world.i"
+	@echo "... src/world.s"
 .PHONY : help
 
 
