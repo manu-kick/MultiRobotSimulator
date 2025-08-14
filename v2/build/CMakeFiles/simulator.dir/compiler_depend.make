@@ -991,6 +991,7 @@ CMakeFiles/simulator.dir/src/car.cpp.o: /Users/emanuelerucci/Desktop/Sapienza/Ma
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include/stddef.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include/stdint.h \
   /Users/emanuelerucci/Desktop/Sapienza/Materie/RobProg2025/simulator/v2/src/car.h \
+  /Users/emanuelerucci/Desktop/Sapienza/Materie/RobProg2025/simulator/v2/src/freeflying.h \
   /Users/emanuelerucci/Desktop/Sapienza/Materie/RobProg2025/simulator/v2/src/simple_geometry.h \
   /Users/emanuelerucci/Desktop/Sapienza/Materie/RobProg2025/simulator/v2/src/world.h \
   /opt/homebrew/Cellar/opencv/4.12.0/include/opencv4/opencv2/imgproc/segmentation.hpp \
@@ -2093,8 +2094,10 @@ CMakeFiles/simulator.dir/src/freeflying.cpp.o: /Users/emanuelerucci/Desktop/Sapi
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include/stdarg.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include/stddef.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include/stdint.h \
+  /Users/emanuelerucci/Desktop/Sapienza/Materie/RobProg2025/simulator/v2/src/car.h \
   /Users/emanuelerucci/Desktop/Sapienza/Materie/RobProg2025/simulator/v2/src/freeflying.h \
   /Users/emanuelerucci/Desktop/Sapienza/Materie/RobProg2025/simulator/v2/src/simple_geometry.h \
+  /Users/emanuelerucci/Desktop/Sapienza/Materie/RobProg2025/simulator/v2/src/utils.h \
   /Users/emanuelerucci/Desktop/Sapienza/Materie/RobProg2025/simulator/v2/src/world.h \
   /opt/homebrew/Cellar/opencv/4.12.0/include/opencv4/opencv2/imgproc/segmentation.hpp \
   /opt/homebrew/Cellar/opencv/4.12.0/include/opencv4/opencv2/calib3d.hpp \
@@ -5570,6 +5573,8 @@ CMakeFiles/simulator.dir/src/world.cpp.o: /Users/emanuelerucci/Desktop/Sapienza/
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__filesystem/file_status.h:
 
 /Users/emanuelerucci/Desktop/Sapienza/Materie/RobProg2025/simulator/v2/src/lidar.h:
+
+/Users/emanuelerucci/Desktop/Sapienza/Materie/RobProg2025/simulator/v2/src/utils.h:
 
 /opt/homebrew/Cellar/opencv/4.12.0/include/opencv4/opencv2/video/background_segm.hpp:
 
