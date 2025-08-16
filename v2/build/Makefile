@@ -129,6 +129,30 @@ simulator/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/simulator.dir/build.make CMakeFiles/simulator.dir/build
 .PHONY : simulator/fast
 
+src/arm.o: src/arm.cpp.o
+.PHONY : src/arm.o
+
+# target to build an object file
+src/arm.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simulator.dir/build.make CMakeFiles/simulator.dir/src/arm.cpp.o
+.PHONY : src/arm.cpp.o
+
+src/arm.i: src/arm.cpp.i
+.PHONY : src/arm.i
+
+# target to preprocess a source file
+src/arm.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simulator.dir/build.make CMakeFiles/simulator.dir/src/arm.cpp.i
+.PHONY : src/arm.cpp.i
+
+src/arm.s: src/arm.cpp.s
+.PHONY : src/arm.s
+
+# target to generate assembly for a file
+src/arm.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simulator.dir/build.make CMakeFiles/simulator.dir/src/arm.cpp.s
+.PHONY : src/arm.cpp.s
+
 src/car.o: src/car.cpp.o
 .PHONY : src/car.o
 
@@ -258,6 +282,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... simulator"
+	@echo "... src/arm.o"
+	@echo "... src/arm.i"
+	@echo "... src/arm.s"
 	@echo "... src/car.o"
 	@echo "... src/car.i"
 	@echo "... src/car.s"

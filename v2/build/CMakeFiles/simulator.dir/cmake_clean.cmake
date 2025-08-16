@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/simulator.dir/src/arm.cpp.o"
+  "CMakeFiles/simulator.dir/src/arm.cpp.o.d"
   "CMakeFiles/simulator.dir/src/car.cpp.o"
   "CMakeFiles/simulator.dir/src/car.cpp.o.d"
   "CMakeFiles/simulator.dir/src/freeflying.cpp.o"
