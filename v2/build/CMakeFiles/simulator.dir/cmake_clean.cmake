@@ -7,6 +7,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/simulator.dir/src/freeflying.cpp.o.d"
   "CMakeFiles/simulator.dir/src/lidar.cpp.o"
   "CMakeFiles/simulator.dir/src/lidar.cpp.o.d"
+  "CMakeFiles/simulator.dir/src/object.cpp.o"
+  "CMakeFiles/simulator.dir/src/object.cpp.o.d"
   "CMakeFiles/simulator.dir/src/simulator.cpp.o"
   "CMakeFiles/simulator.dir/src/simulator.cpp.o.d"
   "CMakeFiles/simulator.dir/src/world.cpp.o"

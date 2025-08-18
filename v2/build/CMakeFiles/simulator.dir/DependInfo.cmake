@@ -12,6 +12,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/emanuelerucci/Desktop/Sapienza/Materie/RobProg2025/simulator/v2/src/car.cpp" "CMakeFiles/simulator.dir/src/car.cpp.o" "gcc" "CMakeFiles/simulator.dir/src/car.cpp.o.d"
   "/Users/emanuelerucci/Desktop/Sapienza/Materie/RobProg2025/simulator/v2/src/freeflying.cpp" "CMakeFiles/simulator.dir/src/freeflying.cpp.o" "gcc" "CMakeFiles/simulator.dir/src/freeflying.cpp.o.d"
   "/Users/emanuelerucci/Desktop/Sapienza/Materie/RobProg2025/simulator/v2/src/lidar.cpp" "CMakeFiles/simulator.dir/src/lidar.cpp.o" "gcc" "CMakeFiles/simulator.dir/src/lidar.cpp.o.d"
+  "/Users/emanuelerucci/Desktop/Sapienza/Materie/RobProg2025/simulator/v2/src/object.cpp" "CMakeFiles/simulator.dir/src/object.cpp.o" "gcc" "CMakeFiles/simulator.dir/src/object.cpp.o.d"
   "/Users/emanuelerucci/Desktop/Sapienza/Materie/RobProg2025/simulator/v2/src/simulator.cpp" "CMakeFiles/simulator.dir/src/simulator.cpp.o" "gcc" "CMakeFiles/simulator.dir/src/simulator.cpp.o.d"
   "/Users/emanuelerucci/Desktop/Sapienza/Materie/RobProg2025/simulator/v2/src/world.cpp" "CMakeFiles/simulator.dir/src/world.cpp.o" "gcc" "CMakeFiles/simulator.dir/src/world.cpp.o.d"
   )

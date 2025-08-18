@@ -225,6 +225,30 @@ src/lidar.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/simulator.dir/build.make CMakeFiles/simulator.dir/src/lidar.cpp.s
 .PHONY : src/lidar.cpp.s
 
+src/object.o: src/object.cpp.o
+.PHONY : src/object.o
+
+# target to build an object file
+src/object.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simulator.dir/build.make CMakeFiles/simulator.dir/src/object.cpp.o
+.PHONY : src/object.cpp.o
+
+src/object.i: src/object.cpp.i
+.PHONY : src/object.i
+
+# target to preprocess a source file
+src/object.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simulator.dir/build.make CMakeFiles/simulator.dir/src/object.cpp.i
+.PHONY : src/object.cpp.i
+
+src/object.s: src/object.cpp.s
+.PHONY : src/object.s
+
+# target to generate assembly for a file
+src/object.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simulator.dir/build.make CMakeFiles/simulator.dir/src/object.cpp.s
+.PHONY : src/object.cpp.s
+
 src/simulator.o: src/simulator.cpp.o
 .PHONY : src/simulator.o
 
@@ -294,6 +318,9 @@ help:
 	@echo "... src/lidar.o"
 	@echo "... src/lidar.i"
 	@echo "... src/lidar.s"
+	@echo "... src/object.o"
+	@echo "... src/object.i"
+	@echo "... src/object.s"
 	@echo "... src/simulator.o"
 	@echo "... src/simulator.i"
 	@echo "... src/simulator.s"
