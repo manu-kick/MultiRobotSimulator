@@ -993,6 +993,7 @@ CMakeFiles/simulator.dir/src/arm.cpp.o: /Users/emanuelerucci/Desktop/Sapienza/Ma
   /Users/emanuelerucci/Desktop/Sapienza/Materie/RobProg2025/simulator/v2/src/arm.h \
   /Users/emanuelerucci/Desktop/Sapienza/Materie/RobProg2025/simulator/v2/src/car.h \
   /Users/emanuelerucci/Desktop/Sapienza/Materie/RobProg2025/simulator/v2/src/freeflying.h \
+  /Users/emanuelerucci/Desktop/Sapienza/Materie/RobProg2025/simulator/v2/src/object.h \
   /Users/emanuelerucci/Desktop/Sapienza/Materie/RobProg2025/simulator/v2/src/simple_geometry.h \
   /Users/emanuelerucci/Desktop/Sapienza/Materie/RobProg2025/simulator/v2/src/world.h \
   /opt/homebrew/Cellar/opencv/4.12.0/include/opencv4/opencv2/imgproc/segmentation.hpp \
@@ -2098,6 +2099,7 @@ CMakeFiles/simulator.dir/src/car.cpp.o: /Users/emanuelerucci/Desktop/Sapienza/Ma
   /Users/emanuelerucci/Desktop/Sapienza/Materie/RobProg2025/simulator/v2/src/arm.h \
   /Users/emanuelerucci/Desktop/Sapienza/Materie/RobProg2025/simulator/v2/src/car.h \
   /Users/emanuelerucci/Desktop/Sapienza/Materie/RobProg2025/simulator/v2/src/freeflying.h \
+  /Users/emanuelerucci/Desktop/Sapienza/Materie/RobProg2025/simulator/v2/src/object.h \
   /Users/emanuelerucci/Desktop/Sapienza/Materie/RobProg2025/simulator/v2/src/simple_geometry.h \
   /Users/emanuelerucci/Desktop/Sapienza/Materie/RobProg2025/simulator/v2/src/utils.h \
   /Users/emanuelerucci/Desktop/Sapienza/Materie/RobProg2025/simulator/v2/src/world.h \
@@ -3204,6 +3206,7 @@ CMakeFiles/simulator.dir/src/freeflying.cpp.o: /Users/emanuelerucci/Desktop/Sapi
   /Users/emanuelerucci/Desktop/Sapienza/Materie/RobProg2025/simulator/v2/src/arm.h \
   /Users/emanuelerucci/Desktop/Sapienza/Materie/RobProg2025/simulator/v2/src/car.h \
   /Users/emanuelerucci/Desktop/Sapienza/Materie/RobProg2025/simulator/v2/src/freeflying.h \
+  /Users/emanuelerucci/Desktop/Sapienza/Materie/RobProg2025/simulator/v2/src/object.h \
   /Users/emanuelerucci/Desktop/Sapienza/Materie/RobProg2025/simulator/v2/src/simple_geometry.h \
   /Users/emanuelerucci/Desktop/Sapienza/Materie/RobProg2025/simulator/v2/src/utils.h \
   /Users/emanuelerucci/Desktop/Sapienza/Materie/RobProg2025/simulator/v2/src/world.h \

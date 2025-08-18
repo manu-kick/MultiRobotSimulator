@@ -1101,5 +1101,6 @@ CMakeFiles/simulator.dir/src/arm.cpp.o: \
   /opt/homebrew/Cellar/opencv/4.12.0/include/opencv4/opencv2/video.hpp \
   /opt/homebrew/Cellar/opencv/4.12.0/include/opencv4/opencv2/video/tracking.hpp \
   /opt/homebrew/Cellar/opencv/4.12.0/include/opencv4/opencv2/video/background_segm.hpp \
+  /Users/emanuelerucci/Desktop/Sapienza/Materie/RobProg2025/simulator/v2/src/object.h \
   /Users/emanuelerucci/Desktop/Sapienza/Materie/RobProg2025/simulator/v2/src/car.h \
   /Users/emanuelerucci/Desktop/Sapienza/Materie/RobProg2025/simulator/v2/src/freeflying.h
