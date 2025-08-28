@@ -90,12 +90,12 @@ void placeItems(World &world, const Json::Value &root, std::vector<RobotHandle> 
         }
         else if (type == "car")
         {
+            // throw std::runtime_error("ARM on CarRobot not implemented yet");
             auto *car = new CarRobot(&world);
             car->pose = p;
             world.addItem(car);
             outRobots.push_back({car, id, type, p});
             std::cout << "\t - CarRobot " << id << " @ (" << p.x << "," << p.y << "," << p.theta << ")\n";
-            // throw std::runtime_error("ARM on CarRobot not implemented yet");
         }
         else
         {
@@ -120,7 +120,7 @@ void placeObjects(World &world, const Json::Value &root, std::vector<Object> &ob
         Pose p(25, 20, M_PI / 2);
         float width = 10.0f, height = 10.0f;
         if (o.isMember("size") && o["size"].isObject())
-        {   
+        {
             const auto &size = o["size"];
             width = size.get("width", width).asFloat();
             height = size.get("height", height).asFloat();
@@ -134,9 +134,11 @@ void placeObjects(World &world, const Json::Value &root, std::vector<Object> &ob
         }
 
         std::vector<Prehensile_Point> list_prehensile;
-        if (o.isMember("prehensile_points") && o["prehensile_points"].isArray()){
+        if (o.isMember("prehensile_points") && o["prehensile_points"].isArray())
+        {
             const auto &prehensile_points = o["prehensile_points"];
-            for (const auto &pp : prehensile_points){
+            for (const auto &pp : prehensile_points)
+            {
                 Prehensile_Point prehensile_point(pp.get("id", "").asString(), pp.get("value", 0.0f).asFloat());
                 list_prehensile.push_back(prehensile_point);
             }
@@ -152,7 +154,7 @@ void placeObjects(World &world, const Json::Value &root, std::vector<Object> &ob
                 {
                     float x = g.get("x", 0).asFloat();
                     float y = g.get("y", 0).asFloat();
-                    
+
                     Point p(x, y);
 
                     goal_vertices.push_back(p);
@@ -163,14 +165,14 @@ void placeObjects(World &world, const Json::Value &root, std::vector<Object> &ob
         if (type == "box")
         {
             auto *box = new BoxObject(&world, width, height, p, list_prehensile, goal_vertices);
-            cou
+            cout << "\t - BoxObject " << id << " @ (" << p.x << "," << p.y << "," << p.theta << ") size (" << width << "x" << height << ")\n";
             world.addItem(box);
             // obj.push_back(*box);
         }
     }
-    cout << endl << endl;
+    cout << endl
+         << endl;
 }
-
 
 // Function responsible of controlling the arm of the selected robot if available
 void controlArm(RobotHandle &robotHandle, const int key)
@@ -190,8 +192,6 @@ void controlArm(RobotHandle &robotHandle, const int key)
     {
         if (car->hasArm())
             arm = car->arm;
-        else
-            throw std::runtime_error("Control for arm on CarRobot not implemented yet");
     }
 
     if (!arm)
@@ -204,19 +204,45 @@ void controlArm(RobotHandle &robotHandle, const int key)
 
     switch (key)
     {
-    case 2: // left arrow key to rotateclear left (increase  angle of the selected link)
-        if (arm && robotHandle.arm_index != -1)
-        {
-            arm->links[robotHandle.arm_index].angle += 0.05;
-        }
-        break;
+        // case 2: // left arrow key to rotateclear left (increase  angle of the selected link)
+        //     if (arm && robotHandle.arm_index != -1)
+        //     {
+        //         arm->links[robotHandle.arm_index].angle += 0.05;
+        //     }
+        //     break;
 
-    case 3: // right arrow key to rotate right (decrease angle of the selected link)
-        if (arm && robotHandle.arm_index != -1)
-        {
-            arm->links[robotHandle.arm_index].angle -= 0.05;
+        // case 3: // right arrow key to rotate right (decrease angle of the selected link)
+        //     if (arm && robotHandle.arm_index != -1)
+        //     {
+        //         arm->links[robotHandle.arm_index].angle -= 0.05;
+        //     }
+        // break;
+        case 2: { // left arrow: try increase angle
+            if (arm && robotHandle.arm_index != -1) {
+                const int i = robotHandle.arm_index;
+                const float old = arm->links[i].angle;
+                arm->links[i].angle = old + 0.05f;         // propose
+                if (arm->collides()) {                     // reject if colliding
+                    arm->links[i].angle = old;
+                    std::cout << "\t-Blocked (EE collision), rotate the other way.\n";
+                }
+            }
+            break;
         }
-        break;
+
+        case 3: { // right arrow: try decrease angle
+            if (arm && robotHandle.arm_index != -1) {
+                const int i = robotHandle.arm_index;
+                const float old = arm->links[i].angle;
+                arm->links[i].angle = old - 0.05f;         // propose
+                if (arm->collides()) {                     // reject if colliding
+                    arm->links[i].angle = old;
+                    std::cout << "\t-Blocked (EE collision), rotate the other way.\n";
+                }
+            }
+            break;
+        }
+
 
     case 98: // 'b' key to return to robot control
         // Reset arm index to -1 to indicate no arm control
@@ -229,14 +255,14 @@ void controlArm(RobotHandle &robotHandle, const int key)
         {
             if (arm->end_effector.isHolding())
             {
-                arm->end_effector.release(); // Release the held object
-                cout << "\t-Releasing held object of arm index: " << robotHandle.arm_index << std::endl;
+                arm->doRelease(); // <-- invece di end_effector.release();
+                std::cout << "\t-Release arm index: " << robotHandle.arm_index << std::endl;
             }
             else
             {
-                arm->end_effector.hold(); // Close gripper
+                arm->end_effector.hold(); // alza richiesta; Arm::timeTick farà il docking
+                std::cout << "\t-Docking request arm index: " << robotHandle.arm_index << std::endl;
             }
-            cout << "\t-Closing gripper of arm index: " << robotHandle.arm_index << std::endl;
         }
         break;
 

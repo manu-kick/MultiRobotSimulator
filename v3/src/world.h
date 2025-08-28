@@ -33,10 +33,11 @@ public:
   }
 
   inline IndexPair worldToIndices(const Point p) {return IndexPair(p.x*inv_res, p.y*inv_res);}
+  const IndexPair worldToIndices(const Point p) const {return IndexPair(p.x*inv_res, p.y*inv_res);}
   
   inline Point indicesToWorld(const IndexPair idx) {return Point(idx.r*resolution, idx.c*resolution);}
 
-  void loadFromImage(const char* filename);
+  void loadFromImage(const string filename);
   
   // inefficency award
   bool traverseGrid(int& r, int& c, float& range, float alpha);
@@ -45,9 +46,9 @@ public:
   void timeTick(float dt);
   
   void addItem(WorldItem* item) {items[num_items]=item; ++num_items;}
-  // WorldItem* items[MAX_ITEMS];
-  std::vector<WorldItem*> items;
+  WorldItem* items[MAX_ITEMS];
   int num_items=0;
+  
 
   // for visualization
   void show();

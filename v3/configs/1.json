@@ -35,13 +35,34 @@
                 "length": 2
             },
             {
+                "id": "q3",
+                "type": 0,
+                "initial_angle": 0,
+                "length": 3
+            },
+            {
                 "id": "q4",
+                "type": 0,
+                "initial_angle": 0,
+                "length": 4
+            },
+            {
+                "id": "ee",
                 "type": 1,
                 "initial_angle": 0.0,
-                "length": 3
+                "length": 2
             }
         ]
     }
+    //    {
+    //     "id": "robot2",
+    //     "type": "car",
+    //     "initial_pose" : {
+    //         "x": 35,
+    //         "y": 10,
+    //         "theta": 1.60
+    //     }
+    // }
 ],
 "objects": [
     {
@@ -53,13 +74,14 @@
             "theta": 0
         },
         "prehensile_points": [
-            // {
-            //     "id": "pp1",
-            //     "value": 12.5
-            // },
+            {
+                "id": "pp1",
+                "value": 12.5
+            },
             {
                 "id": "pp2",
-                "value": 62.5
+                "value": 48
+                // "value": 62.5
             }
         ],
         "goal": [
