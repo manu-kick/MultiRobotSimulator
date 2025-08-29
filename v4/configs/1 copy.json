@@ -1,0 +1,55 @@
+{
+"name" : "test",
+"version": "1.0.0",
+"description": "Test configuration for the simulator",
+"scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+},
+"author": "",
+"license": "ISC",
+
+
+"map_file": "/Users/emanuelerucci/Desktop/Sapienza/Materie/RobProg2025/robotprogramming_2024_25/exercises/rp_02_inheritance/simple_simulator/bg2.png",
+"world_resolution" : 0.05,
+"delay" : 0.1,
+"robots" : [
+    {
+        "id": "robot1",
+        "type": "freeflying",
+        "initial_pose" : {
+            "x": 25,
+            "y": 20,
+            "theta": 1.65
+        },
+        "arm":[
+            {
+                "id": "q1",
+                "type": "joint",
+                "initial_value": 0.0,
+                "length": 0.5
+            },
+            {
+                "id": "q2",
+                "type": "joint",
+                "initial_value": 0.0,
+                "length": 0.5
+            },
+            {
+                "id": "q3",
+                "type": "end_effector",
+                "initial_value": 0.0,
+                "length": 0.5
+            }
+        ]
+    },
+    {
+        "id": "robot2",
+        "type": "car",
+        "initial_pose" : {
+            "x": 10,
+            "y": 15,
+            "theta": 0.0
+        }
+    }
+]
+}
