@@ -9,7 +9,7 @@
 "license": "ISC",
 
 
-"map_file": "/home/ubuntu/Desktop/MultiRobotSimulator/v4/bg2.png",
+"map_file": "/home/ubuntu/Desktop/MultiRobotSimulator/v4/configs/levels_map/lv_1.jpg",
 "world_resolution" : 0.05,
 "delay" : 0.1,
 "robots" : [

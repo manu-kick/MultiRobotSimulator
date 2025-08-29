@@ -439,11 +439,11 @@ void Arm::draw()
             cv::line(world->_display_image,
                      cv::Point(i_attach.c, i_attach.r),
                      cv::Point(i_end.c, i_end.r),
-                     cv::Scalar(0, 0, 0), 2);
+                     cv::Scalar(0, 0, 0), 1);
 
             cv::circle(world->_display_image,
                        cv::Point(i_end.c, i_end.r),
-                       3, cv::Scalar(0, 0, 0), -1);
+                       2, cv::Scalar(0, 0, 0), -1);
 
             attachment = end_point;
             i_attach = i_end;
@@ -452,7 +452,7 @@ void Arm::draw()
         // End effector: semplice cerchio
         cv::circle(world->_display_image,
                    cv::Point(i_attach.c, i_attach.r),
-                   10, cv::Scalar(0, 0, 0), -1);
+                   6, cv::Scalar(0, 0, 0), -1);
         // ✅ Correct telemetry:
         end_effector.position = attachment;           // WORLD coords (meters / map units)
         end_effector.pixel_pos = i_attach;            // PIXEL indices (r,c)

@@ -53,7 +53,7 @@ void placeItems(World &world, const Json::Value &root, std::vector<RobotHandle> 
 
         if (type == "freeflying")
         {
-            auto *ff = new FreeFlying(&world, 2);
+            auto *ff = new FreeFlying(&world, 1);
             ff->pose = p;
             world.addItem(ff);
             outRobots.push_back({ff, id, type, p});
@@ -177,7 +177,13 @@ void placeObjects(World &world, const Json::Value &root, std::vector<Object> &ob
 
 // Function responsible of controlling the arm of the selected robot if available
 void controlArm(RobotHandle &robotHandle, Key key)
-{
+{   
+    if (key == Key::BackToRobot) {          // handle first
+        robotHandle.arm_index = -1;
+        std::cout << "\t-Returning to robot control.\n";
+        return;
+    }
+
     Arm *arm = nullptr;
 
     if (auto *ff = dynamic_cast<FreeFlying *>(robotHandle.ptr)) {

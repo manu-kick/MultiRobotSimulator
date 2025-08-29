@@ -41,6 +41,7 @@ inline Key normalizeKey(int k) {
     if (k == 27)  return Key::Esc;     // ESC
     if (k == 'r' || k == 'R') return Key::Reset;
     if (k == 'e' || k == 'E') return Key::ToggleHold;
+    if (k == 'b' || k == 'B') return Key::BackToRobot;
     if (k == '\t' || k == 9)  return Key::Tab;
 
     // Digits
