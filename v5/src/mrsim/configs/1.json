@@ -53,16 +53,16 @@
                 "length": 2
             }
         ]
+    },
+       {
+        "id": "robot2",
+        "type": "car",
+        "initial_pose" : {
+            "x": 35,
+            "y": 10,
+            "theta": 1.60
+        }
     }
-    //    {
-    //     "id": "robot2",
-    //     "type": "car",
-    //     "initial_pose" : {
-    //         "x": 35,
-    //         "y": 10,
-    //         "theta": 1.60
-    //     }
-    // }
 ],
 "objects": [
     {
