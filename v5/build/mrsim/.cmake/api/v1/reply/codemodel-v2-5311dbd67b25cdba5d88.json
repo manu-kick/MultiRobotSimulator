@@ -7,7 +7,7 @@
 				{
 					"build" : ".",
 					"hasInstallRule" : true,
-					"jsonFile" : "directory-.-Release-b0409ac52433801128d3.json",
+					"jsonFile" : "directory-.-Release-843abb3dc5deeec7c128.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.12"
@@ -51,7 +51,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "simulator::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-simulator-Release-bbb94cfb112c5aa90486.json",
+					"jsonFile" : "target-simulator-Release-20b3b1ea88f0d2f601ee.json",
 					"name" : "simulator",
 					"projectIndex" : 0
 				},
