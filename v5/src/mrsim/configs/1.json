@@ -1,0 +1,114 @@
+{
+"name" : "test",
+"version": "1.0.0",
+"description": "Test configuration for the simulator",
+"scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+},
+"author": "",
+"license": "ISC",
+
+
+"map_file": "/home/ubuntu/Desktop/MultiRobotSimulator/v4/configs/levels_map/lv_1.jpg",
+"world_resolution" : 0.05,
+"delay" : 0.1,
+"robots" : [
+    {
+        "id": "robot1",
+        "type": "freeflying",
+        "initial_pose" : {
+            "x": 25,
+            "y": 20,
+            "theta": 0
+        },
+        "arm":[
+            {
+                "id": "q1",
+                "type": 0, 
+                "initial_angle": 0.0,
+                "length": 3
+            },
+            {
+                "id": "q2",
+                "type": 0,
+                "initial_angle": 0,
+                "length": 2
+            },
+            {
+                "id": "q3",
+                "type": 0,
+                "initial_angle": 0,
+                "length": 3
+            },
+            {
+                "id": "q4",
+                "type": 0,
+                "initial_angle": 0,
+                "length": 4
+            },
+            {
+                "id": "ee",
+                "type": 1,
+                "initial_angle": 0.0,
+                "length": 2
+            }
+        ]
+    }
+    //    {
+    //     "id": "robot2",
+    //     "type": "car",
+    //     "initial_pose" : {
+    //         "x": 35,
+    //         "y": 10,
+    //         "theta": 1.60
+    //     }
+    // }
+],
+"objects": [
+    {
+        "id": "item1",
+        "type": "box",
+        "initial_pose": {
+            "x": 10,
+            "y": 15,
+            "theta": 0
+        },
+        "prehensile_points": [
+            {
+                "id": "pp1",
+                "value": 12.5
+            },
+            {
+                "id": "pp2",
+                "value": 48
+                // "value": 62.5
+            }
+        ],
+        "goal": [
+            {
+                "x": 35,
+                "y": 10
+            },
+            {
+                "x": 45,
+                "y": 10
+            },
+            {
+                "x": 45,
+                "y": 20
+            },
+            {
+                "x": 35,
+                "y": 20
+            }
+           
+        ]
+        ,
+        "size": {
+            "width": 50,
+            "height": 50
+        }
+
+    }
+]
+}
