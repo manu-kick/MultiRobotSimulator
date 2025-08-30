@@ -4,6 +4,8 @@
 #include "opencv2/opencv.hpp"
 #include <vector>
 #include <memory>
+#include <chrono>
+
 
 #include <rclcpp/rclcpp.hpp>
 #include "mrsim/sim_common.h"
@@ -93,7 +95,8 @@ void placeItems(World &world, const Json::Value &root, std::vector<RobotHandle> 
          << endl;
 }
 
-void placeObjects(World &world, const Json::Value &root, std::vector<Object> &obj){
+void placeObjects(World &world, const Json::Value &root, std::vector<Object*> &outObjects){
+
     const Json::Value objects = root["objects"];
     cout << "******************* CREATING OBJECTS **********************" << endl;
     for (Json::ArrayIndex i = 0; i < objects.size(); ++i)
@@ -153,7 +156,8 @@ void placeObjects(World &world, const Json::Value &root, std::vector<Object> &ob
             auto *box = new BoxObject(&world, width, height, p, list_prehensile, goal_vertices);
             cout << "\t - BoxObject " << id << " @ (" << p.x << "," << p.y << "," << p.theta << ") size (" << width << "x" << height << ")\n";
             world.addItem(box);
-            // obj.push_back(*box);
+            outObjects.push_back(box);   // <-- add this line
+
         }
     }
     cout << endl
@@ -282,10 +286,38 @@ int main(int argc, char **argv)
 
     // Collect robots here
     std::vector<RobotHandle> robots;
-    std::vector<Object> objects;
+    std::vector<Object*> objects;
+
 
     placeItems(w, root, robots);
     placeObjects(w, root, objects);
+    using Clock = std::chrono::steady_clock;
+
+    bool timing_started = false;
+    bool timing_done    = false;
+    Clock::time_point t0;
+    int eligible_count = 0; // will store the time when all reached their goals
+
+    // Count how many objects actually have a goal polygon (>=3 vertices)
+    for (auto *o : objects) {
+        if (o && o->goal.size() >= 3) ++eligible_count;
+    }
+
+    // Helper that checks if *all* eligible objects are inside their goal (by center)
+    auto all_objects_in_goal = [&]() -> bool {
+        if (eligible_count == 0) return false; // nothing to time
+        for (auto *o : objects) {
+            if (!o || o->goal.size() < 3) continue;
+            if (!o->isInsideGoalArea(o->pose.translation())) return false;
+        }
+        return true;
+    };
+
+    // If we start with everything already inside, report immediately (0 s)
+    if (all_objects_in_goal()) {
+        std::cout << "\n>>> All objects are already in their goal areas (0 s).\n\n";
+        timing_done = true;
+    }
 
     // Create a ros Bridge
     auto ros_bridge = std::make_shared<RosBridge>(w, robots);
@@ -303,6 +335,26 @@ int main(int argc, char **argv)
         ros_bridge->spinOnce();
         w.timeTick(delay);
         w.show();
+
+
+        // --- WALL-CLOCK timing independent of JSON 'delay' ---
+        auto now = Clock::now();
+        bool all_in = all_objects_in_goal();
+
+        // Start when there's actually work to do
+        if (!timing_started && !timing_done && eligible_count > 0 && !all_in) {
+            t0 = now;
+            timing_started = true;
+        }
+
+        // Stop when everything is in
+        if (timing_started && !timing_done && all_in) {
+            double elapsed = std::chrono::duration<double>(now - t0).count();
+            timing_done = true;
+            std::cout << "\n>>> All objects reached their goal areas in "
+                    << elapsed << " s (wall time).\n\n";
+        }
+
 
         // Wait for a key press
         k = cv::waitKeyEx(delay * 1000) & 255;
