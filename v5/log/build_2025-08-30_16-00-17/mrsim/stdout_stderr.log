@@ -1,0 +1,32 @@
+[35m[1mConsolidate compiler generated dependencies of target simulator[0m
+[ 11%] [32mBuilding CXX object CMakeFiles/simulator.dir/src/simulator.cpp.o[0m
+In file included from [01m[K/home/ubuntu/Desktop/MultiRobotSimulator/v5/src/mrsim/include/mrsim/object.h:4[m[K,
+                 from [01m[K/home/ubuntu/Desktop/MultiRobotSimulator/v5/src/mrsim/include/mrsim/arm.h:4[m[K,
+                 from [01m[K/home/ubuntu/Desktop/MultiRobotSimulator/v5/src/mrsim/include/mrsim/ros_bridge.h:9[m[K,
+                 from [01m[K/home/ubuntu/Desktop/MultiRobotSimulator/v5/src/mrsim/src/simulator.cpp:10[m[K:
+[01m[K/home/ubuntu/Desktop/MultiRobotSimulator/v5/src/mrsim/include/mrsim/utils.h:[m[K In function ‘[01m[Kcv::Scalar generateSecondaryColor(Color)[m[K’:
+[01m[K/home/ubuntu/Desktop/MultiRobotSimulator/v5/src/mrsim/include/mrsim/utils.h:27:12:[m[K [01;31m[Kerror: [m[Kcould not convert ‘[01m[KColor(b, g, r)[m[K’ from ‘[01m[KColor[m[K’ to ‘[01m[Kcv::Scalar[m[K’ {aka ‘[01m[Kcv::Scalar_<double>[m[K’}
+   27 |     return [01;31m[KColor(b, g, r)[m[K;
+      |            [01;31m[K^~~~~~~~~~~~~~[m[K
+      |            [01;31m[K|[m[K
+      |            [01;31m[KColor[m[K
+In file included from [01m[K/home/ubuntu/Desktop/MultiRobotSimulator/v5/src/mrsim/include/mrsim/arm.h:4[m[K,
+                 from [01m[K/home/ubuntu/Desktop/MultiRobotSimulator/v5/src/mrsim/include/mrsim/ros_bridge.h:9[m[K,
+                 from [01m[K/home/ubuntu/Desktop/MultiRobotSimulator/v5/src/mrsim/src/simulator.cpp:10[m[K:
+[01m[K/home/ubuntu/Desktop/MultiRobotSimulator/v5/src/mrsim/include/mrsim/object.h:[m[K In constructor ‘[01m[KObject::Object(World*, const Pose&, const std::vector<Prehensile_Point>&, const std::vector<Point>&)[m[K’:
+[01m[K/home/ubuntu/Desktop/MultiRobotSimulator/v5/src/mrsim/include/mrsim/object.h:29:65:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator=[m[K’ (operand types are ‘[01m[KColor[m[K’ and ‘[01m[Kcv::Scalar[m[K’ {aka ‘[01m[Kcv::Scalar_<double>[m[K’})
+   29 |             secondaryColor = generateSecondaryColor(primaryColor[01;31m[K)[m[K;
+      |                                                                 [01;31m[K^[m[K
+In file included from [01m[K/home/ubuntu/Desktop/MultiRobotSimulator/v5/src/mrsim/include/mrsim/object.h:4[m[K,
+                 from [01m[K/home/ubuntu/Desktop/MultiRobotSimulator/v5/src/mrsim/include/mrsim/arm.h:4[m[K,
+                 from [01m[K/home/ubuntu/Desktop/MultiRobotSimulator/v5/src/mrsim/include/mrsim/ros_bridge.h:9[m[K,
+                 from [01m[K/home/ubuntu/Desktop/MultiRobotSimulator/v5/src/mrsim/src/simulator.cpp:10[m[K:
+[01m[K/home/ubuntu/Desktop/MultiRobotSimulator/v5/src/mrsim/include/mrsim/utils.h:9:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconstexpr Color& Color::operator=(const Color&)[m[K’
+    9 | class [01;36m[KColor[m[K {
+      |       [01;36m[K^~~~~[m[K
+[01m[K/home/ubuntu/Desktop/MultiRobotSimulator/v5/src/mrsim/include/mrsim/utils.h:9:7:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kcv::Scalar[m[K’ {aka ‘[01m[Kcv::Scalar_<double>[m[K’} to ‘[01m[Kconst Color&[m[K’
+[01m[K/home/ubuntu/Desktop/MultiRobotSimulator/v5/src/mrsim/include/mrsim/utils.h:9:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconstexpr Color& Color::operator=(Color&&)[m[K’
+[01m[K/home/ubuntu/Desktop/MultiRobotSimulator/v5/src/mrsim/include/mrsim/utils.h:9:7:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kcv::Scalar[m[K’ {aka ‘[01m[Kcv::Scalar_<double>[m[K’} to ‘[01m[KColor&&[m[K’
+gmake[2]: *** [CMakeFiles/simulator.dir/build.make:76: CMakeFiles/simulator.dir/src/simulator.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/simulator.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

@@ -1,6 +1,7 @@
 #pragma once
 #include "world.h"
 #include "simple_geometry.h"
+#include "utils.h"
 using namespace std;
 
 struct Prehensile_Point {
@@ -14,12 +15,19 @@ struct Prehensile_Point {
 
 struct Object : public WorldItem {
     Pose pose; // Pose of the object in the world
+    Color primaryColor = Color(0,0,0); // Color for visualization
+    Color secondaryColor = Color(0,0,0);
+
     std::vector<Prehensile_Point> prehensile_points; // Prehensile points for grasping
     std::vector<Point> goal; // Goal position for the object (4 points for a box)
     // Size size; // Size of the object
     bool locked = false;
 
-    Object(World* world_, const Pose& pose_ = Pose(), const std::vector<Prehensile_Point>& prehensile_points_ = {}, const std::vector<Point>& goal_ = {}) : WorldItem(world_), pose(pose_), prehensile_points(prehensile_points_), goal(goal_) {}
+    Object(World* world_, const Pose& pose_ = Pose(), const std::vector<Prehensile_Point>& prehensile_points_ = {}, const std::vector<Point>& goal_ = {}) 
+        : WorldItem(world_), pose(pose_), prehensile_points(prehensile_points_), goal(goal_) {
+            primaryColor = Color::generateRandomColor();
+            secondaryColor = generateSecondaryColor(primaryColor);
+        }
     bool isInsideGraspArea(const cv::Point& effector_px, std::string& grasp_id);
     bool isInsideGoalArea(const Point& p);
     bool collides();

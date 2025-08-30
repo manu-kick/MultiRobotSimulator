@@ -89,15 +89,16 @@ void BoxObject::drawPrehensile(Prehensile_Point &pp, const std::vector<cv::Point
             pp.grasp_px = Point(cvRound(Q.x), cvRound(Q.y));
             // cout<<"Saving grasping point x="<<pp.grasp_px.x<<" y="<<pp.grasp_px.y<<endl;
 
+            cv::Scalar secondaryColorScalar = secondaryColor.toScalar();
             // Normal and circle on prehensile point
             cv::line(world->_display_image,
                      cv::Point(cvRound(P.x), cvRound(P.y)),
                      cv::Point(cvRound(Q.x), cvRound(Q.y)),
-                     cv::Scalar(103, 50, 5), 2);
+                     secondaryColorScalar, 2);
 
             cv::circle(world->_display_image,
                        cv::Point(cvRound(Q.x), cvRound(Q.y)),
-                       5, cv::Scalar(103, 50, 5), -1);
+                       5, secondaryColorScalar, -1);
 
             // 🔴 Draw Prehensile area
             int half = (int)(pp.grasp_area_size / 2.0f);
@@ -128,13 +129,14 @@ void BoxObject::draw()
 
     // draw the box as a filled polygon
 
-    cv::fillConvexPoly(world->_display_image, corners_px, cv::Scalar(208, 102, 13));
+    cv::fillConvexPoly(world->_display_image, corners_px, primaryColor.toScalar());
 
     // draw the edges of the box
-    cv::line(world->_display_image, corners_px[0], corners_px[1], cv::Scalar(103, 50, 5), 2);
-    cv::line(world->_display_image, corners_px[1], corners_px[2], cv::Scalar(103, 50, 5), 2);
-    cv::line(world->_display_image, corners_px[2], corners_px[3], cv::Scalar(103, 50, 5), 2);
-    cv::line(world->_display_image, corners_px[3], corners_px[0], cv::Scalar(103, 50, 5), 2);
+    cv::Scalar secondaryColorScalar = secondaryColor.toScalar();
+    cv::line(world->_display_image, corners_px[0], corners_px[1], secondaryColorScalar, 2);
+    cv::line(world->_display_image, corners_px[1], corners_px[2], secondaryColorScalar, 2);
+    cv::line(world->_display_image, corners_px[2], corners_px[3], secondaryColorScalar, 2);
+    cv::line(world->_display_image, corners_px[3], corners_px[0], secondaryColorScalar, 2);
 
     // draw the prehensile points
     for (auto &pp : prehensile_points)
@@ -153,7 +155,7 @@ void BoxObject::draw()
         cv::line(world->_display_image,
                  cv::Point(idx1.r, idx1.c),
                  cv::Point(idx2.r, idx2.c),
-                 cv::Scalar(0, 255, 0), 2);
+                 secondaryColorScalar, 2);
     }
     // Draw line from last goal point to first
     if (goal.size() > 1)
@@ -163,7 +165,7 @@ void BoxObject::draw()
         cv::line(world->_display_image,
                  cv::Point(idx1.r, idx1.c),
                  cv::Point(idx2.r, idx2.c),
-                 cv::Scalar(0, 255, 0), 2);
+                 secondaryColorScalar, 2);
     }
 
     // up the first vertex write as text "goal area"
@@ -182,7 +184,7 @@ void BoxObject::draw()
                     text_origin,
                     cv::FONT_HERSHEY_SIMPLEX,
                     0.5,                 // font scale
-                    cv::Scalar(0, 0, 0), // text color (black)
+                    secondaryColorScalar, // text color (black)
                     1,                   // thickness
                     cv::LINE_AA);
     }

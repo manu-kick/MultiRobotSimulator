@@ -2,8 +2,30 @@
 #include <vector>
 #include <cmath>
 #include <algorithm>
+#include <opencv2/imgproc.hpp>
 #include "simple_geometry.h" // uses Point, Pose
 
+// Colors for OpenCV drawing (BGR)
+class Color {
+public:
+    int b, g, r;
+    Color(int b_=0, int g_=0, int r_=0) : b(b_), g(g_), r(r_) {}
+
+    inline static Color generateRandomColor() {
+        return Color(rand() % 256, rand() % 256, rand() % 256);
+    }
+
+    inline cv::Scalar toScalar() const { return cv::Scalar(b, g, r); }
+
+};
+
+inline Color generateSecondaryColor(Color c) {
+    int factor = 2; // darkening factor
+    int b = std::max(0, c.b - factor * 30);
+    int g = std::max(0, c.g - factor * 30);
+    int r = std::max(0, c.r - factor * 30);
+    return Color(b, g, r);
+}
 
 // --- Cross-platform key normalization for cv::waitKeyEx ---
 enum class Key {

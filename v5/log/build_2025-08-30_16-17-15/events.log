@@ -1,0 +1,135 @@
+[0.000000] (-) TimerEvent: {}
+[0.001531] (mrsim) JobQueued: {'identifier': 'mrsim', 'dependencies': OrderedDict()}
+[0.001620] (mrsim) JobStarted: {'identifier': 'mrsim'}
+[0.030769] (mrsim) JobProgress: {'identifier': 'mrsim', 'progress': 'cmake'}
+[0.030838] (mrsim) JobProgress: {'identifier': 'mrsim', 'progress': 'build'}
+[0.030857] (mrsim) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ubuntu/Desktop/MultiRobotSimulator/v5/build/mrsim', '--', '-j8', '-l8'], 'cwd': '/home/ubuntu/Desktop/MultiRobotSimulator/v5/build/mrsim', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ubuntu'), ('HOSTNAME', 'cdb58f7a44e2'), ('GIT_ASKPASS', '/root/.vscode-server/bin/cb0c47c0cfaad0757385834bd89d410c78a856c0/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('BROWSER', '/root/.vscode-server/bin/cb0c47c0cfaad0757385834bd89d410c78a856c0/bin/helpers/browser.sh'), ('HOME', '/root'), ('OLDPWD', '/home/ubuntu/Desktop'), ('TERM_PROGRAM_VERSION', '1.102.0'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-44a3a547-9688-42e0-8a80-f68cfb6d2e05.sock'), ('GTK_MODULES', 'appmenu-gtk-module'), ('VSCODE_GIT_ASKPASS_MAIN', '/root/.vscode-server/bin/cb0c47c0cfaad0757385834bd89d410c78a856c0/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/root/.vscode-server/bin/cb0c47c0cfaad0757385834bd89d410c78a856c0/node'), ('LC_CTYPE', 'C.UTF-8'), ('COLORTERM', 'truecolor'), ('REMOTE_CONTAINERS', 'true'), ('UBUNTU_MENUPROXY', '1'), ('DEBUGINFOD_URLS', ''), ('ROS_DISTRO', 'humble'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-363ca295-ebd7-49c7-850a-915b7731488c.sock'), ('_', '/usr/bin/colcon'), ('TERM', 'xterm-256color'), ('PATH', '/root/.vscode-server/bin/cb0c47c0cfaad0757385834bd89d410c78a856c0/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin:/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/vscode-ssh-auth-363ca295-ebd7-49c7-850a-915b7731488c.sock"]'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/tmp/vscode-git-ba945b4414.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/tmp/vscode-ssh-auth-363ca295-ebd7-49c7-850a-915b7731488c.sock'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PASSWD', 'ubuntu'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/ubuntu/Desktop/MultiRobotSimulator/v5/build/mrsim'), ('XDG_DATA_DIRS', '/usr/share/gnome:/root/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('COLCON', '1')]), 'shell': False}
+[0.073644] (-) TimerEvent: {}
+[0.174680] (-) TimerEvent: {}
+[0.275711] (-) TimerEvent: {}
+[0.377745] (-) TimerEvent: {}
+[0.478634] (-) TimerEvent: {}
+[0.581969] (-) TimerEvent: {}
+[0.683342] (-) TimerEvent: {}
+[0.784963] (-) TimerEvent: {}
+[0.857154] (mrsim) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target simulator\x1b[0m\n'}
+[0.885356] (-) TimerEvent: {}
+[0.987457] (-) TimerEvent: {}
+[1.093662] (-) TimerEvent: {}
+[1.194680] (-) TimerEvent: {}
+[1.295451] (-) TimerEvent: {}
+[1.396807] (-) TimerEvent: {}
+[1.411563] (mrsim) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding CXX object CMakeFiles/simulator.dir/src/object.cpp.o\x1b[0m\n'}
+[1.496983] (-) TimerEvent: {}
+[1.599354] (-) TimerEvent: {}
+[1.700092] (-) TimerEvent: {}
+[1.800910] (-) TimerEvent: {}
+[1.901825] (-) TimerEvent: {}
+[2.041603] (-) TimerEvent: {}
+[2.150163] (-) TimerEvent: {}
+[2.251254] (-) TimerEvent: {}
+[2.351828] (-) TimerEvent: {}
+[2.452450] (-) TimerEvent: {}
+[2.553082] (-) TimerEvent: {}
+[2.653873] (-) TimerEvent: {}
+[2.755607] (-) TimerEvent: {}
+[2.856048] (-) TimerEvent: {}
+[2.956786] (-) TimerEvent: {}
+[3.057341] (-) TimerEvent: {}
+[3.163758] (-) TimerEvent: {}
+[3.264176] (-) TimerEvent: {}
+[3.364816] (-) TimerEvent: {}
+[3.466350] (-) TimerEvent: {}
+[3.567161] (-) TimerEvent: {}
+[3.667761] (-) TimerEvent: {}
+[3.768116] (-) TimerEvent: {}
+[3.868516] (-) TimerEvent: {}
+[3.969384] (-) TimerEvent: {}
+[4.070494] (-) TimerEvent: {}
+[4.175823] (-) TimerEvent: {}
+[4.276564] (-) TimerEvent: {}
+[4.380577] (-) TimerEvent: {}
+[4.485258] (-) TimerEvent: {}
+[4.590896] (-) TimerEvent: {}
+[4.691345] (-) TimerEvent: {}
+[4.791637] (-) TimerEvent: {}
+[4.900112] (-) TimerEvent: {}
+[5.002328] (-) TimerEvent: {}
+[5.107974] (-) TimerEvent: {}
+[5.208661] (-) TimerEvent: {}
+[5.309132] (-) TimerEvent: {}
+[5.409620] (-) TimerEvent: {}
+[5.513721] (-) TimerEvent: {}
+[5.620154] (-) TimerEvent: {}
+[5.722226] (-) TimerEvent: {}
+[5.823155] (-) TimerEvent: {}
+[5.995591] (-) TimerEvent: {}
+[6.096402] (-) TimerEvent: {}
+[6.197174] (-) TimerEvent: {}
+[6.302615] (-) TimerEvent: {}
+[6.404718] (-) TimerEvent: {}
+[6.506348] (-) TimerEvent: {}
+[6.606953] (-) TimerEvent: {}
+[6.707680] (-) TimerEvent: {}
+[6.808850] (-) TimerEvent: {}
+[6.909211] (-) TimerEvent: {}
+[7.010025] (-) TimerEvent: {}
+[7.110765] (-) TimerEvent: {}
+[7.220428] (-) TimerEvent: {}
+[7.328254] (-) TimerEvent: {}
+[7.429304] (-) TimerEvent: {}
+[7.530073] (-) TimerEvent: {}
+[7.632853] (-) TimerEvent: {}
+[7.729333] (mrsim) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/Desktop/MultiRobotSimulator/v5/src/mrsim/src/object.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid BoxObject::drawPrehensile(Prehensile_Point&, const std::vector<cv::Point_<int> >&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[7.730605] (mrsim) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/Desktop/MultiRobotSimulator/v5/src/mrsim/src/object.cpp:96:22:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KsecondaryColorScalar\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[KsecondaryColor\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[7.730895] (mrsim) StderrLine: {'line': b'   96 |                      \x1b[01;31m\x1b[KsecondaryColorScalar\x1b[m\x1b[K, 2);\n'}
+[7.731179] (mrsim) StderrLine: {'line': b'      |                      \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.731469] (mrsim) StderrLine: {'line': b'      |                      \x1b[32m\x1b[KsecondaryColor\x1b[m\x1b[K\n'}
+[7.732889] (-) TimerEvent: {}
+[7.741667] (mrsim) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/Desktop/MultiRobotSimulator/v5/src/mrsim/src/object.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual void BoxObject::draw()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[7.742086] (mrsim) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/Desktop/MultiRobotSimulator/v5/src/mrsim/src/object.cpp:186:21:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kcould not convert \xe2\x80\x98\x1b[01m\x1b[K((BoxObject*)this)->BoxObject::<anonymous>.Object::secondaryColor\x1b[m\x1b[K\xe2\x80\x99 from \xe2\x80\x98\x1b[01m\x1b[KColor\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kcv::Scalar\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kcv::Scalar_<double>\x1b[m\x1b[K\xe2\x80\x99}\n'}
+[7.742361] (mrsim) StderrLine: {'line': b'  186 |                     \x1b[01;31m\x1b[KsecondaryColor\x1b[m\x1b[K, // text color (black)\n'}
+[7.742580] (mrsim) StderrLine: {'line': b'      |                     \x1b[01;31m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.742821] (mrsim) StderrLine: {'line': b'      |                     \x1b[01;31m\x1b[K|\x1b[m\x1b[K\n'}
+[7.743047] (mrsim) StderrLine: {'line': b'      |                     \x1b[01;31m\x1b[KColor\x1b[m\x1b[K\n'}
+[7.833239] (-) TimerEvent: {}
+[7.934905] (-) TimerEvent: {}
+[8.037944] (-) TimerEvent: {}
+[8.144954] (-) TimerEvent: {}
+[8.247886] (-) TimerEvent: {}
+[8.356917] (-) TimerEvent: {}
+[8.461882] (-) TimerEvent: {}
+[8.562535] (-) TimerEvent: {}
+[8.663260] (-) TimerEvent: {}
+[8.764211] (-) TimerEvent: {}
+[8.865389] (-) TimerEvent: {}
+[8.966777] (-) TimerEvent: {}
+[9.067499] (-) TimerEvent: {}
+[9.169881] (-) TimerEvent: {}
+[9.270830] (-) TimerEvent: {}
+[9.371773] (-) TimerEvent: {}
+[9.472706] (-) TimerEvent: {}
+[9.573575] (-) TimerEvent: {}
+[9.674965] (-) TimerEvent: {}
+[9.777057] (-) TimerEvent: {}
+[9.878034] (-) TimerEvent: {}
+[10.052753] (-) TimerEvent: {}
+[10.154294] (-) TimerEvent: {}
+[10.258811] (-) TimerEvent: {}
+[10.366095] (-) TimerEvent: {}
+[10.466966] (-) TimerEvent: {}
+[10.568991] (-) TimerEvent: {}
+[10.671380] (-) TimerEvent: {}
+[10.772577] (-) TimerEvent: {}
+[10.873696] (-) TimerEvent: {}
+[10.974255] (-) TimerEvent: {}
+[11.019616] (mrsim) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/simulator.dir/build.make:160: CMakeFiles/simulator.dir/src/object.cpp.o] Error 1\n'}
+[11.039607] (mrsim) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/simulator.dir/all] Error 2\n'}
+[11.040613] (mrsim) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[11.058939] (mrsim) CommandEnded: {'returncode': 2}
+[11.075065] (-) TimerEvent: {}
+[11.177075] (-) TimerEvent: {}
+[11.307354] (-) TimerEvent: {}
+[11.410237] (-) TimerEvent: {}
+[11.487901] (mrsim) JobEnded: {'identifier': 'mrsim', 'rc': 2}
+[11.491399] (-) EventReactorShutdown: {}
