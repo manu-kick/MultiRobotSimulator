@@ -1,0 +1,58 @@
+-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found rclcpp: 16.0.14 (/opt/ros/humble/share/rclcpp/cmake)
+-- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+-- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+-- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found geometry_msgs: 4.9.0 (/opt/ros/humble/share/geometry_msgs/cmake)
+-- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+-- Found tf2: 0.25.15 (/opt/ros/humble/share/tf2/cmake)
+-- Found tf2_ros: 0.25.15 (/opt/ros/humble/share/tf2_ros/cmake)
+-- Eigen3 found: /usr/include/eigen3
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/ubuntu/Desktop/MultiRobotSimulator/v5/build/mrsim
+[ 11%] [32mBuilding CXX object CMakeFiles/simulator.dir/src/freeflying.cpp.o[0m
+[ 22%] [32mBuilding CXX object CMakeFiles/simulator.dir/src/lidar.cpp.o[0m
+[ 33%] [32mBuilding CXX object CMakeFiles/simulator.dir/src/simulator.cpp.o[0m
+[ 44%] [32mBuilding CXX object CMakeFiles/simulator.dir/src/world.cpp.o[0m
+[ 55%] [32mBuilding CXX object CMakeFiles/simulator.dir/src/arm.cpp.o[0m
+[ 66%] [32mBuilding CXX object CMakeFiles/simulator.dir/src/car.cpp.o[0m
+[ 77%] [32mBuilding CXX object CMakeFiles/simulator.dir/src/object.cpp.o[0m
+[ 88%] [32mBuilding CXX object CMakeFiles/simulator.dir/src/ros_bridge.cpp.o[0m
+In file included from [01m[K/home/ubuntu/Desktop/MultiRobotSimulator/v5/src/mrsim/src/freeflying.cpp:5[m[K:
+[01m[K/home/ubuntu/Desktop/MultiRobotSimulator/v5/src/mrsim/include/mrsim/car.h:3:10:[m[K [01;31m[Kfatal error: [m[Karm.h: No such file or directory
+    3 | #include [01;31m[K"arm.h"[m[K
+      |          [01;31m[K^~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/simulator.dir/build.make:104: CMakeFiles/simulator.dir/src/freeflying.cpp.o] Error 1
+gmake[2]: *** Waiting for unfinished jobs....
+In file included from [01m[K/home/ubuntu/Desktop/MultiRobotSimulator/v5/src/mrsim/src/car.cpp:4[m[K:
+[01m[K/home/ubuntu/Desktop/MultiRobotSimulator/v5/src/mrsim/include/mrsim/car.h:3:10:[m[K [01;31m[Kfatal error: [m[Karm.h: No such file or directory
+    3 | #include [01;31m[K"arm.h"[m[K
+      |          [01;31m[K^~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/simulator.dir/build.make:132: CMakeFiles/simulator.dir/src/car.cpp.o] Error 1
+[01m[K/home/ubuntu/Desktop/MultiRobotSimulator/v5/src/mrsim/src/arm.cpp:6:10:[m[K [01;31m[Kfatal error: [m[Kmrsim/arm.h: No such file or directory
+    6 | #include [01;31m[K"mrsim/arm.h"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/simulator.dir/build.make:146: CMakeFiles/simulator.dir/src/arm.cpp.o] Error 1
+In file included from [01m[K/home/ubuntu/Desktop/MultiRobotSimulator/v5/src/mrsim/src/simulator.cpp:10[m[K:
+[01m[K/home/ubuntu/Desktop/MultiRobotSimulator/v5/src/mrsim/include/mrsim/ros_bridge.h:9:10:[m[K [01;31m[Kfatal error: [m[Karm.h: No such file or directory
+    9 | #include [01;31m[K"arm.h"[m[K
+      |          [01;31m[K^~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/simulator.dir/build.make:76: CMakeFiles/simulator.dir/src/simulator.cpp.o] Error 1
+In file included from [01m[K/home/ubuntu/Desktop/MultiRobotSimulator/v5/src/mrsim/src/ros_bridge.cpp:1[m[K:
+[01m[K/home/ubuntu/Desktop/MultiRobotSimulator/v5/src/mrsim/include/mrsim/ros_bridge.h:9:10:[m[K [01;31m[Kfatal error: [m[Karm.h: No such file or directory
+    9 | #include [01;31m[K"arm.h"[m[K
+      |          [01;31m[K^~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/simulator.dir/build.make:174: CMakeFiles/simulator.dir/src/ros_bridge.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/simulator.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

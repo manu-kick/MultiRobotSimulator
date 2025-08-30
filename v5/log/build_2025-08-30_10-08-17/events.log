@@ -1,0 +1,109 @@
+[0.000000] (-) TimerEvent: {}
+[0.001009] (mrsim) JobQueued: {'identifier': 'mrsim', 'dependencies': OrderedDict()}
+[0.004654] (mrsim) JobStarted: {'identifier': 'mrsim'}
+[0.041464] (mrsim) JobProgress: {'identifier': 'mrsim', 'progress': 'cmake'}
+[0.045358] (mrsim) Command: {'cmd': ['/usr/bin/cmake', '/home/ubuntu/Desktop/MultiRobotSimulator/v5/src/mrsim', '-DCATKIN_INSTALL_INTO_PREFIX_ROOT=0', '-DCATKIN_SYMLINK_INSTALL=ON', '-DCMAKE_INSTALL_PREFIX=/home/ubuntu/Desktop/MultiRobotSimulator/v5/install/mrsim'], 'cwd': '/home/ubuntu/Desktop/MultiRobotSimulator/v5/build/mrsim', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ubuntu'), ('HOSTNAME', 'cdb58f7a44e2'), ('GIT_ASKPASS', '/root/.vscode-server/bin/cb0c47c0cfaad0757385834bd89d410c78a856c0/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/root/.vscode-server/bin/cb0c47c0cfaad0757385834bd89d410c78a856c0/bin/helpers/browser.sh'), ('HOME', '/root'), ('OLDPWD', '/home/ubuntu/Desktop/MultiRobotSimulator'), ('TERM_PROGRAM_VERSION', '1.102.0'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-52e3150f-a7d6-40c0-bfd1-306ea0e40aae.sock'), ('ROS_PYTHON_VERSION', '3'), ('GTK_MODULES', 'appmenu-gtk-module'), ('VSCODE_GIT_ASKPASS_MAIN', '/root/.vscode-server/bin/cb0c47c0cfaad0757385834bd89d410c78a856c0/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/root/.vscode-server/bin/cb0c47c0cfaad0757385834bd89d410c78a856c0/node'), ('LC_CTYPE', 'C.UTF-8'), ('COLORTERM', 'truecolor'), ('REMOTE_CONTAINERS', 'true'), ('UBUNTU_MENUPROXY', '1'), ('DEBUGINFOD_URLS', ''), ('ROS_DISTRO', 'humble'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-9d870bbe-1864-4b13-93d7-26023b39e520.sock'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/root/.vscode-server/bin/cb0c47c0cfaad0757385834bd89d410c78a856c0/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/vscode-ssh-auth-9d870bbe-1864-4b13-93d7-26023b39e520.sock"]'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/tmp/vscode-git-ba945b4414.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/tmp/vscode-ssh-auth-9d870bbe-1864-4b13-93d7-26023b39e520.sock'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PASSWD', 'ubuntu'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/ubuntu/Desktop/MultiRobotSimulator/v5/build/mrsim'), ('XDG_DATA_DIRS', '/usr/share/gnome:/root/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1')]), 'shell': False}
+[0.086846] (-) TimerEvent: {}
+[0.190257] (-) TimerEvent: {}
+[0.292570] (-) TimerEvent: {}
+[0.392930] (-) TimerEvent: {}
+[0.493445] (-) TimerEvent: {}
+[0.594957] (-) TimerEvent: {}
+[0.700431] (-) TimerEvent: {}
+[0.805793] (-) TimerEvent: {}
+[0.907702] (-) TimerEvent: {}
+[1.008684] (-) TimerEvent: {}
+[1.114185] (-) TimerEvent: {}
+[1.173053] (mrsim) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[1.214521] (-) TimerEvent: {}
+[1.323662] (-) TimerEvent: {}
+[1.437172] (-) TimerEvent: {}
+[1.566794] (-) TimerEvent: {}
+[1.669859] (-) TimerEvent: {}
+[1.772760] (-) TimerEvent: {}
+[1.853371] (mrsim) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[1.875337] (-) TimerEvent: {}
+[1.977404] (-) TimerEvent: {}
+[2.079767] (-) TimerEvent: {}
+[2.181359] (-) TimerEvent: {}
+[2.283073] (-) TimerEvent: {}
+[2.388019] (-) TimerEvent: {}
+[2.488184] (mrsim) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[2.488708] (-) TimerEvent: {}
+[2.503154] (mrsim) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[2.504653] (mrsim) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[2.507049] (mrsim) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[2.594673] (-) TimerEvent: {}
+[2.608590] (mrsim) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[2.695882] (-) TimerEvent: {}
+[2.797093] (-) TimerEvent: {}
+[2.898788] (-) TimerEvent: {}
+[3.034815] (-) TimerEvent: {}
+[3.136447] (-) TimerEvent: {}
+[3.141670] (mrsim) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[3.236724] (-) TimerEvent: {}
+[3.334844] (mrsim) StdoutLine: {'line': b'-- Found rclcpp: 16.0.14 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[3.336928] (-) TimerEvent: {}
+[3.434571] (mrsim) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[3.437351] (-) TimerEvent: {}
+[3.444122] (mrsim) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[3.461640] (mrsim) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[3.489127] (mrsim) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[3.516879] (mrsim) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[3.537604] (-) TimerEvent: {}
+[3.606670] (mrsim) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[3.610575] (mrsim) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[3.642755] (-) TimerEvent: {}
+[3.743919] (-) TimerEvent: {}
+[3.831467] (mrsim) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[3.844505] (-) TimerEvent: {}
+[3.894694] (mrsim) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[3.945817] (-) TimerEvent: {}
+[3.980444] (mrsim) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[3.996692] (mrsim) StdoutLine: {'line': b'-- Looking for C++ include pthread.h\n'}
+[4.045940] (-) TimerEvent: {}
+[4.147861] (-) TimerEvent: {}
+[4.250343] (-) TimerEvent: {}
+[4.351872] (-) TimerEvent: {}
+[4.408850] (mrsim) StdoutLine: {'line': b'-- Looking for C++ include pthread.h - found\n'}
+[4.409917] (mrsim) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[4.452257] (-) TimerEvent: {}
+[4.552640] (-) TimerEvent: {}
+[4.653098] (-) TimerEvent: {}
+[4.671320] (mrsim) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[4.676183] (mrsim) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[4.753482] (-) TimerEvent: {}
+[4.863092] (-) TimerEvent: {}
+[4.952346] (mrsim) StdoutLine: {'line': b'-- Found geometry_msgs: 4.9.0 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[4.963162] (-) TimerEvent: {}
+[4.988663] (mrsim) StdoutLine: {'line': b'-- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[5.034511] (mrsim) StdoutLine: {'line': b'-- Found tf2: 0.25.15 (/opt/ros/humble/share/tf2/cmake)\n'}
+[5.063787] (-) TimerEvent: {}
+[5.108750] (mrsim) StdoutLine: {'line': b'-- Found tf2_ros: 0.25.15 (/opt/ros/humble/share/tf2_ros/cmake)\n'}
+[5.163976] (-) TimerEvent: {}
+[5.264680] (-) TimerEvent: {}
+[5.367364] (-) TimerEvent: {}
+[5.456292] (mrsim) StdoutLine: {'line': b'-- Found OpenCV: /usr (found version "4.5.4") \n'}
+[5.468492] (-) TimerEvent: {}
+[5.475647] (mrsim) StdoutLine: {'line': b'-- Eigen3 found: /usr/include/eigen3\n'}
+[5.568810] (-) TimerEvent: {}
+[5.669466] (-) TimerEvent: {}
+[5.691624] (mrsim) StdoutLine: {'line': b'-- Configuring done\n'}
+[5.709876] (mrsim) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:48 (add_executable):\n'}
+[5.710172] (mrsim) StderrLine: {'line': b'  Cannot find source file:\n'}
+[5.710245] (mrsim) StderrLine: {'line': b'\n'}
+[5.710303] (mrsim) StderrLine: {'line': b'    src/ros_bridge.cpp\n'}
+[5.710373] (mrsim) StderrLine: {'line': b'\n'}
+[5.710438] (mrsim) StderrLine: {'line': b'  Tried extensions .c .C .c++ .cc .cpp .cxx .cu .mpp .m .M .mm .ixx .cppm .h\n'}
+[5.710493] (mrsim) StderrLine: {'line': b'  .hh .h++ .hm .hpp .hxx .in .txx .f .F .for .f77 .f90 .f95 .f03 .hip .ispc\n'}
+[5.710534] (mrsim) StderrLine: {'line': b'\n'}
+[5.710579] (mrsim) StderrLine: {'line': b'\x1b[0m\n'}
+[5.715470] (mrsim) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:48 (add_executable):\n'}
+[5.715661] (mrsim) StderrLine: {'line': b'  No SOURCES given to target: simulator\n'}
+[5.715752] (mrsim) StderrLine: {'line': b'\n'}
+[5.715832] (mrsim) StderrLine: {'line': b'\x1b[0m\n'}
+[5.715918] (mrsim) StderrLine: {'line': b'\x1b[0mCMake Generate step failed.  Build files cannot be regenerated correctly.\x1b[0m\n'}
+[5.748268] (mrsim) CommandEnded: {'returncode': 1}
+[5.773720] (-) TimerEvent: {}
+[5.863411] (mrsim) JobEnded: {'identifier': 'mrsim', 'rc': 1}
+[5.869091] (-) EventReactorShutdown: {}

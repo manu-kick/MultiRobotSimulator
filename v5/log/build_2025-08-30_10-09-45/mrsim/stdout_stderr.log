@@ -1,0 +1,19 @@
+[35m[1mConsolidate compiler generated dependencies of target simulator[0m
+[ 11%] [32mBuilding CXX object CMakeFiles/simulator.dir/src/simulator.cpp.o[0m
+[ 22%] [32mBuilding CXX object CMakeFiles/simulator.dir/src/freeflying.cpp.o[0m
+[ 33%] [32mBuilding CXX object CMakeFiles/simulator.dir/src/car.cpp.o[0m
+[ 44%] [32mBuilding CXX object CMakeFiles/simulator.dir/src/arm.cpp.o[0m
+[ 55%] [32mBuilding CXX object CMakeFiles/simulator.dir/src/ros_bridge.cpp.o[0m
+In file included from [01m[K/home/ubuntu/Desktop/MultiRobotSimulator/v5/src/mrsim/src/simulator.cpp:16[m[K:
+[01m[K/home/ubuntu/Desktop/MultiRobotSimulator/v5/src/mrsim/include/mrsim/freeflying.h:4:8:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kstruct FreeFlying[m[K’
+    4 | struct [01;31m[KFreeFlying[m[K: public WorldItem {
+      |        [01;31m[K^~~~~~~~~~[m[K
+In file included from [01m[K/home/ubuntu/Desktop/MultiRobotSimulator/v5/src/mrsim/include/mrsim/ros_bridge.h:10[m[K,
+                 from [01m[K/home/ubuntu/Desktop/MultiRobotSimulator/v5/src/mrsim/src/simulator.cpp:10[m[K:
+[01m[K/home/ubuntu/Desktop/MultiRobotSimulator/v5/src/mrsim/include/mrsim/freeflying.h:4:8:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kstruct FreeFlying[m[K’
+    4 | struct [01;36m[KFreeFlying[m[K: public WorldItem {
+      |        [01;36m[K^~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/simulator.dir/build.make:76: CMakeFiles/simulator.dir/src/simulator.cpp.o] Error 1
+gmake[2]: *** Waiting for unfinished jobs....
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/simulator.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

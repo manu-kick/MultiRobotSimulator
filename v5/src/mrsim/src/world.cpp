@@ -1,0 +1,78 @@
+#include "mrsim/world.h"
+#include <iostream>
+using namespace std;
+
+World::World(float resolution_) : resolution(resolution_),
+                                  inv_res(1. / resolution_)
+{
+  for (int i = 0; i < MAX_ITEMS; ++i)
+    items[i] = 0;
+  num_items = 0;
+}
+
+void World::loadFromImage(const string filename)
+{
+  cerr << "loading [" << filename << "]" << endl;
+  cv::Mat m = cv::imread(filename);
+  if (m.rows == 0)
+  {
+    throw std::runtime_error("unable to load image");
+  }
+  // cv::cvtColor(m, _display_image, cv::COLOR_BGR2GRAY);
+
+  // Save the original color image for drawing
+  original_image = m.clone();
+  _display_image = m.clone(); // Initialize _display_image with color
+
+  // Create grayscale grid for logic/collision
+  cv::Mat gray;
+  cv::cvtColor(m, gray, cv::COLOR_BGR2GRAY);
+
+  rows = gray.rows;
+  cols = gray.cols;
+  size = rows * cols;
+
+  grid = new uint8_t[size];
+  memcpy(grid, gray.data, size);
+}
+
+// inefficency award
+bool World::traverseGrid(int &r, int &c, float &range, float alpha)
+{
+  Point p(r, c);
+  Point dp(cos(alpha), sin(alpha));
+  while (isInside(p.x, p.y) && range > 0)
+  {
+    if (at(p.x, p.y) < 127)
+    {
+      r = p.x;
+      c = p.y;
+      return true;
+    }
+    p += dp;
+    range -= 1;
+  }
+  r = p.x;
+  c = p.y;
+  return false;
+}
+
+void World::show()
+{
+  // Reset the display image from the original color image
+  original_image.copyTo(_display_image);
+
+  // Draw all items on top
+  for (int i = 0; i < num_items; ++i)
+    if (items[i])
+      items[i]->draw();
+
+  cv::imshow("grid", _display_image);
+}
+
+void World::timeTick(float dt)
+{
+  for (int i = 0; i < num_items; ++i)
+    if (items[i])
+      items[i]->timeTick(dt);
+}
