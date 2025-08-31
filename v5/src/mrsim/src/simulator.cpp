@@ -282,30 +282,10 @@ int main(int argc, char **argv)
         return 1;
     }
 
-
-    
-
-
     rclcpp::init(argc, argv);
     
-
-
-
-
-
-
-
-
-
-
-    if (argc != 2)
-    {
-        cerr << "Usage: <config_file.json>" << endl;
-        return 1;
-    }
-
-    // We get the path of the JSON file from the arguments
-    const string jsonFilePath = argv[1];
+    cout << "Loading your favorite level " <<player.fav_level << endl;
+    std::string jsonFilePath = "/home/ubuntu/Desktop/MultiRobotSimulator/v5/src/mrsim/configs/"+ std::to_string(player.fav_level) + ".json";
 
     Json::Value root;
     Json::Reader reader;
@@ -390,7 +370,8 @@ int main(int argc, char **argv)
     cout << "Selected robot: " << (selected + 1) << " [" << robots[selected].id << "]\n";
 
     int k;
-    while (1)
+    bool game_over = false;
+    while (!game_over)
     {
         ros_bridge->spinOnce();
         w.timeTick(delay);
@@ -416,6 +397,10 @@ int main(int argc, char **argv)
             // Save ranking data for the selected player
             if (!saveMatchResult(rankingPath, player, elapsed)) {
                 std::cerr << "Warning: could not save match result.\n";
+            }
+            else{
+                game_over = true;
+                cout<<"Chage your favorite level in the ranking file"<<endl;
             }
         }
 
@@ -534,6 +519,9 @@ int main(int argc, char **argv)
         // Arm controls (now use normalized key)
         controlArm(robots[selected], key);
     }
+
+    cout << "********************* Game Over! ************************";
+    cout << "Change the favorite level in the ranking file to load another game" <<endl;
 
     return 0;
 }

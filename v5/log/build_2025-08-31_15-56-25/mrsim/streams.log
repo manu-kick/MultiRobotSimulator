@@ -1,0 +1,14 @@
+[0.029s] Invoking command in '/home/ubuntu/Desktop/MultiRobotSimulator/v5/build/mrsim': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/Desktop/MultiRobotSimulator/v5/build/mrsim -- -j8 -l8
+[0.372s] [35m[1mConsolidate compiler generated dependencies of target simulator[0m
+[0.652s] [ 10%] [32mBuilding CXX object CMakeFiles/simulator.dir/src/simulator.cpp.o[0m
+[12.683s] [ 30%] [32mBuilding CXX object CMakeFiles/simulator.dir/src/ros_bridge.cpp.o[0m
+[12.684s] [ 30%] [32mBuilding CXX object CMakeFiles/simulator.dir/src/utils.cpp.o[0m
+[16.414s] [01m[K/home/ubuntu/Desktop/MultiRobotSimulator/v5/src/mrsim/src/utils.cpp:[m[K In function ‘[01m[Kbool saveMatchResult(const string&, const PlayerInfo&, double)[m[K’:
+[16.415s] [01m[K/home/ubuntu/Desktop/MultiRobotSimulator/v5/src/mrsim/src/utils.cpp:135:80:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K)[m[K’ token
+[16.415s]   135 |         max_match_id = std::max(max_match_id, matches[i].get("id", 0).asUInt(),[01;31m[K)[m[K;
+[16.415s]       |                                                                                [01;31m[K^[m[K
+[17.122s] gmake[2]: *** [CMakeFiles/simulator.dir/build.make:90: CMakeFiles/simulator.dir/src/utils.cpp.o] Error 1
+[17.123s] gmake[2]: *** Waiting for unfinished jobs....
+[57.902s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/simulator.dir/all] Error 2
+[57.907s] gmake: *** [Makefile:146: all] Error 2
+[58.039s] Invoked command in '/home/ubuntu/Desktop/MultiRobotSimulator/v5/build/mrsim' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/Desktop/MultiRobotSimulator/v5/build/mrsim -- -j8 -l8

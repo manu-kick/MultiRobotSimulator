@@ -93,10 +93,10 @@ PlayerInfo selectOrCreatePlayer(const std::string& rankingPath) {
     unsigned int max_id = 0;
     for (Json::ArrayIndex i = 0; i < players.size(); ++i) {
         const Json::Value& p = players[i];
-        max_id = std::max(max_id, p.get("id", 0).asUInt());
+        max_id = max(max_id, p.get("id", 0).asUInt());
         if (lowerCopy(p.get("name", "").asString()) == lowerCopy(selected)) {
-            std::cout << "Welcome back, " << selected << "!\n";
-            return PlayerInfo{p.get("id", 0).asUInt(), p.get("name","").asString()};
+            cout << "Welcome back, " << selected << "!\n";
+            return PlayerInfo{p.get("id", 0).asUInt(), p.get("name","").asString(), p.get("fav_level","").asUInt()};
         }
     }
 
@@ -114,7 +114,7 @@ PlayerInfo selectOrCreatePlayer(const std::string& rankingPath) {
     }
 
     std::cout << "New player added: " << selected << "\n";
-    return PlayerInfo{max_id + 1, selected};
+    return PlayerInfo{max_id + 1, selected, 1};
 }
 
 bool saveMatchResult(const std::string& rankingPath,

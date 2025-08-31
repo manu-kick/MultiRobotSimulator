@@ -1,0 +1,7 @@
+[0.075s] Invoking command in '/home/ubuntu/Desktop/MultiRobotSimulator/v5/build/mrsim': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/Desktop/MultiRobotSimulator/v5/build/mrsim -- -j8 -l8
+[1.116s] [35m[1mConsolidate compiler generated dependencies of target simulator[0m
+[1.314s] [ 10%] [32mBuilding CXX object CMakeFiles/simulator.dir/src/utils.cpp.o[0m
+[13.802s] gmake[2]: *** [CMakeFiles/simulator.dir/build.make:90: CMakeFiles/simulator.dir/src/utils.cpp.o] Interrupt
+[13.804s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/simulator.dir/all] Interrupt
+[13.813s] gmake: *** [Makefile:146: all] Interrupt
+[15.223s] Invoked command in '/home/ubuntu/Desktop/MultiRobotSimulator/v5/build/mrsim' returned '-2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/Desktop/MultiRobotSimulator/v5/build/mrsim -- -j8 -l8

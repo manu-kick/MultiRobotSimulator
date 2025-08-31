@@ -1,0 +1,48 @@
+{
+    "name" : "Lv 2 configuration file",
+    "version": "1.0.0",
+    "description": "Configuration for the simulator's lv 2",
+    "author": "Manu_Kick__",
+
+
+    "map_file": "/home/ubuntu/Desktop/MultiRobotSimulator/v5/src/mrsim/configs/levels_map/lv_2.jpg",
+    "world_resolution" : 0.05,
+    "delay" : 0.1,
+    "robots" : [
+    {
+        "id": "robot1",
+        "type": "freeflying",
+        "initial_pose" : {
+            "x": 5,
+            "y": 5,
+            "theta": 0
+        },
+        "arm":[
+            {
+                "id": "q1",
+                "type": 0, 
+                "initial_angle": 0.0,
+                "length": 3
+            },
+            {
+                "id": "q2",
+                "type": 0,
+                "initial_angle": 0,
+                "length": 2
+            },
+            {
+                "id": "q3",
+                "type": 0,
+                "initial_angle": 0,
+                "length": 3
+            },
+            {
+                "id": "ee",
+                "type": 1,
+                "initial_angle": 0.0,
+                "length": 2
+            }
+        ]
+    }
+]
+}

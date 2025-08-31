@@ -1,0 +1,19 @@
+[0.027s] Invoking command in '/home/ubuntu/Desktop/MultiRobotSimulator/v5/build/mrsim': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/Desktop/MultiRobotSimulator/v5/build/mrsim -- -j8 -l8
+[1.113s] [35m[1mConsolidate compiler generated dependencies of target simulator[0m
+[1.376s] [ 10%] [32mBuilding CXX object CMakeFiles/simulator.dir/src/simulator.cpp.o[0m
+[16.077s] [01m[K/home/ubuntu/Desktop/MultiRobotSimulator/v5/src/mrsim/src/simulator.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[16.080s] [01m[K/home/ubuntu/Desktop/MultiRobotSimulator/v5/src/mrsim/src/simulator.cpp:288:97:[m[K [01;31m[Kerror: [m[Kinvalid operands of types ‘[01m[Kconst char [63][m[K’ and ‘[01m[Kconst char*[m[K’ to binary ‘[01m[Koperator+[m[K’
+[16.080s]   288 |     const string jsonFilePath = [32m[K"/home/ubuntu/Desktop/MultiRobotSimulator/v5/src/mrsim/configs/"[m[K[01;31m[K+[m[K [34m[K+".json"[m[K
+[16.081s]       |                                 [32m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K[01;31m[K^[m[K [34m[K~~~~~~~~[m[K
+[16.082s]       |                                 [32m[K|[m[K                                                                 [34m[K|[m[K
+[16.082s]       |                                 [32m[Kconst char [63][m[K                                                   [34m[Kconst char*[m[K
+[16.137s] [01m[K/home/ubuntu/Desktop/MultiRobotSimulator/v5/src/mrsim/src/simulator.cpp:317:33:[m[K [01;31m[Kerror: [m[K‘[01m[Kroot[m[K’ was not declared in this scope
+[16.138s]   317 |     if (!reader.parse(jsonFile, [01;31m[Kroot[m[K))
+[16.139s]       |                                 [01;31m[K^~~~[m[K
+[16.152s] [01m[K/home/ubuntu/Desktop/MultiRobotSimulator/v5/src/mrsim/src/simulator.cpp:324:22:[m[K [01;31m[Kerror: [m[K‘[01m[Kroot[m[K’ was not declared in this scope
+[16.153s]   324 |     string mapFile = [01;31m[Kroot[m[K["map_file"].asString();
+[16.153s]       |                      [01;31m[K^~~~[m[K
+[26.216s] gmake[2]: *** [CMakeFiles/simulator.dir/build.make:76: CMakeFiles/simulator.dir/src/simulator.cpp.o] Error 1
+[26.254s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/simulator.dir/all] Error 2
+[26.257s] gmake: *** [Makefile:146: all] Error 2
+[26.437s] Invoked command in '/home/ubuntu/Desktop/MultiRobotSimulator/v5/build/mrsim' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/Desktop/MultiRobotSimulator/v5/build/mrsim -- -j8 -l8

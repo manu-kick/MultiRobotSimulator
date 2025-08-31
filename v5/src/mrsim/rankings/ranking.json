@@ -17,17 +17,17 @@
   "players" : 
   [
     {
-      "fav_level" : 1,
+      "fav_level" : 2,
       "id" : 1,
       "name" : "manu"
     },
     {
-      "fav_lev" : 1,
+      "fav_lev" : 3,
       "id" : 2,
       "name" : "paki"
     },
     {
-      "fav_lev" : 1,
+      "fav_lev" : 4,
       "id" : 3,
       "name" : "tony"
     }

@@ -18,6 +18,7 @@ using namespace std;
 struct PlayerInfo {
     unsigned int id{0};
     std::string name;
+    unsigned int fav_level{1};
 };
 
 PlayerInfo selectOrCreatePlayer(const std::string& rankingPath);
