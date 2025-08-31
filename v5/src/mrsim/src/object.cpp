@@ -222,24 +222,24 @@ bool Object::isInsideGoalArea(const Point &p)
     {
         IndexPair idx = world->worldToIndices(pt);
         polygon.emplace_back(idx.c, idx.r); // Note: cv::Point(x, y) corresponds to (col, row)
-        cout << "Goal Point: " << pt.x << ", " << pt.y << " -> Pixel: " << idx.c << ", " << idx.r << std::endl;
+        // cout << "Goal Point: " << pt.x << ", " << pt.y << " -> Pixel: " << idx.c << ", " << idx.r << std::endl;
     }
 
     // Convert point p to cv::Point
     IndexPair p_idx = world->worldToIndices(p);
     cv::Point test_point(p_idx.r, p_idx.c);
-    cout << "Testing Point: " << p.x << ", " << p.y << " -> Pixel: " << p_idx.c << ", " << p_idx.r << std::endl;
+    // cout << "Testing Point: " << p.x << ", " << p.y << " -> Pixel: " << p_idx.c << ", " << p_idx.r << std::endl;
 
     // Use cv::pointPolygonTest to check if the point is inside the polygon
     double result = cv::pointPolygonTest(polygon, test_point, false);
     if (result >= 0)
     {
-        std::cout << "Point " << p.x << ", " << p.y << " is inside the goal area." << std::endl;
+        // std::cout << "Point " << p.x << ", " << p.y << " is inside the goal area." << std::endl;
         return true;
     }
     else
     {
-        std::cout << "Point " << p.x << ", " << p.y << " is outside the goal area." << std::endl;
+        // std::cout << "Point " << p.x << ", " << p.y << " is outside the goal area." << std::endl;
         return false;
     }
 }

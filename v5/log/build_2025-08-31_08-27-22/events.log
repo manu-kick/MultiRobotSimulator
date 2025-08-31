@@ -1,0 +1,113 @@
+[0.000000] (-) TimerEvent: {}
+[0.000371] (mrsim) JobQueued: {'identifier': 'mrsim', 'dependencies': OrderedDict()}
+[0.000444] (mrsim) JobStarted: {'identifier': 'mrsim'}
+[0.007359] (mrsim) JobProgress: {'identifier': 'mrsim', 'progress': 'cmake'}
+[0.008020] (mrsim) JobProgress: {'identifier': 'mrsim', 'progress': 'build'}
+[0.008475] (mrsim) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ubuntu/Desktop/MultiRobotSimulator/v5/build/mrsim', '--', '-j8', '-l8'], 'cwd': '/home/ubuntu/Desktop/MultiRobotSimulator/v5/build/mrsim', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ubuntu'), ('HOSTNAME', 'cdb58f7a44e2'), ('GIT_ASKPASS', '/root/.vscode-server/bin/cb0c47c0cfaad0757385834bd89d410c78a856c0/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/root/.vscode-server/bin/cb0c47c0cfaad0757385834bd89d410c78a856c0/bin/helpers/browser.sh'), ('HOME', '/root'), ('OLDPWD', '/home/ubuntu/Desktop'), ('TERM_PROGRAM_VERSION', '1.102.0'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-44a3a547-9688-42e0-8a80-f68cfb6d2e05.sock'), ('ROS_PYTHON_VERSION', '3'), ('GTK_MODULES', 'appmenu-gtk-module'), ('VSCODE_GIT_ASKPASS_MAIN', '/root/.vscode-server/bin/cb0c47c0cfaad0757385834bd89d410c78a856c0/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/root/.vscode-server/bin/cb0c47c0cfaad0757385834bd89d410c78a856c0/node'), ('LC_CTYPE', 'C.UTF-8'), ('COLORTERM', 'truecolor'), ('REMOTE_CONTAINERS', 'true'), ('UBUNTU_MENUPROXY', '1'), ('DEBUGINFOD_URLS', ''), ('ROS_DISTRO', 'humble'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-363ca295-ebd7-49c7-850a-915b7731488c.sock'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/root/.vscode-server/bin/cb0c47c0cfaad0757385834bd89d410c78a856c0/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin:/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/vscode-ssh-auth-363ca295-ebd7-49c7-850a-915b7731488c.sock"]'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/tmp/vscode-git-ba945b4414.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/tmp/vscode-ssh-auth-363ca295-ebd7-49c7-850a-915b7731488c.sock'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PASSWD', 'ubuntu'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/ubuntu/Desktop/MultiRobotSimulator/v5/build/mrsim'), ('XDG_DATA_DIRS', '/usr/share/gnome:/root/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.099482] (-) TimerEvent: {}
+[0.112699] (mrsim) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target simulator\x1b[0m\n'}
+[0.166184] (mrsim) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding CXX object CMakeFiles/simulator.dir/src/simulator.cpp.o\x1b[0m\n'}
+[0.204597] (-) TimerEvent: {}
+[0.306291] (-) TimerEvent: {}
+[0.410980] (-) TimerEvent: {}
+[0.514040] (-) TimerEvent: {}
+[0.614378] (-) TimerEvent: {}
+[0.714879] (-) TimerEvent: {}
+[0.815452] (-) TimerEvent: {}
+[0.918893] (-) TimerEvent: {}
+[1.024176] (-) TimerEvent: {}
+[1.125714] (-) TimerEvent: {}
+[1.231021] (-) TimerEvent: {}
+[1.332518] (-) TimerEvent: {}
+[1.434319] (-) TimerEvent: {}
+[1.537380] (-) TimerEvent: {}
+[1.639918] (-) TimerEvent: {}
+[1.741907] (-) TimerEvent: {}
+[1.842358] (-) TimerEvent: {}
+[1.959593] (-) TimerEvent: {}
+[2.064768] (-) TimerEvent: {}
+[2.165310] (-) TimerEvent: {}
+[2.266323] (-) TimerEvent: {}
+[2.368508] (-) TimerEvent: {}
+[2.471466] (-) TimerEvent: {}
+[2.575077] (-) TimerEvent: {}
+[2.676562] (-) TimerEvent: {}
+[2.777758] (-) TimerEvent: {}
+[2.879479] (-) TimerEvent: {}
+[2.981085] (-) TimerEvent: {}
+[3.083145] (-) TimerEvent: {}
+[3.183539] (-) TimerEvent: {}
+[3.283950] (-) TimerEvent: {}
+[3.384453] (-) TimerEvent: {}
+[3.484961] (-) TimerEvent: {}
+[3.587073] (-) TimerEvent: {}
+[3.691474] (-) TimerEvent: {}
+[3.792406] (-) TimerEvent: {}
+[3.895407] (-) TimerEvent: {}
+[3.995743] (-) TimerEvent: {}
+[4.096504] (-) TimerEvent: {}
+[4.197917] (-) TimerEvent: {}
+[4.301285] (-) TimerEvent: {}
+[4.401870] (-) TimerEvent: {}
+[4.506357] (-) TimerEvent: {}
+[4.610136] (-) TimerEvent: {}
+[4.712895] (-) TimerEvent: {}
+[4.813822] (-) TimerEvent: {}
+[4.914239] (-) TimerEvent: {}
+[5.014676] (-) TimerEvent: {}
+[5.140126] (-) TimerEvent: {}
+[5.242103] (-) TimerEvent: {}
+[5.343008] (-) TimerEvent: {}
+[5.444131] (-) TimerEvent: {}
+[5.549759] (-) TimerEvent: {}
+[5.653501] (-) TimerEvent: {}
+[5.758872] (-) TimerEvent: {}
+[5.860968] (-) TimerEvent: {}
+[5.961491] (-) TimerEvent: {}
+[6.063632] (-) TimerEvent: {}
+[6.165462] (-) TimerEvent: {}
+[6.270796] (-) TimerEvent: {}
+[6.373318] (-) TimerEvent: {}
+[6.478675] (-) TimerEvent: {}
+[6.580522] (-) TimerEvent: {}
+[6.685015] (-) TimerEvent: {}
+[6.786896] (-) TimerEvent: {}
+[6.887969] (-) TimerEvent: {}
+[6.990131] (-) TimerEvent: {}
+[7.095476] (-) TimerEvent: {}
+[7.198010] (-) TimerEvent: {}
+[7.301758] (-) TimerEvent: {}
+[7.402478] (-) TimerEvent: {}
+[7.503214] (-) TimerEvent: {}
+[7.596670] (mrsim) StdoutLine: {'line': b'[ 22%] \x1b[32m\x1b[1mLinking CXX executable simulator\x1b[0m\n'}
+[7.603611] (-) TimerEvent: {}
+[7.704310] (-) TimerEvent: {}
+[7.806491] (-) TimerEvent: {}
+[7.911761] (-) TimerEvent: {}
+[8.013665] (-) TimerEvent: {}
+[8.088555] (mrsim) StdoutLine: {'line': b'[100%] Built target simulator\n'}
+[8.109119] (mrsim) CommandEnded: {'returncode': 0}
+[8.112673] (mrsim) JobProgress: {'identifier': 'mrsim', 'progress': 'install'}
+[8.113804] (-) TimerEvent: {}
+[8.134895] (mrsim) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ubuntu/Desktop/MultiRobotSimulator/v5/build/mrsim'], 'cwd': '/home/ubuntu/Desktop/MultiRobotSimulator/v5/build/mrsim', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ubuntu'), ('HOSTNAME', 'cdb58f7a44e2'), ('GIT_ASKPASS', '/root/.vscode-server/bin/cb0c47c0cfaad0757385834bd89d410c78a856c0/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/root/.vscode-server/bin/cb0c47c0cfaad0757385834bd89d410c78a856c0/bin/helpers/browser.sh'), ('HOME', '/root'), ('OLDPWD', '/home/ubuntu/Desktop'), ('TERM_PROGRAM_VERSION', '1.102.0'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-44a3a547-9688-42e0-8a80-f68cfb6d2e05.sock'), ('ROS_PYTHON_VERSION', '3'), ('GTK_MODULES', 'appmenu-gtk-module'), ('VSCODE_GIT_ASKPASS_MAIN', '/root/.vscode-server/bin/cb0c47c0cfaad0757385834bd89d410c78a856c0/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/root/.vscode-server/bin/cb0c47c0cfaad0757385834bd89d410c78a856c0/node'), ('LC_CTYPE', 'C.UTF-8'), ('COLORTERM', 'truecolor'), ('REMOTE_CONTAINERS', 'true'), ('UBUNTU_MENUPROXY', '1'), ('DEBUGINFOD_URLS', ''), ('ROS_DISTRO', 'humble'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-363ca295-ebd7-49c7-850a-915b7731488c.sock'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/root/.vscode-server/bin/cb0c47c0cfaad0757385834bd89d410c78a856c0/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin:/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/vscode-ssh-auth-363ca295-ebd7-49c7-850a-915b7731488c.sock"]'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/tmp/vscode-git-ba945b4414.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/tmp/vscode-ssh-auth-363ca295-ebd7-49c7-850a-915b7731488c.sock'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PASSWD', 'ubuntu'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/ubuntu/Desktop/MultiRobotSimulator/v5/build/mrsim'), ('XDG_DATA_DIRS', '/usr/share/gnome:/root/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[8.143756] (mrsim) StdoutLine: {'line': b'-- Install configuration: "Release"\n'}
+[8.144877] (mrsim) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[8.145803] (mrsim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/Desktop/MultiRobotSimulator/v5/install/mrsim/lib/mrsim/simulator\n'}
+[8.146344] (mrsim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/Desktop/MultiRobotSimulator/v5/install/mrsim/share/ament_index/resource_index/package_run_dependencies/mrsim\n'}
+[8.146661] (mrsim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/Desktop/MultiRobotSimulator/v5/install/mrsim/share/ament_index/resource_index/parent_prefix_path/mrsim\n'}
+[8.147278] (mrsim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/Desktop/MultiRobotSimulator/v5/install/mrsim/share/mrsim/environment/ament_prefix_path.sh\n'}
+[8.147524] (mrsim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/Desktop/MultiRobotSimulator/v5/install/mrsim/share/mrsim/environment/ament_prefix_path.dsv\n'}
+[8.147801] (mrsim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/Desktop/MultiRobotSimulator/v5/install/mrsim/share/mrsim/environment/path.sh\n'}
+[8.148102] (mrsim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/Desktop/MultiRobotSimulator/v5/install/mrsim/share/mrsim/environment/path.dsv\n'}
+[8.148376] (mrsim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/Desktop/MultiRobotSimulator/v5/install/mrsim/share/mrsim/local_setup.bash\n'}
+[8.148612] (mrsim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/Desktop/MultiRobotSimulator/v5/install/mrsim/share/mrsim/local_setup.sh\n'}
+[8.148749] (mrsim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/Desktop/MultiRobotSimulator/v5/install/mrsim/share/mrsim/local_setup.zsh\n'}
+[8.148900] (mrsim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/Desktop/MultiRobotSimulator/v5/install/mrsim/share/mrsim/local_setup.dsv\n'}
+[8.148977] (mrsim) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/Desktop/MultiRobotSimulator/v5/install/mrsim/share/mrsim/package.dsv\n'}
+[8.162503] (mrsim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/Desktop/MultiRobotSimulator/v5/install/mrsim/share/ament_index/resource_index/packages/mrsim\n'}
+[8.162660] (mrsim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/Desktop/MultiRobotSimulator/v5/install/mrsim/share/mrsim/cmake/mrsimConfig.cmake\n'}
+[8.162765] (mrsim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/Desktop/MultiRobotSimulator/v5/install/mrsim/share/mrsim/cmake/mrsimConfig-version.cmake\n'}
+[8.162945] (mrsim) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/Desktop/MultiRobotSimulator/v5/install/mrsim/share/mrsim/package.xml\n'}
+[8.165451] (mrsim) CommandEnded: {'returncode': 0}
+[8.181904] (mrsim) JobEnded: {'identifier': 'mrsim', 'rc': 0}
+[8.183154] (-) EventReactorShutdown: {}

@@ -309,13 +309,14 @@ int main(int argc, char **argv)
         for (auto *o : objects) {
             if (!o || o->goal.size() < 3) continue;
             if (!o->isInsideGoalArea(o->pose.translation())) return false;
+            if (!o->locked) return false;
         }
         return true;
     };
 
     // If we start with everything already inside, report immediately (0 s)
     if (all_objects_in_goal()) {
-        std::cout << "\n>>> All objects are already in their goal areas (0 s).\n\n";
+        cout << "\n>>> All objects are already in their goal areas (0 s).\n\n";
         timing_done = true;
     }
 
