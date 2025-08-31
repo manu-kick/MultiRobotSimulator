@@ -237,6 +237,12 @@ void controlArm(RobotHandle &robotHandle, Key key){
             break;
         }
 
+        case Key::Esc:
+            std::cout << "Exiting simulator...." << std::endl;
+            rclcpp::shutdown();
+            
+
+
         default:
             break;
     }
@@ -246,6 +252,39 @@ void controlArm(RobotHandle &robotHandle, Key key){
 int main(int argc, char **argv)
 {
     rclcpp::init(argc, argv);
+    // Open the ranking file from ../rankings/ranking.json
+    const string rankingPath = "/home/ubuntu/Desktop/MultiRobotSimulator/v5/src/mrsim/rankings/ranking.json";
+    ifstream jsonFileRanking(rankingPath, ifstream::binary);
+    if (!jsonFileRanking.good())
+    {
+        cerr << "Error opening JSON file: " << rankingPath << endl;
+        return 1;
+    }
+    Json::Value rootRanking;
+    Json::Reader readerRanking;
+
+    if (!readerRanking.parse(jsonFileRanking, rootRanking))
+    {
+        cerr << "Error parsing JSON file: " << jsonFileRanking << endl;
+        return 1;
+    }
+
+    // Access to the players
+    const Json::Value players = rootRanking["players"];
+    cout << "******************* WELCOME **********************" << endl;
+    cout << "First choose your player :"<<endl;
+    for (Json::ArrayIndex i = 0; i < players.size(); ++i){
+        const Json::Value &p = players[i];
+        cout <<"\t-"<< p.get("name", std::to_string(i + 1)).asString();
+    }
+    string selectedPlayer = "";
+    cin >> selectedPlayer;
+
+
+
+
+
+
     if (argc != 2)
     {
         cerr << "Usage: <config_file.json>" << endl;
@@ -258,7 +297,6 @@ int main(int argc, char **argv)
     Json::Value root;
     Json::Reader reader;
 
-    // ifstream jsonFile(("/home/lattinone/RobotProgramming/Project/workspace/src/mrsim/test_data/" + jsonFilePath).c_str(), ifstream::binary);
     ifstream jsonFile(jsonFilePath, ifstream::binary);
 
     if (!jsonFile.good())
@@ -273,7 +311,7 @@ int main(int argc, char **argv)
         return 1;
     }
 
-    // We access the map file
+    // Access to config
     string mapFile = root["map_file"].asString();
     const double res = root.get("world_resolution", 0.05).asDouble();
     const float delay = root.get("delay", 0.1).asDouble();

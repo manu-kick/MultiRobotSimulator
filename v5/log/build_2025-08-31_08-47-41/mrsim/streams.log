@@ -1,0 +1,14 @@
+[0.013s] Invoking command in '/home/ubuntu/Desktop/MultiRobotSimulator/v5/build/mrsim': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/Desktop/MultiRobotSimulator/v5/build/mrsim -- -j8 -l8
+[0.099s] [35m[1mConsolidate compiler generated dependencies of target simulator[0m
+[0.142s] [ 11%] [32mBuilding CXX object CMakeFiles/simulator.dir/src/simulator.cpp.o[0m
+[4.306s] [01m[K/home/ubuntu/Desktop/MultiRobotSimulator/v5/src/mrsim/src/simulator.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[4.306s] [01m[K/home/ubuntu/Desktop/MultiRobotSimulator/v5/src/mrsim/src/simulator.cpp:278:14:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[Kstd::ifstream jsonFile[m[K’
+[4.306s]   278 |     ifstream [01;31m[KjsonFile[m[K(jsonFilePath, ifstream::binary);
+[4.306s]       |              [01;31m[K^~~~~~~~[m[K
+[4.306s] [01m[K/home/ubuntu/Desktop/MultiRobotSimulator/v5/src/mrsim/src/simulator.cpp:257:14:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::ifstream jsonFile[m[K’ previously declared here
+[4.307s]   257 |     ifstream [01;36m[KjsonFile[m[K(rankingPath, ifstream::binary);
+[4.307s]       |              [01;36m[K^~~~~~~~[m[K
+[5.239s] gmake[2]: *** [CMakeFiles/simulator.dir/build.make:76: CMakeFiles/simulator.dir/src/simulator.cpp.o] Error 1
+[5.240s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/simulator.dir/all] Error 2
+[5.241s] gmake: *** [Makefile:146: all] Error 2
+[5.250s] Invoked command in '/home/ubuntu/Desktop/MultiRobotSimulator/v5/build/mrsim' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/Desktop/MultiRobotSimulator/v5/build/mrsim -- -j8 -l8

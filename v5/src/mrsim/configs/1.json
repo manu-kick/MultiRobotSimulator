@@ -53,16 +53,16 @@
                 "length": 2
             }
         ]
-    },
-       {
-        "id": "robot2",
-        "type": "car",
-        "initial_pose" : {
-            "x": 35,
-            "y": 10,
-            "theta": 1.60
-        }
     }
+    //    {
+    //     "id": "robot2",
+    //     "type": "car",
+    //     "initial_pose" : {
+    //         "x": 35,
+    //         "y": 10,
+    //         "theta": 1.60
+    //     }
+    // }
 ],
 "objects": [
     {
@@ -75,11 +75,11 @@
         },
         "prehensile_points": [
             {
-                "id": "pp1",
+                "id": "pp1_1",
                 "value": 12.5
             },
             {
-                "id": "pp2",
+                "id": "pp1_2",
                 "value": 48
                 // "value": 62.5
             }
@@ -108,7 +108,50 @@
             "width": 50,
             "height": 50
         }
-
+    },
+    {
+        "id": "item2",
+        "type": "box",
+        "initial_pose": {
+            "x": 20,
+            "y": 15,
+            "theta": 0.6
+        },
+        "prehensile_points": [
+            {
+                "id": "pp2_1",
+                "value": 12.5
+            },
+            {
+                "id": "pp2_2",
+                "value": 48
+                // "value": 62.5
+            }
+        ],
+        "goal": [
+            {
+                "x": 45,
+                "y": 25
+            },
+            {
+                "x": 55,
+                "y": 25
+            },
+            {
+                "x": 55,
+                "y": 35
+            },
+            {
+                "x": 45,
+                "y": 35
+            }
+           
+        ]
+        ,
+        "size": {
+            "width": 35,
+            "height": 35
+        }
     }
 ]
 }
