@@ -47,6 +47,7 @@ endif()
 # --- Sources (everything you listed + the ROS bridge) ---
 add_executable(simulator
   src/simulator.cpp 
+  src/utils.cpp
   src/world.cpp
   src/freeflying.cpp
   src/lidar.cpp

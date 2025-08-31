@@ -1,0 +1,24 @@
+/usr/bin/ld: CMakeFiles/simulator.dir/src/freeflying.cpp.o: in function `selectOrCreatePlayer(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)':
+freeflying.cpp:(.text+0x1d70): multiple definition of `selectOrCreatePlayer(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'; CMakeFiles/simulator.dir/src/simulator.cpp.o:simulator.cpp:(.text+0x41e0): first defined here
+/usr/bin/ld: CMakeFiles/simulator.dir/src/freeflying.cpp.o: in function `saveMatchResult(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, PlayerInfo const&, double)':
+freeflying.cpp:(.text+0x2920): multiple definition of `saveMatchResult(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, PlayerInfo const&, double)'; CMakeFiles/simulator.dir/src/simulator.cpp.o:simulator.cpp:(.text+0x4d90): first defined here
+/usr/bin/ld: CMakeFiles/simulator.dir/src/car.cpp.o: in function `selectOrCreatePlayer(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)':
+car.cpp:(.text+0x2d60): multiple definition of `selectOrCreatePlayer(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'; CMakeFiles/simulator.dir/src/simulator.cpp.o:simulator.cpp:(.text+0x41e0): first defined here
+/usr/bin/ld: CMakeFiles/simulator.dir/src/car.cpp.o: in function `saveMatchResult(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, PlayerInfo const&, double)':
+car.cpp:(.text+0x3910): multiple definition of `saveMatchResult(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, PlayerInfo const&, double)'; CMakeFiles/simulator.dir/src/simulator.cpp.o:simulator.cpp:(.text+0x4d90): first defined here
+/usr/bin/ld: CMakeFiles/simulator.dir/src/arm.cpp.o: in function `selectOrCreatePlayer(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)':
+arm.cpp:(.text+0x2e00): multiple definition of `selectOrCreatePlayer(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'; CMakeFiles/simulator.dir/src/simulator.cpp.o:simulator.cpp:(.text+0x41e0): first defined here
+/usr/bin/ld: CMakeFiles/simulator.dir/src/arm.cpp.o: in function `saveMatchResult(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, PlayerInfo const&, double)':
+arm.cpp:(.text+0x39b0): multiple definition of `saveMatchResult(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, PlayerInfo const&, double)'; CMakeFiles/simulator.dir/src/simulator.cpp.o:simulator.cpp:(.text+0x4d90): first defined here
+/usr/bin/ld: CMakeFiles/simulator.dir/src/object.cpp.o: in function `selectOrCreatePlayer(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)':
+object.cpp:(.text+0x2c70): multiple definition of `selectOrCreatePlayer(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'; CMakeFiles/simulator.dir/src/simulator.cpp.o:simulator.cpp:(.text+0x41e0): first defined here
+/usr/bin/ld: CMakeFiles/simulator.dir/src/object.cpp.o: in function `saveMatchResult(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, PlayerInfo const&, double)':
+object.cpp:(.text+0x3820): multiple definition of `saveMatchResult(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, PlayerInfo const&, double)'; CMakeFiles/simulator.dir/src/simulator.cpp.o:simulator.cpp:(.text+0x4d90): first defined here
+/usr/bin/ld: CMakeFiles/simulator.dir/src/ros_bridge.cpp.o: in function `selectOrCreatePlayer(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)':
+ros_bridge.cpp:(.text+0x6144): multiple definition of `selectOrCreatePlayer(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'; CMakeFiles/simulator.dir/src/simulator.cpp.o:simulator.cpp:(.text+0x41e0): first defined here
+/usr/bin/ld: CMakeFiles/simulator.dir/src/ros_bridge.cpp.o: in function `saveMatchResult(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, PlayerInfo const&, double)':
+ros_bridge.cpp:(.text+0x6c00): multiple definition of `saveMatchResult(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, PlayerInfo const&, double)'; CMakeFiles/simulator.dir/src/simulator.cpp.o:simulator.cpp:(.text+0x4d90): first defined here
+collect2: error: ld returned 1 exit status
+gmake[2]: *** [CMakeFiles/simulator.dir/build.make:372: simulator] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/simulator.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

@@ -2,8 +2,31 @@
 #include <vector>
 #include <cmath>
 #include <algorithm>
+#include <json/json.h>
+#include <algorithm>
+#include <cctype>
+#include <cerrno>
+#include <cstring>
+#include <filesystem>
+#include <fstream>
+#include <iostream>
+#include <memory>
 #include <opencv2/imgproc.hpp>
 #include "simple_geometry.h" // uses Point, Pose
+
+using namespace std;
+struct PlayerInfo {
+    unsigned int id{0};
+    std::string name;
+};
+
+PlayerInfo selectOrCreatePlayer(const std::string& rankingPath);
+bool saveMatchResult(const std::string& rankingPath,
+                     const PlayerInfo& player,
+                     double elapsed_seconds);
+
+
+
 
 // Colors for OpenCV drawing (BGR)
 class Color {

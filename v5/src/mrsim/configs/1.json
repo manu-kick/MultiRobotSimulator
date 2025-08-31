@@ -81,7 +81,6 @@
             {
                 "id": "pp1_2",
                 "value": 48
-                // "value": 62.5
             }
         ],
         "goal": [
@@ -107,50 +106,6 @@
         "size": {
             "width": 50,
             "height": 50
-        }
-    },
-    {
-        "id": "item2",
-        "type": "box",
-        "initial_pose": {
-            "x": 20,
-            "y": 15,
-            "theta": 0.6
-        },
-        "prehensile_points": [
-            {
-                "id": "pp2_1",
-                "value": 12.5
-            },
-            {
-                "id": "pp2_2",
-                "value": 48
-                // "value": 62.5
-            }
-        ],
-        "goal": [
-            {
-                "x": 45,
-                "y": 25
-            },
-            {
-                "x": 55,
-                "y": 25
-            },
-            {
-                "x": 55,
-                "y": 35
-            },
-            {
-                "x": 45,
-                "y": 35
-            }
-           
-        ]
-        ,
-        "size": {
-            "width": 35,
-            "height": 35
         }
     }
 ]

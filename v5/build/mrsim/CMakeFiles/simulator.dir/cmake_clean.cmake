@@ -13,6 +13,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/simulator.dir/src/ros_bridge.cpp.o.d"
   "CMakeFiles/simulator.dir/src/simulator.cpp.o"
   "CMakeFiles/simulator.dir/src/simulator.cpp.o.d"
+  "CMakeFiles/simulator.dir/src/utils.cpp.o"
+  "CMakeFiles/simulator.dir/src/utils.cpp.o.d"
   "CMakeFiles/simulator.dir/src/world.cpp.o"
   "CMakeFiles/simulator.dir/src/world.cpp.o.d"
   "simulator"

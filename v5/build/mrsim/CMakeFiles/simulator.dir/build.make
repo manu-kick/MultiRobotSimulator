@@ -83,10 +83,24 @@ CMakeFiles/simulator.dir/src/simulator.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/simulator.dir/src/simulator.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/Desktop/MultiRobotSimulator/v5/src/mrsim/src/simulator.cpp -o CMakeFiles/simulator.dir/src/simulator.cpp.s
 
+CMakeFiles/simulator.dir/src/utils.cpp.o: CMakeFiles/simulator.dir/flags.make
+CMakeFiles/simulator.dir/src/utils.cpp.o: /home/ubuntu/Desktop/MultiRobotSimulator/v5/src/mrsim/src/utils.cpp
+CMakeFiles/simulator.dir/src/utils.cpp.o: CMakeFiles/simulator.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/Desktop/MultiRobotSimulator/v5/build/mrsim/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/simulator.dir/src/utils.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/simulator.dir/src/utils.cpp.o -MF CMakeFiles/simulator.dir/src/utils.cpp.o.d -o CMakeFiles/simulator.dir/src/utils.cpp.o -c /home/ubuntu/Desktop/MultiRobotSimulator/v5/src/mrsim/src/utils.cpp
+
+CMakeFiles/simulator.dir/src/utils.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/simulator.dir/src/utils.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/Desktop/MultiRobotSimulator/v5/src/mrsim/src/utils.cpp > CMakeFiles/simulator.dir/src/utils.cpp.i
+
+CMakeFiles/simulator.dir/src/utils.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/simulator.dir/src/utils.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/Desktop/MultiRobotSimulator/v5/src/mrsim/src/utils.cpp -o CMakeFiles/simulator.dir/src/utils.cpp.s
+
 CMakeFiles/simulator.dir/src/world.cpp.o: CMakeFiles/simulator.dir/flags.make
 CMakeFiles/simulator.dir/src/world.cpp.o: /home/ubuntu/Desktop/MultiRobotSimulator/v5/src/mrsim/src/world.cpp
 CMakeFiles/simulator.dir/src/world.cpp.o: CMakeFiles/simulator.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/Desktop/MultiRobotSimulator/v5/build/mrsim/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/simulator.dir/src/world.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/Desktop/MultiRobotSimulator/v5/build/mrsim/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/simulator.dir/src/world.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/simulator.dir/src/world.cpp.o -MF CMakeFiles/simulator.dir/src/world.cpp.o.d -o CMakeFiles/simulator.dir/src/world.cpp.o -c /home/ubuntu/Desktop/MultiRobotSimulator/v5/src/mrsim/src/world.cpp
 
 CMakeFiles/simulator.dir/src/world.cpp.i: cmake_force
@@ -100,7 +114,7 @@ CMakeFiles/simulator.dir/src/world.cpp.s: cmake_force
 CMakeFiles/simulator.dir/src/freeflying.cpp.o: CMakeFiles/simulator.dir/flags.make
 CMakeFiles/simulator.dir/src/freeflying.cpp.o: /home/ubuntu/Desktop/MultiRobotSimulator/v5/src/mrsim/src/freeflying.cpp
 CMakeFiles/simulator.dir/src/freeflying.cpp.o: CMakeFiles/simulator.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/Desktop/MultiRobotSimulator/v5/build/mrsim/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/simulator.dir/src/freeflying.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/Desktop/MultiRobotSimulator/v5/build/mrsim/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/simulator.dir/src/freeflying.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/simulator.dir/src/freeflying.cpp.o -MF CMakeFiles/simulator.dir/src/freeflying.cpp.o.d -o CMakeFiles/simulator.dir/src/freeflying.cpp.o -c /home/ubuntu/Desktop/MultiRobotSimulator/v5/src/mrsim/src/freeflying.cpp
 
 CMakeFiles/simulator.dir/src/freeflying.cpp.i: cmake_force
@@ -114,7 +128,7 @@ CMakeFiles/simulator.dir/src/freeflying.cpp.s: cmake_force
 CMakeFiles/simulator.dir/src/lidar.cpp.o: CMakeFiles/simulator.dir/flags.make
 CMakeFiles/simulator.dir/src/lidar.cpp.o: /home/ubuntu/Desktop/MultiRobotSimulator/v5/src/mrsim/src/lidar.cpp
 CMakeFiles/simulator.dir/src/lidar.cpp.o: CMakeFiles/simulator.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/Desktop/MultiRobotSimulator/v5/build/mrsim/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/simulator.dir/src/lidar.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/Desktop/MultiRobotSimulator/v5/build/mrsim/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/simulator.dir/src/lidar.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/simulator.dir/src/lidar.cpp.o -MF CMakeFiles/simulator.dir/src/lidar.cpp.o.d -o CMakeFiles/simulator.dir/src/lidar.cpp.o -c /home/ubuntu/Desktop/MultiRobotSimulator/v5/src/mrsim/src/lidar.cpp
 
 CMakeFiles/simulator.dir/src/lidar.cpp.i: cmake_force
@@ -128,7 +142,7 @@ CMakeFiles/simulator.dir/src/lidar.cpp.s: cmake_force
 CMakeFiles/simulator.dir/src/car.cpp.o: CMakeFiles/simulator.dir/flags.make
 CMakeFiles/simulator.dir/src/car.cpp.o: /home/ubuntu/Desktop/MultiRobotSimulator/v5/src/mrsim/src/car.cpp
 CMakeFiles/simulator.dir/src/car.cpp.o: CMakeFiles/simulator.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/Desktop/MultiRobotSimulator/v5/build/mrsim/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/simulator.dir/src/car.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/Desktop/MultiRobotSimulator/v5/build/mrsim/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/simulator.dir/src/car.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/simulator.dir/src/car.cpp.o -MF CMakeFiles/simulator.dir/src/car.cpp.o.d -o CMakeFiles/simulator.dir/src/car.cpp.o -c /home/ubuntu/Desktop/MultiRobotSimulator/v5/src/mrsim/src/car.cpp
 
 CMakeFiles/simulator.dir/src/car.cpp.i: cmake_force
@@ -142,7 +156,7 @@ CMakeFiles/simulator.dir/src/car.cpp.s: cmake_force
 CMakeFiles/simulator.dir/src/arm.cpp.o: CMakeFiles/simulator.dir/flags.make
 CMakeFiles/simulator.dir/src/arm.cpp.o: /home/ubuntu/Desktop/MultiRobotSimulator/v5/src/mrsim/src/arm.cpp
 CMakeFiles/simulator.dir/src/arm.cpp.o: CMakeFiles/simulator.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/Desktop/MultiRobotSimulator/v5/build/mrsim/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/simulator.dir/src/arm.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/Desktop/MultiRobotSimulator/v5/build/mrsim/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/simulator.dir/src/arm.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/simulator.dir/src/arm.cpp.o -MF CMakeFiles/simulator.dir/src/arm.cpp.o.d -o CMakeFiles/simulator.dir/src/arm.cpp.o -c /home/ubuntu/Desktop/MultiRobotSimulator/v5/src/mrsim/src/arm.cpp
 
 CMakeFiles/simulator.dir/src/arm.cpp.i: cmake_force
@@ -156,7 +170,7 @@ CMakeFiles/simulator.dir/src/arm.cpp.s: cmake_force
 CMakeFiles/simulator.dir/src/object.cpp.o: CMakeFiles/simulator.dir/flags.make
 CMakeFiles/simulator.dir/src/object.cpp.o: /home/ubuntu/Desktop/MultiRobotSimulator/v5/src/mrsim/src/object.cpp
 CMakeFiles/simulator.dir/src/object.cpp.o: CMakeFiles/simulator.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/Desktop/MultiRobotSimulator/v5/build/mrsim/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/simulator.dir/src/object.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/Desktop/MultiRobotSimulator/v5/build/mrsim/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/simulator.dir/src/object.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/simulator.dir/src/object.cpp.o -MF CMakeFiles/simulator.dir/src/object.cpp.o.d -o CMakeFiles/simulator.dir/src/object.cpp.o -c /home/ubuntu/Desktop/MultiRobotSimulator/v5/src/mrsim/src/object.cpp
 
 CMakeFiles/simulator.dir/src/object.cpp.i: cmake_force
@@ -170,7 +184,7 @@ CMakeFiles/simulator.dir/src/object.cpp.s: cmake_force
 CMakeFiles/simulator.dir/src/ros_bridge.cpp.o: CMakeFiles/simulator.dir/flags.make
 CMakeFiles/simulator.dir/src/ros_bridge.cpp.o: /home/ubuntu/Desktop/MultiRobotSimulator/v5/src/mrsim/src/ros_bridge.cpp
 CMakeFiles/simulator.dir/src/ros_bridge.cpp.o: CMakeFiles/simulator.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/Desktop/MultiRobotSimulator/v5/build/mrsim/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/simulator.dir/src/ros_bridge.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/Desktop/MultiRobotSimulator/v5/build/mrsim/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/simulator.dir/src/ros_bridge.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/simulator.dir/src/ros_bridge.cpp.o -MF CMakeFiles/simulator.dir/src/ros_bridge.cpp.o.d -o CMakeFiles/simulator.dir/src/ros_bridge.cpp.o -c /home/ubuntu/Desktop/MultiRobotSimulator/v5/src/mrsim/src/ros_bridge.cpp
 
 CMakeFiles/simulator.dir/src/ros_bridge.cpp.i: cmake_force
@@ -184,6 +198,7 @@ CMakeFiles/simulator.dir/src/ros_bridge.cpp.s: cmake_force
 # Object files for target simulator
 simulator_OBJECTS = \
 "CMakeFiles/simulator.dir/src/simulator.cpp.o" \
+"CMakeFiles/simulator.dir/src/utils.cpp.o" \
 "CMakeFiles/simulator.dir/src/world.cpp.o" \
 "CMakeFiles/simulator.dir/src/freeflying.cpp.o" \
 "CMakeFiles/simulator.dir/src/lidar.cpp.o" \
@@ -196,6 +211,7 @@ simulator_OBJECTS = \
 simulator_EXTERNAL_OBJECTS =
 
 simulator: CMakeFiles/simulator.dir/src/simulator.cpp.o
+simulator: CMakeFiles/simulator.dir/src/utils.cpp.o
 simulator: CMakeFiles/simulator.dir/src/world.cpp.o
 simulator: CMakeFiles/simulator.dir/src/freeflying.cpp.o
 simulator: CMakeFiles/simulator.dir/src/lidar.cpp.o
@@ -368,7 +384,7 @@ simulator: /opt/ros/humble/lib/libunique_identifier_msgs__rosidl_generator_c.so
 simulator: /opt/ros/humble/lib/librosidl_runtime_c.so
 simulator: /opt/ros/humble/lib/librcutils.so
 simulator: CMakeFiles/simulator.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ubuntu/Desktop/MultiRobotSimulator/v5/build/mrsim/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable simulator"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ubuntu/Desktop/MultiRobotSimulator/v5/build/mrsim/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable simulator"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/simulator.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

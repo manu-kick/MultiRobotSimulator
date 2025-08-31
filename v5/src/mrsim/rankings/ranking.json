@@ -1,20 +1,36 @@
 {
-    "version": "1.0",
-
-    "players":[
-        {
-            "id": 1,
-            "name": "Manu",
-            "fav_level": 1
-        }
-    ],
-    "matches": [
-        {
-            "id": 1,
-            "player_id": 1,
-            "level": 1,
-            "time": 123,
-            "date": "2024-06-10"
-        }
-    ]
+  "matches" : 
+  [
+    {
+      "id" : 1,
+      "level" : 1,
+      "player_id" : 1,
+      "time" : 123
+    },
+    {
+      "time" : 30.112894723,
+      "id" : 2,
+      "player" : "tony",
+      "player_id" : 3
+    }
+  ],
+  "players" : 
+  [
+    {
+      "fav_level" : 1,
+      "id" : 1,
+      "name" : "manu"
+    },
+    {
+      "fav_lev" : 1,
+      "id" : 2,
+      "name" : "paki"
+    },
+    {
+      "fav_lev" : 1,
+      "id" : 3,
+      "name" : "tony"
+    }
+  ],
+  "version" : "1.0"
 }
