@@ -1,0 +1,63 @@
+In file included from [01m[K/home/ubuntu/Desktop/MultiRobotSimulator/v5/src/mrsim/include/mrsim/arm.h:4[m[K,
+                 from [01m[K/home/ubuntu/Desktop/MultiRobotSimulator/v5/src/mrsim/include/mrsim/utils.h:16[m[K,
+                 from [01m[K/home/ubuntu/Desktop/MultiRobotSimulator/v5/src/mrsim/src/utils.cpp:1[m[K:
+[01m[K/home/ubuntu/Desktop/MultiRobotSimulator/v5/src/mrsim/include/mrsim/object.h:18:5:[m[K [01;31m[Kerror: [m[K‘[01m[KColor[m[K’ does not name a type
+   18 |     [01;31m[KColor[m[K primaryColor = Color(0,0,0); // Color for visualization
+      |     [01;31m[K^~~~~[m[K
+[01m[K/home/ubuntu/Desktop/MultiRobotSimulator/v5/src/mrsim/include/mrsim/object.h:19:5:[m[K [01;31m[Kerror: [m[K‘[01m[KColor[m[K’ does not name a type
+   19 |     [01;31m[KColor[m[K secondaryColor = Color(0,0,0);
+      |     [01;31m[K^~~~~[m[K
+In file included from [01m[K/home/ubuntu/Desktop/MultiRobotSimulator/v5/src/mrsim/include/mrsim/utils.h:16[m[K,
+                 from [01m[K/home/ubuntu/Desktop/MultiRobotSimulator/v5/src/mrsim/include/mrsim/object.h:4[m[K,
+                 from [01m[K/home/ubuntu/Desktop/MultiRobotSimulator/v5/src/mrsim/src/object.cpp:4[m[K:
+[01m[K/home/ubuntu/Desktop/MultiRobotSimulator/v5/src/mrsim/include/mrsim/arm.h:22:5:[m[K [01;31m[Kerror: [m[K‘[01m[KObject[m[K’ does not name a type
+   22 |     [01;31m[KObject[m[K* held_object = nullptr;
+      |     [01;31m[K^~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/MultiRobotSimulator/v5/src/mrsim/include/mrsim/arm.h:33:35:[m[K [01;31m[Kerror: [m[K‘[01m[KObject[m[K’ has not been declared
+   33 |     EndEffector(bool is_holding_, [01;31m[KObject[m[K* held_object_ = nullptr)
+      |                                   [01;31m[K^~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/MultiRobotSimulator/v5/src/mrsim/include/mrsim/arm.h:[m[K In constructor ‘[01m[KEndEffector::EndEffector(bool, int*)[m[K’:
+[01m[K/home/ubuntu/Desktop/MultiRobotSimulator/v5/src/mrsim/include/mrsim/arm.h:34:36:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[KEndEffector[m[K’ does not have any field named ‘[01m[Kheld_object[m[K’
+   34 |         : is_holding(is_holding_), [01;31m[Kheld_object[m[K(held_object_), position(0,0), pixel_pos(0,0) {}
+      |                                    [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/MultiRobotSimulator/v5/src/mrsim/include/mrsim/object.h:[m[K In constructor ‘[01m[KObject::Object(World*, const Pose&, const std::vector<Prehensile_Point>&, const std::vector<Point>&)[m[K’:
+[01m[K/home/ubuntu/Desktop/MultiRobotSimulator/v5/src/mrsim/include/mrsim/object.h:28:13:[m[K [01;31m[Kerror: [m[K‘[01m[KprimaryColor[m[K’ was not declared in this scope
+   28 |             [01;31m[KprimaryColor[m[K = Color::generateRandomColor();
+      |             [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/MultiRobotSimulator/v5/src/mrsim/include/mrsim/object.h:28:28:[m[K [01;31m[Kerror: [m[K‘[01m[KColor[m[K’ has not been declared
+   28 |             primaryColor = [01;31m[KColor[m[K::generateRandomColor();
+      |                            [01;31m[K^~~~~[m[K
+[01m[K/home/ubuntu/Desktop/MultiRobotSimulator/v5/src/mrsim/include/mrsim/arm.h:[m[K In member function ‘[01m[Kvoid EndEffector::release()[m[K’:
+[01m[K/home/ubuntu/Desktop/MultiRobotSimulator/v5/src/mrsim/include/mrsim/arm.h:43:27:[m[K [01;31m[Kerror: [m[K‘[01m[Kheld_object[m[K’ was not declared in this scope; did you mean ‘[01m[KgetHeldObject[m[K’?
+   43 |         if (is_holding && [01;31m[Kheld_object[m[K) {
+      |                           [01;31m[K^~~~~~~~~~~[m[K
+      |                           [32m[KgetHeldObject[m[K
+[01m[K/home/ubuntu/Desktop/MultiRobotSimulator/v5/src/mrsim/include/mrsim/object.h:29:13:[m[K [01;31m[Kerror: [m[K‘[01m[KsecondaryColor[m[K’ was not declared in this scope
+   29 |             [01;31m[KsecondaryColor[m[K = generateSecondaryColor(primaryColor);
+      |             [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/MultiRobotSimulator/v5/src/mrsim/include/mrsim/arm.h:57:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kheld_object[m[K’ was not declared in this scope; did you mean ‘[01m[KgetHeldObject[m[K’?
+   57 |         [01;31m[Kheld_object[m[K = nullptr;
+      |         [01;31m[K^~~~~~~~~~~[m[K
+      |         [32m[KgetHeldObject[m[K
+[01m[K/home/ubuntu/Desktop/MultiRobotSimulator/v5/src/mrsim/include/mrsim/object.h:29:30:[m[K [01;31m[Kerror: [m[K‘[01m[KgenerateSecondaryColor[m[K’ was not declared in this scope
+   29 |             secondaryColor = [01;31m[KgenerateSecondaryColor[m[K(primaryColor);
+      |                              [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/Desktop/MultiRobotSimulator/v5/src/mrsim/include/mrsim/arm.h:[m[K In member function ‘[01m[KWorldItem* EndEffector::getHeldObject() const[m[K’:
+[01m[K/home/ubuntu/Desktop/MultiRobotSimulator/v5/src/mrsim/include/mrsim/arm.h:65:47:[m[K [01;31m[Kerror: [m[K‘[01m[Kheld_object[m[K’ was not declared in this scope; did you mean ‘[01m[KgetHeldObject[m[K’?
+   65 |     WorldItem* getHeldObject() const { return [01;31m[Kheld_object[m[K; }
+      |                                               [01;31m[K^~~~~~~~~~~[m[K
+      |                                               [32m[KgetHeldObject[m[K
+[01m[K/home/ubuntu/Desktop/MultiRobotSimulator/v5/src/mrsim/include/mrsim/arm.h:[m[K At global scope:
+[01m[K/home/ubuntu/Desktop/MultiRobotSimulator/v5/src/mrsim/include/mrsim/arm.h:99:15:[m[K [01;31m[Kerror: [m[K‘[01m[KObject[m[K’ has not been declared
+   99 |     bool dock([01;31m[KObject[m[K*& out_obj, std::string& out_grasp_id);
+      |               [01;31m[K^~~~~~[m[K
+gmake[2]: *** [CMakeFiles/simulator.dir/build.make:90: CMakeFiles/simulator.dir/src/utils.cpp.o] Error 1
+gmake[2]: *** Waiting for unfinished jobs....
+gmake[2]: *** [CMakeFiles/simulator.dir/build.make:174: CMakeFiles/simulator.dir/src/object.cpp.o] Error 1
+[01m[K/home/ubuntu/Desktop/MultiRobotSimulator/v5/src/mrsim/src/simulator.cpp:[m[K In function ‘[01m[KArm* makeArmIfPresent(World&, WorldItem*, const Json::Value&, const string&)[m[K’:
+[01m[K/home/ubuntu/Desktop/MultiRobotSimulator/v5/src/mrsim/src/simulator.cpp:45:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass WorldItem[m[K’ has no member named ‘[01m[Karm[m[K’
+   45 |     parent->[01;31m[Karm[m[K = arm;            // attach arm to robot
+      |             [01;31m[K^~~[m[K
+gmake[2]: *** [CMakeFiles/simulator.dir/build.make:76: CMakeFiles/simulator.dir/src/simulator.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/simulator.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

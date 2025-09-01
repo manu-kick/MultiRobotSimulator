@@ -7,25 +7,21 @@
 
 void CarRobot::timeTick(float dt)
 {
-    // cout << "phi: " << phi << " v: " << v << endl;
-
-    // Compute change in orientation
+    // 1) compute next pose
     float dtheta = (v / L) * std::tan(phi) * dt;
-
-    // Move forward along car’s heading (x-axis in robot frame)
-    // This respects non-holonomic constraint — no lateral slip
     Pose next_pose = pose * Pose(v * dt, 0.0f, dtheta);
 
-    if (!collides(next_pose.translation()))
-    {
-        pose = next_pose;
-    }
-    else
-    {
-        cerr << "collision" << endl;
-        v = 0;
-        phi = 0;
-    }
+    // 2) base-only collision gate (map/robots)
+    const bool base_ok = !collides(next_pose.translation());
+    if (!base_ok) { v = 0; phi = 0; return; }
+
+    // 3) arm collision gate (mirror of FreeFlying)
+    const bool arm_coll_now  = hasArm() && arm->collides();
+    const bool arm_coll_next = hasArm() && armCollidesAtPose(next_pose);
+    if (!arm_coll_now && arm_coll_next) { v = 0; phi = 0; return; }
+
+    // 4) apply move
+    pose = next_pose;
 }
 
 bool CarRobot::collides(const Point &p)
@@ -248,6 +244,16 @@ void CarRobot::draw()
     // cv::fillConvexPoly(world->_display_image, hull_pts, cv::Scalar(0, 255, 0));
 }
 
+
+bool CarRobot::armCollidesAtPose(const Pose &test_pose)
+{
+    if (!hasArm()) return false;
+    Pose saved = pose;
+    pose = test_pose;
+    bool c = arm->collides();
+    pose = saved;
+    return c;
+}
 
 
 // bool CarRobot::collides(const Point &p)

@@ -61,6 +61,11 @@ void RosBridge::onJointCmd(const sensor_msgs::msg::JointState::SharedPtr msg, Pe
         if (ff->hasArm())
             arm = ff->arm;
     }
+    else if (auto *car = dynamic_cast<CarRobot *>(pr.h->ptr))
+    {
+        if (car->hasArm())
+            arm = car->arm;
+    }
     if (!arm)
         return;
 
@@ -85,6 +90,11 @@ void RosBridge::onGripper(const std_msgs::msg::Bool::SharedPtr msg, PerRobot &pr
         if (ff->hasArm())
             arm = ff->arm;
     }
+    else if (auto *car = dynamic_cast<CarRobot *>(pr.h->ptr))
+    {
+        if (car->hasArm())
+            arm = car->arm;
+    }
     if (!arm)
         return;
 
@@ -103,6 +113,11 @@ void RosBridge::publishJointStates()
         {
             if (ff->hasArm())
                 arm = ff->arm;
+        }
+        else if (auto *car = dynamic_cast<CarRobot *>(pr.h->ptr))
+        {
+            if (car->hasArm())
+                arm = car->arm;
         }
         if (!arm)
             continue;

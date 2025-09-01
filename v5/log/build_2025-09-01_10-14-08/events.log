@@ -1,0 +1,143 @@
+[0.000000] (-) TimerEvent: {}
+[0.000119] (mrsim) JobQueued: {'identifier': 'mrsim', 'dependencies': OrderedDict()}
+[0.000146] (mrsim) JobStarted: {'identifier': 'mrsim'}
+[0.005978] (mrsim) JobProgress: {'identifier': 'mrsim', 'progress': 'cmake'}
+[0.006663] (mrsim) JobProgress: {'identifier': 'mrsim', 'progress': 'build'}
+[0.007070] (mrsim) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ubuntu/Desktop/MultiRobotSimulator/v5/build/mrsim', '--', '-j8', '-l8'], 'cwd': '/home/ubuntu/Desktop/MultiRobotSimulator/v5/build/mrsim', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ubuntu'), ('HOSTNAME', 'cdb58f7a44e2'), ('GIT_ASKPASS', '/root/.vscode-server/bin/6f17636121051a53c88d3e605c491d22af2ba755/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/root/.vscode-server/bin/6f17636121051a53c88d3e605c491d22af2ba755/bin/helpers/browser.sh'), ('HOME', '/root'), ('OLDPWD', '/'), ('TERM_PROGRAM_VERSION', '1.103.2'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-8090812a-fb2b-4b1b-98cb-c20232057b1f.sock'), ('ROS_PYTHON_VERSION', '3'), ('GTK_MODULES', 'appmenu-gtk-module'), ('VSCODE_GIT_ASKPASS_MAIN', '/root/.vscode-server/bin/6f17636121051a53c88d3e605c491d22af2ba755/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/root/.vscode-server/bin/6f17636121051a53c88d3e605c491d22af2ba755/node'), ('LC_CTYPE', 'C.UTF-8'), ('COLORTERM', 'truecolor'), ('REMOTE_CONTAINERS', 'true'), ('UBUNTU_MENUPROXY', '1'), ('DEBUGINFOD_URLS', ''), ('ROS_DISTRO', 'humble'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-541aaf64-160e-4271-b8b9-64ddaa56ee78.sock'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/root/.vscode-server/bin/6f17636121051a53c88d3e605c491d22af2ba755/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/vscode-ssh-auth-541aaf64-160e-4271-b8b9-64ddaa56ee78.sock"]'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/tmp/vscode-git-ba945b4414.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/tmp/vscode-ssh-auth-541aaf64-160e-4271-b8b9-64ddaa56ee78.sock'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PASSWD', 'ubuntu'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/ubuntu/Desktop/MultiRobotSimulator/v5/build/mrsim'), ('XDG_DATA_DIRS', '/usr/share/gnome:/root/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.094711] (mrsim) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target simulator\x1b[0m\n'}
+[0.099419] (-) TimerEvent: {}
+[0.133826] (mrsim) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding CXX object CMakeFiles/simulator.dir/src/simulator.cpp.o\x1b[0m\n'}
+[0.136387] (mrsim) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object CMakeFiles/simulator.dir/src/utils.cpp.o\x1b[0m\n'}
+[0.138413] (mrsim) StdoutLine: {'line': b'[ 30%] \x1b[32mBuilding CXX object CMakeFiles/simulator.dir/src/object.cpp.o\x1b[0m\n'}
+[0.199709] (-) TimerEvent: {}
+[0.300015] (-) TimerEvent: {}
+[0.405336] (-) TimerEvent: {}
+[0.505734] (-) TimerEvent: {}
+[0.607802] (-) TimerEvent: {}
+[0.708992] (-) TimerEvent: {}
+[0.809329] (-) TimerEvent: {}
+[0.910687] (-) TimerEvent: {}
+[1.016056] (-) TimerEvent: {}
+[1.121036] (-) TimerEvent: {}
+[1.222135] (-) TimerEvent: {}
+[1.326274] (-) TimerEvent: {}
+[1.427289] (-) TimerEvent: {}
+[1.528811] (-) TimerEvent: {}
+[1.632847] (-) TimerEvent: {}
+[1.733678] (-) TimerEvent: {}
+[1.835301] (-) TimerEvent: {}
+[1.935823] (-) TimerEvent: {}
+[2.036974] (-) TimerEvent: {}
+[2.141672] (-) TimerEvent: {}
+[2.243366] (-) TimerEvent: {}
+[2.344955] (-) TimerEvent: {}
+[2.407718] (mrsim) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/ubuntu/Desktop/MultiRobotSimulator/v5/src/mrsim/include/mrsim/arm.h:4\x1b[m\x1b[K,\n'}
+[2.408328] (mrsim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ubuntu/Desktop/MultiRobotSimulator/v5/src/mrsim/include/mrsim/utils.h:16\x1b[m\x1b[K,\n'}
+[2.408586] (mrsim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ubuntu/Desktop/MultiRobotSimulator/v5/src/mrsim/src/utils.cpp:1\x1b[m\x1b[K:\n'}
+[2.408796] (mrsim) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/Desktop/MultiRobotSimulator/v5/src/mrsim/include/mrsim/object.h:18:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KColor\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[2.409482] (mrsim) StderrLine: {'line': b'   18 |     \x1b[01;31m\x1b[KColor\x1b[m\x1b[K primaryColor = Color(0,0,0); // Color for visualization\n'}
+[2.409679] (mrsim) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[2.409777] (mrsim) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/Desktop/MultiRobotSimulator/v5/src/mrsim/include/mrsim/object.h:19:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KColor\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[2.409893] (mrsim) StderrLine: {'line': b'   19 |     \x1b[01;31m\x1b[KColor\x1b[m\x1b[K secondaryColor = Color(0,0,0);\n'}
+[2.409992] (mrsim) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[2.425613] (mrsim) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/ubuntu/Desktop/MultiRobotSimulator/v5/src/mrsim/include/mrsim/utils.h:16\x1b[m\x1b[K,\n'}
+[2.425837] (mrsim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ubuntu/Desktop/MultiRobotSimulator/v5/src/mrsim/include/mrsim/object.h:4\x1b[m\x1b[K,\n'}
+[2.425917] (mrsim) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ubuntu/Desktop/MultiRobotSimulator/v5/src/mrsim/src/object.cpp:4\x1b[m\x1b[K:\n'}
+[2.425953] (mrsim) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/Desktop/MultiRobotSimulator/v5/src/mrsim/include/mrsim/arm.h:22:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KObject\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[2.425995] (mrsim) StderrLine: {'line': b'   22 |     \x1b[01;31m\x1b[KObject\x1b[m\x1b[K* held_object = nullptr;\n'}
+[2.426152] (mrsim) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.426227] (mrsim) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/Desktop/MultiRobotSimulator/v5/src/mrsim/include/mrsim/arm.h:33:35:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KObject\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[2.426295] (mrsim) StderrLine: {'line': b'   33 |     EndEffector(bool is_holding_, \x1b[01;31m\x1b[KObject\x1b[m\x1b[K* held_object_ = nullptr)\n'}
+[2.426342] (mrsim) StderrLine: {'line': b'      |                                   \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.426378] (mrsim) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/Desktop/MultiRobotSimulator/v5/src/mrsim/include/mrsim/arm.h:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KEndEffector::EndEffector(bool, int*)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.426425] (mrsim) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/Desktop/MultiRobotSimulator/v5/src/mrsim/include/mrsim/arm.h:34:36:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kclass \xe2\x80\x98\x1b[01m\x1b[KEndEffector\x1b[m\x1b[K\xe2\x80\x99 does not have any field named \xe2\x80\x98\x1b[01m\x1b[Kheld_object\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.426470] (mrsim) StderrLine: {'line': b'   34 |         : is_holding(is_holding_), \x1b[01;31m\x1b[Kheld_object\x1b[m\x1b[K(held_object_), position(0,0), pixel_pos(0,0) {}\n'}
+[2.426521] (mrsim) StderrLine: {'line': b'      |                                    \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.430437] (mrsim) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/Desktop/MultiRobotSimulator/v5/src/mrsim/include/mrsim/object.h:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KObject::Object(World*, const Pose&, const std::vector<Prehensile_Point>&, const std::vector<Point>&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.430581] (mrsim) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/Desktop/MultiRobotSimulator/v5/src/mrsim/include/mrsim/object.h:28:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KprimaryColor\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.430616] (mrsim) StderrLine: {'line': b'   28 |             \x1b[01;31m\x1b[KprimaryColor\x1b[m\x1b[K = Color::generateRandomColor();\n'}
+[2.430647] (mrsim) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.430690] (mrsim) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/Desktop/MultiRobotSimulator/v5/src/mrsim/include/mrsim/object.h:28:28:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KColor\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[2.430732] (mrsim) StderrLine: {'line': b'   28 |             primaryColor = \x1b[01;31m\x1b[KColor\x1b[m\x1b[K::generateRandomColor();\n'}
+[2.430769] (mrsim) StderrLine: {'line': b'      |                            \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[2.438474] (mrsim) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/Desktop/MultiRobotSimulator/v5/src/mrsim/include/mrsim/arm.h:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid EndEffector::release()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.438672] (mrsim) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/Desktop/MultiRobotSimulator/v5/src/mrsim/include/mrsim/arm.h:43:27:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kheld_object\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[KgetHeldObject\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.438719] (mrsim) StderrLine: {'line': b'   43 |         if (is_holding && \x1b[01;31m\x1b[Kheld_object\x1b[m\x1b[K) {\n'}
+[2.438763] (mrsim) StderrLine: {'line': b'      |                           \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.438796] (mrsim) StderrLine: {'line': b'      |                           \x1b[32m\x1b[KgetHeldObject\x1b[m\x1b[K\n'}
+[2.443592] (mrsim) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/Desktop/MultiRobotSimulator/v5/src/mrsim/include/mrsim/object.h:29:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KsecondaryColor\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.443748] (mrsim) StderrLine: {'line': b'   29 |             \x1b[01;31m\x1b[KsecondaryColor\x1b[m\x1b[K = generateSecondaryColor(primaryColor);\n'}
+[2.443837] (mrsim) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.445242] (-) TimerEvent: {}
+[2.450923] (mrsim) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/Desktop/MultiRobotSimulator/v5/src/mrsim/include/mrsim/arm.h:57:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kheld_object\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[KgetHeldObject\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.451130] (mrsim) StderrLine: {'line': b'   57 |         \x1b[01;31m\x1b[Kheld_object\x1b[m\x1b[K = nullptr;\n'}
+[2.451227] (mrsim) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.451268] (mrsim) StderrLine: {'line': b'      |         \x1b[32m\x1b[KgetHeldObject\x1b[m\x1b[K\n'}
+[2.460009] (mrsim) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/Desktop/MultiRobotSimulator/v5/src/mrsim/include/mrsim/object.h:29:30:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KgenerateSecondaryColor\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.460486] (mrsim) StderrLine: {'line': b'   29 |             secondaryColor = \x1b[01;31m\x1b[KgenerateSecondaryColor\x1b[m\x1b[K(primaryColor);\n'}
+[2.460566] (mrsim) StderrLine: {'line': b'      |                              \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.465123] (mrsim) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/Desktop/MultiRobotSimulator/v5/src/mrsim/include/mrsim/arm.h:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[KWorldItem* EndEffector::getHeldObject() const\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.465328] (mrsim) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/Desktop/MultiRobotSimulator/v5/src/mrsim/include/mrsim/arm.h:65:47:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kheld_object\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[KgetHeldObject\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.465422] (mrsim) StderrLine: {'line': b'   65 |     WorldItem* getHeldObject() const { return \x1b[01;31m\x1b[Kheld_object\x1b[m\x1b[K; }\n'}
+[2.465486] (mrsim) StderrLine: {'line': b'      |                                               \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.465547] (mrsim) StderrLine: {'line': b'      |                                               \x1b[32m\x1b[KgetHeldObject\x1b[m\x1b[K\n'}
+[2.469635] (mrsim) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/Desktop/MultiRobotSimulator/v5/src/mrsim/include/mrsim/arm.h:\x1b[m\x1b[K At global scope:\n'}
+[2.470959] (mrsim) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/Desktop/MultiRobotSimulator/v5/src/mrsim/include/mrsim/arm.h:99:15:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KObject\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[2.471570] (mrsim) StderrLine: {'line': b'   99 |     bool dock(\x1b[01;31m\x1b[KObject\x1b[m\x1b[K*& out_obj, std::string& out_grasp_id);\n'}
+[2.471902] (mrsim) StderrLine: {'line': b'      |               \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.547599] (-) TimerEvent: {}
+[2.650025] (-) TimerEvent: {}
+[2.750779] (-) TimerEvent: {}
+[2.853364] (-) TimerEvent: {}
+[2.977341] (-) TimerEvent: {}
+[3.078246] (-) TimerEvent: {}
+[3.182185] (-) TimerEvent: {}
+[3.282827] (-) TimerEvent: {}
+[3.384370] (-) TimerEvent: {}
+[3.447499] (mrsim) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/simulator.dir/build.make:90: CMakeFiles/simulator.dir/src/utils.cpp.o] Error 1\n'}
+[3.447839] (mrsim) StderrLine: {'line': b'gmake[2]: *** Waiting for unfinished jobs....\n'}
+[3.447892] (mrsim) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/simulator.dir/build.make:174: CMakeFiles/simulator.dir/src/object.cpp.o] Error 1\n'}
+[3.513876] (-) TimerEvent: {}
+[3.618362] (-) TimerEvent: {}
+[3.745271] (-) TimerEvent: {}
+[3.855606] (-) TimerEvent: {}
+[3.958002] (-) TimerEvent: {}
+[4.060799] (-) TimerEvent: {}
+[4.163470] (-) TimerEvent: {}
+[4.280097] (-) TimerEvent: {}
+[4.431552] (-) TimerEvent: {}
+[4.532708] (-) TimerEvent: {}
+[4.634087] (-) TimerEvent: {}
+[4.735625] (-) TimerEvent: {}
+[4.838541] (-) TimerEvent: {}
+[4.941097] (-) TimerEvent: {}
+[5.043104] (-) TimerEvent: {}
+[5.144036] (-) TimerEvent: {}
+[5.245925] (-) TimerEvent: {}
+[5.346800] (-) TimerEvent: {}
+[5.447353] (-) TimerEvent: {}
+[5.551866] (-) TimerEvent: {}
+[5.652339] (-) TimerEvent: {}
+[5.756666] (-) TimerEvent: {}
+[5.861357] (-) TimerEvent: {}
+[5.963555] (-) TimerEvent: {}
+[6.064038] (-) TimerEvent: {}
+[6.165307] (-) TimerEvent: {}
+[6.268970] (-) TimerEvent: {}
+[6.369490] (-) TimerEvent: {}
+[6.470801] (-) TimerEvent: {}
+[6.571425] (-) TimerEvent: {}
+[6.671808] (-) TimerEvent: {}
+[6.772213] (-) TimerEvent: {}
+[6.872496] (-) TimerEvent: {}
+[6.973753] (-) TimerEvent: {}
+[7.074311] (-) TimerEvent: {}
+[7.176720] (-) TimerEvent: {}
+[7.277781] (-) TimerEvent: {}
+[7.383132] (-) TimerEvent: {}
+[7.484470] (-) TimerEvent: {}
+[7.492549] (mrsim) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/simulator.dir/all] Error 2\n'}
+[7.493219] (mrsim) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[7.500903] (mrsim) CommandEnded: {'returncode': 2}
+[7.512827] (mrsim) JobEnded: {'identifier': 'mrsim', 'rc': 2}
+[7.523626] (-) EventReactorShutdown: {}

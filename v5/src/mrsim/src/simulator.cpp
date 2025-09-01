@@ -22,6 +22,31 @@
 #include "mrsim/car.h"
 
 using namespace std;
+Arm* makeArmIfPresent(World& world, WorldItem* parent, const Json::Value& r, const std::string& id) {
+    if (!(r.isMember("arm") && r["arm"].isArray())) {
+        return nullptr;
+    }
+
+    std::vector<Link> links;
+    EndEffector end_effector; // optional
+
+    for (const auto& link : r["arm"]) {
+        float length = link.get("length", 1.0f).asFloat();
+        float angle  = link.get("initial_angle", 0.0f).asFloat();
+        int   type   = link.get("type", 0).asInt();
+        if (type == 0) {
+            links.emplace_back(length, angle, type);
+        } else {
+            end_effector = EndEffector();
+        }
+    }
+
+    auto* arm = new Arm(parent, links, end_effector);
+    world.addItem(arm);
+    return arm;
+}
+
+
 
 void placeItems(World &world, const Json::Value &root, std::vector<RobotHandle> &outRobots)
 {
@@ -43,52 +68,28 @@ void placeItems(World &world, const Json::Value &root, std::vector<RobotHandle> 
             p.theta = pj.get("theta", p.theta).asDouble();
         }
 
+
         if (type == "freeflying")
         {
-            auto *ff = new FreeFlying(&world, 1);
+            auto* ff = new FreeFlying(&world, 1);
             ff->pose = p;
             world.addItem(ff);
             outRobots.push_back({ff, id, type, p});
-            cout << "\t - FreeFlying " << id << " @ (" << p.x << "," << p.y << "," << p.theta << ")\n";
+            std::cout << "\t - FreeFlying " << id << " @ (" << p.x << "," << p.y << "," << p.theta << ")\n";
 
-            // Load arm if present
-            if (r.isMember("arm") && r["arm"].isArray())
-            {
-                std::vector<Link> links;
-                EndEffector end_effector; // Optional end effector
-                for (const auto &link : r["arm"])
-                {
-                    float length = link.get("length", 1.0f).asFloat();
-                    float angle = link.get("initial_angle", 0.0f).asFloat();
-                    int type = link.get("type", 0).asInt();
-                    if (type == 0)
-                    {
-                        // Regular link
-                        links.emplace_back(length, angle, type);
-                    }
-                    else
-                    {
-                        // End effector
-                        end_effector = EndEffector();
-                    }
-                }
-
-                auto *arm = new Arm(ff, links, end_effector);
-                // arm->end_effector.hold(ff); // Optional: hold the FreeFlying itself
-                // arm->pose = p;
-                ff->arm = arm; // Explicit reference to the arm
-                world.addItem(arm);
-                std::cout << "\t - Arm with " << links.size() << " links added to FreeFlying " << id << "\n";
-            }
+            Arm* armFF = makeArmIfPresent(world, ff, r, id);
+            ff->arm = armFF;
         }
         else if (type == "car")
         {
-            // throw std::runtime_error("ARM on CarRobot not implemented yet");
-            auto *car = new CarRobot(&world);
+            auto* car = new CarRobot(&world);
             car->pose = p;
             world.addItem(car);
             outRobots.push_back({car, id, type, p});
             std::cout << "\t - CarRobot " << id << " @ (" << p.x << "," << p.y << "," << p.theta << ")\n";
+
+            Arm* armCar = makeArmIfPresent(world, car, r, id);
+            car->arm = armCar;
         }
         else
         {
@@ -520,7 +521,7 @@ int main(int argc, char **argv)
         controlArm(robots[selected], key);
     }
 
-    cout << "********************* Game Over! ************************";
+    cout << "********************* Game Over! ************************\n";
     cout << "Change the favorite level in the ranking file to load another game" <<endl;
 
     return 0;

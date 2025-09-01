@@ -14,11 +14,12 @@
 #include <opencv2/imgproc.hpp>
 #include "simple_geometry.h" // uses Point, Pose
 
+
 using namespace std;
 struct PlayerInfo {
     unsigned int id{0};
     std::string name;
-    unsigned int fav_level{1};
+    int fav_level{1};
 };
 
 PlayerInfo selectOrCreatePlayer(const std::string& rankingPath);

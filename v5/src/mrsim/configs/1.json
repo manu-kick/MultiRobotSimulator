@@ -11,7 +11,7 @@
 "robots" : [
     {
         "id": "robot1",
-        "type": "freeflying",
+        "type": "car",
         "initial_pose" : {
             "x": 25,
             "y": 20,

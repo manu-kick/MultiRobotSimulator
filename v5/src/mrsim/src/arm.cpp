@@ -77,7 +77,7 @@ void Arm::alignLastLinkTo(const Point &target_world)
     // calcola base e orientamento accumulato fino al link N-1
     Pose parent_pose = poseInWorld();
 
-    cout << "\t-Parent pose x=" << parent_pose.x << " y=" << parent_pose.y << endl;
+    cout << "\t-Parent  x=" << parent_pose.x << " y=" << parent_pose.y << endl;
 
     Point joint = Point(parent_pose.x, parent_pose.y);
     float theta = parent_pose.theta;
@@ -416,11 +416,7 @@ void Arm::draw()
     Pose parent_pose = poseInWorld();
     Point base_coord(parent_pose.x, parent_pose.y);
 
-    if (auto *car = dynamic_cast<CarRobot *>(parent_robot))
-    {
-        (void)car;
-        return;
-    }
+    
 
     Point attachment = base_coord;
     IndexPair i_attach = world->worldToIndices(attachment);

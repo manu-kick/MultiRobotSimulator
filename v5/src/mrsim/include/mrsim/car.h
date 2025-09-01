@@ -47,4 +47,5 @@ struct CarRobot : public WorldItem
     }
 
     bool hasArm() const { return arm != nullptr; }
+    bool armCollidesAtPose(const Pose& test_pose);
 };

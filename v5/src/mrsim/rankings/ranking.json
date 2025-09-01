@@ -8,26 +8,32 @@
       "time" : 123
     },
     {
-      "time" : 30.112894723,
       "id" : 2,
       "player" : "tony",
-      "player_id" : 3
+      "player_id" : 3,
+      "time" : 30.112894723
+    },
+    {
+      "id" : 3,
+      "player" : "manu",
+      "player_id" : 1,
+      "time" : 43.084585351999998
     }
   ],
   "players" : 
   [
     {
-      "fav_level" : 2,
+      "fav_level" : 1,
       "id" : 1,
       "name" : "manu"
     },
     {
-      "fav_lev" : 3,
+      "fav_level" : 3,
       "id" : 2,
       "name" : "paki"
     },
     {
-      "fav_lev" : 4,
+      "fav_level" : 4,
       "id" : 3,
       "name" : "tony"
     }
