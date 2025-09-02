@@ -1,0 +1,49 @@
+-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Found rclcpp: 16.0.14 (/opt/ros/humble/share/rclcpp/cmake)
+-- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+-- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+-- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found geometry_msgs: 4.9.0 (/opt/ros/humble/share/geometry_msgs/cmake)
+-- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+-- Found tf2: 0.25.15 (/opt/ros/humble/share/tf2/cmake)
+-- Found tf2_ros: 0.25.15 (/opt/ros/humble/share/tf2_ros/cmake)
+-- Eigen3 found: /usr/include/eigen3
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/ubuntu/Desktop/MultiRobotSimulator/v5/build/mrsim
+[35m[1mConsolidate compiler generated dependencies of target simulator[0m
+[ 10%] [32mBuilding CXX object CMakeFiles/simulator.dir/src/simulator.cpp.o[0m
+[ 40%] [32mBuilding CXX object CMakeFiles/simulator.dir/src/world.cpp.o[0m
+[ 40%] [32mBuilding CXX object CMakeFiles/simulator.dir/src/utils.cpp.o[0m
+[ 30%] [32mBuilding CXX object CMakeFiles/simulator.dir/src/freeflying.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/simulator.dir/src/lidar.cpp.o[0m
+[ 60%] [32mBuilding CXX object CMakeFiles/simulator.dir/src/object.cpp.o[0m
+[ 70%] [32mBuilding CXX object CMakeFiles/simulator.dir/src/car.cpp.o[0m
+[ 80%] [32mBuilding CXX object CMakeFiles/simulator.dir/src/arm.cpp.o[0m
+[ 90%] [32mBuilding CXX object CMakeFiles/simulator.dir/src/ros_bridge.cpp.o[0m
+[100%] [32m[1mLinking CXX executable simulator[0m
+[100%] Built target simulator
+-- Install configuration: "Release"
+-- Execute custom install script
+-- Up-to-date symlink: /home/ubuntu/Desktop/MultiRobotSimulator/v5/install/mrsim/lib/mrsim/simulator
+-- Up-to-date symlink: /home/ubuntu/Desktop/MultiRobotSimulator/v5/install/mrsim/share/ament_index/resource_index/package_run_dependencies/mrsim
+-- Up-to-date symlink: /home/ubuntu/Desktop/MultiRobotSimulator/v5/install/mrsim/share/ament_index/resource_index/parent_prefix_path/mrsim
+-- Up-to-date symlink: /home/ubuntu/Desktop/MultiRobotSimulator/v5/install/mrsim/share/mrsim/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /home/ubuntu/Desktop/MultiRobotSimulator/v5/install/mrsim/share/mrsim/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /home/ubuntu/Desktop/MultiRobotSimulator/v5/install/mrsim/share/mrsim/environment/path.sh
+-- Up-to-date symlink: /home/ubuntu/Desktop/MultiRobotSimulator/v5/install/mrsim/share/mrsim/environment/path.dsv
+-- Up-to-date symlink: /home/ubuntu/Desktop/MultiRobotSimulator/v5/install/mrsim/share/mrsim/local_setup.bash
+-- Up-to-date symlink: /home/ubuntu/Desktop/MultiRobotSimulator/v5/install/mrsim/share/mrsim/local_setup.sh
+-- Up-to-date symlink: /home/ubuntu/Desktop/MultiRobotSimulator/v5/install/mrsim/share/mrsim/local_setup.zsh
+-- Up-to-date symlink: /home/ubuntu/Desktop/MultiRobotSimulator/v5/install/mrsim/share/mrsim/local_setup.dsv
+-- Symlinking: /home/ubuntu/Desktop/MultiRobotSimulator/v5/install/mrsim/share/mrsim/package.dsv
+-- Up-to-date symlink: /home/ubuntu/Desktop/MultiRobotSimulator/v5/install/mrsim/share/ament_index/resource_index/packages/mrsim
+-- Up-to-date symlink: /home/ubuntu/Desktop/MultiRobotSimulator/v5/install/mrsim/share/mrsim/cmake/mrsimConfig.cmake
+-- Up-to-date symlink: /home/ubuntu/Desktop/MultiRobotSimulator/v5/install/mrsim/share/mrsim/cmake/mrsimConfig-version.cmake
+-- Up-to-date symlink: /home/ubuntu/Desktop/MultiRobotSimulator/v5/install/mrsim/share/mrsim/package.xml

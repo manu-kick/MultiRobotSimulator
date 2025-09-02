@@ -64,6 +64,10 @@ bool Arm::dock(Object *&out_obj, std::string &out_grasp_id)
 
         if (obj->locked)
             cout << "\t\t !!!!Cannot dock, obj locked!!!!" << endl;
+
+        if (obj->isHeld){
+            cout << "\t\t !!!!Cannot dock, obj is held!!!!" << endl;
+        }
     }
     return false;
 }

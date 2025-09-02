@@ -11,10 +11,45 @@
     "robots" : [
     {
         "id": "robot1",
+        "type": "car",
+        "initial_pose" : {
+            "x": 45,
+            "y": 8,
+            "theta": 3.14
+        },
+        "arm":[
+            {
+                "id": "q1",
+                "type": 0, 
+                "initial_angle": 0.0,
+                "length": 4
+            },
+            {
+                "id": "q2",
+                "type": 0,
+                "initial_angle": 0,
+                "length": 3
+            },
+            {
+                "id": "q3",
+                "type": 0,
+                "initial_angle": 0,
+                "length": 4
+            },
+            {
+                "id": "ee",
+                "type": 1,
+                "initial_angle": 0.0,
+                "length": 2
+            }
+        ]
+    },
+    {
+        "id": "robot2",
         "type": "freeflying",
         "initial_pose" : {
             "x": 5,
-            "y": 5,
+            "y": 70,
             "theta": 0
         },
         "arm":[
@@ -22,7 +57,7 @@
                 "id": "q1",
                 "type": 0, 
                 "initial_angle": 0.0,
-                "length": 3
+                "length": 2
             },
             {
                 "id": "q2",
@@ -34,7 +69,7 @@
                 "id": "q3",
                 "type": 0,
                 "initial_angle": 0,
-                "length": 3
+                "length": 2
             },
             {
                 "id": "ee",
@@ -43,6 +78,51 @@
                 "length": 2
             }
         ]
+    }
+],
+"objects": [
+    {
+        "id": "item1",
+        "type": "box",
+        "initial_pose": {
+            "x": 5,
+            "y": 5,
+            "theta": 0
+        },
+        "prehensile_points": [
+            {
+                "id": "pp1_1",
+                "value": 32.5
+            },
+            {
+                "id": "pp1_2",
+                "value": 62.5
+            }
+        ],
+        "goal": [
+            {
+                "x": 75,
+                "y": 35
+            },
+            {
+                "x": 65,
+                "y": 35
+            },
+            {
+                "x": 65,
+                "y": 45
+            },
+            {
+                "x": 75,
+                "y": 45
+            }
+           
+        ]
+        ,
+        "size": {
+            "width": 50,
+            "height": 50
+        }
     }
 ]
 }

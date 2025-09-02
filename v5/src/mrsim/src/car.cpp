@@ -148,8 +148,8 @@ void CarRobot::draw()
     }
 
     // Draw 4 wheels
-    float wheel_length = (int)L / 4; // meters (along wheel direction)
-    float wheel_width = (int)d / 4;  // meters (across axle)
+    float wheel_length = max((int)L / 4, 2); // meters (along wheel direction)
+    float wheel_width = max((int)d / 4, 1);  // meters (across axle)
 
     for (auto axle_center : {rear, front})
     {

@@ -21,7 +21,8 @@ struct Object : public WorldItem {
     std::vector<Prehensile_Point> prehensile_points; // Prehensile points for grasping
     std::vector<Point> goal; // Goal position for the object (4 points for a box)
     // Size size; // Size of the object
-    bool locked = false;
+    bool locked = false; // if in goal area
+    bool isHeld = false; // if currently held by an arm
 
     Object(World* world_, const Pose& pose_ = Pose(), const std::vector<Prehensile_Point>& prehensile_points_ = {}, const std::vector<Point>& goal_ = {}) 
         : WorldItem(world_), pose(pose_), prehensile_points(prehensile_points_), goal(goal_) {

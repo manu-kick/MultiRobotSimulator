@@ -13,7 +13,7 @@ struct CarRobot : public WorldItem
     float d; // d: distance from the middle point of the axles and the contact point of the wheels
     Arm *arm = nullptr;
 
-    CarRobot(World *world_, float L_ = 8, float d_ = 5) : WorldItem(world_),L(L_),d(d_){}
+    CarRobot(World *world_, float L_ = 5, float d_ = 3) : WorldItem(world_),L(L_),d(d_){}
 
     void timeTick(float dt) override;
     bool collides(const Point &p);

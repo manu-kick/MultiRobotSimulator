@@ -7,7 +7,10 @@ docker run -it --rm -p 6080:80 tiryoh/ros2-desktop-vnc:humble
 Open Browser on http://localhost:6080/
 
 
+
 Run the simulator using a fresh terminal in which you run from the /v5 directory:
+source /opt/ros/humble/setup.bash
+colcon build --symlink-install --packages-select mrsim
 source install/setup.bash
 
 ros2 run mrsim simulator <your_path_to_config_folder>/configs/<configuration_file>.json

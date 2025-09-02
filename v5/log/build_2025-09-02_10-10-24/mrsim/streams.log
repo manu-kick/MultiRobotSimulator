@@ -1,0 +1,29 @@
+[0.010s] Invoking command in '/home/ubuntu/Desktop/MultiRobotSimulator/v5/build/mrsim': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/Desktop/MultiRobotSimulator/v5/build/mrsim -- -j8 -l8
+[0.172s] [35m[1mConsolidate compiler generated dependencies of target simulator[0m
+[0.327s] [ 10%] [32mBuilding CXX object CMakeFiles/simulator.dir/src/freeflying.cpp.o[0m
+[6.911s] [ 20%] [32mBuilding CXX object CMakeFiles/simulator.dir/src/ros_bridge.cpp.o[0m
+[72.625s] [ 30%] [32mBuilding CXX object CMakeFiles/simulator.dir/src/arm.cpp.o[0m
+[80.284s] [ 40%] [32mBuilding CXX object CMakeFiles/simulator.dir/src/car.cpp.o[0m
+[89.543s] [ 50%] [32m[1mLinking CXX executable simulator[0m
+[91.004s] [100%] Built target simulator
+[91.073s] Invoked command in '/home/ubuntu/Desktop/MultiRobotSimulator/v5/build/mrsim' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/Desktop/MultiRobotSimulator/v5/build/mrsim -- -j8 -l8
+[91.269s] Invoking command in '/home/ubuntu/Desktop/MultiRobotSimulator/v5/build/mrsim': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ubuntu/Desktop/MultiRobotSimulator/v5/build/mrsim
+[91.302s] -- Install configuration: "Release"
+[91.303s] -- Execute custom install script
+[91.305s] -- Up-to-date symlink: /home/ubuntu/Desktop/MultiRobotSimulator/v5/install/mrsim/lib/mrsim/simulator
+[91.306s] -- Up-to-date symlink: /home/ubuntu/Desktop/MultiRobotSimulator/v5/install/mrsim/share/ament_index/resource_index/package_run_dependencies/mrsim
+[91.307s] -- Up-to-date symlink: /home/ubuntu/Desktop/MultiRobotSimulator/v5/install/mrsim/share/ament_index/resource_index/parent_prefix_path/mrsim
+[91.309s] -- Up-to-date symlink: /home/ubuntu/Desktop/MultiRobotSimulator/v5/install/mrsim/share/mrsim/environment/ament_prefix_path.sh
+[91.310s] -- Up-to-date symlink: /home/ubuntu/Desktop/MultiRobotSimulator/v5/install/mrsim/share/mrsim/environment/ament_prefix_path.dsv
+[91.312s] -- Up-to-date symlink: /home/ubuntu/Desktop/MultiRobotSimulator/v5/install/mrsim/share/mrsim/environment/path.sh
+[91.313s] -- Up-to-date symlink: /home/ubuntu/Desktop/MultiRobotSimulator/v5/install/mrsim/share/mrsim/environment/path.dsv
+[91.313s] -- Up-to-date symlink: /home/ubuntu/Desktop/MultiRobotSimulator/v5/install/mrsim/share/mrsim/local_setup.bash
+[91.314s] -- Up-to-date symlink: /home/ubuntu/Desktop/MultiRobotSimulator/v5/install/mrsim/share/mrsim/local_setup.sh
+[91.314s] -- Up-to-date symlink: /home/ubuntu/Desktop/MultiRobotSimulator/v5/install/mrsim/share/mrsim/local_setup.zsh
+[91.314s] -- Up-to-date symlink: /home/ubuntu/Desktop/MultiRobotSimulator/v5/install/mrsim/share/mrsim/local_setup.dsv
+[91.315s] -- Symlinking: /home/ubuntu/Desktop/MultiRobotSimulator/v5/install/mrsim/share/mrsim/package.dsv
+[91.340s] -- Up-to-date symlink: /home/ubuntu/Desktop/MultiRobotSimulator/v5/install/mrsim/share/ament_index/resource_index/packages/mrsim
+[91.342s] -- Up-to-date symlink: /home/ubuntu/Desktop/MultiRobotSimulator/v5/install/mrsim/share/mrsim/cmake/mrsimConfig.cmake
+[91.342s] -- Up-to-date symlink: /home/ubuntu/Desktop/MultiRobotSimulator/v5/install/mrsim/share/mrsim/cmake/mrsimConfig-version.cmake
+[91.343s] -- Up-to-date symlink: /home/ubuntu/Desktop/MultiRobotSimulator/v5/install/mrsim/share/mrsim/package.xml
+[91.352s] Invoked command in '/home/ubuntu/Desktop/MultiRobotSimulator/v5/build/mrsim' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ubuntu/Desktop/MultiRobotSimulator/v5/build/mrsim
