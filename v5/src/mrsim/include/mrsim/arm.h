@@ -46,7 +46,7 @@ struct EndEffector {
                 std::cout << "\t-Object released inside goal area!" << std::endl;
                 // lock the obj
                 held_object->locked = true;
-
+                held_object->isHeld = false;
             } else {
                 std::cout << "\t-Object released outside goal area!" << std::endl;
             }

@@ -68,6 +68,7 @@ bool Arm::dock(Object *&out_obj, std::string &out_grasp_id)
         if (obj->isHeld){
             cout << "\t\t !!!!Cannot dock, obj is held!!!!" << endl;
         }
+        cout << "Obj "<<obj->isHeld<< endl;
     }
     return false;
 }
@@ -228,6 +229,7 @@ void Arm::timeTick(float dt)
                 end_effector.is_holding = true;
                 end_effector.held_object = obj;
                 end_effector.gripper_closed = true;
+                obj->isHeld = true;
             }
         }
         // Consume request regardless of outcome
