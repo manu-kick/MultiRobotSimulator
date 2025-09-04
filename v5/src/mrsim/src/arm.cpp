@@ -45,6 +45,7 @@ bool Arm::dock(Object *&out_obj, std::string &out_grasp_id)
 {
     out_obj = nullptr;
     out_grasp_id.clear();
+    cout << "Try to dock" << out_grasp_id <<  endl;
     if (!world)
         return false;
 
