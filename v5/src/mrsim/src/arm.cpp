@@ -45,7 +45,6 @@ bool Arm::dock(Object *&out_obj, std::string &out_grasp_id)
 {
     out_obj = nullptr;
     out_grasp_id.clear();
-    cout << "Try to dock" << out_grasp_id <<  endl;
     if (!world)
         return false;
 
@@ -56,8 +55,9 @@ bool Arm::dock(Object *&out_obj, std::string &out_grasp_id)
         if (!obj)
             continue;
 
+
         // Check whether the EE position is within the grasping area
-        if (obj->isInsideGraspArea(cv::Point(end_effector.pixel_pos.c, end_effector.pixel_pos.r), out_grasp_id) && !obj->locked)
+        if (obj->isInsideGraspArea(cv::Point(end_effector.pixel_pos.c, end_effector.pixel_pos.r), out_grasp_id) && !obj->locked && !obj->isHeld)
         {
             out_obj = obj;
             return true;
@@ -69,7 +69,6 @@ bool Arm::dock(Object *&out_obj, std::string &out_grasp_id)
         if (obj->isHeld){
             cout << "\t\t !!!!Cannot dock, obj is held!!!!" << endl;
         }
-        cout << "Obj "<<obj->isHeld<< endl;
     }
     return false;
 }
