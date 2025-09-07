@@ -1,7 +1,6 @@
 #include "mrsim/ros_bridge.h"
 
-RosBridge::RosBridge(World &w, std::vector<RobotHandle> &robots)
-    : rclcpp::Node("mrsim_bridge"), world_(w), robots_(robots)
+RosBridge::RosBridge(World &w, std::vector<RobotHandle> &robots): rclcpp::Node("mrsim_bridge"), world_(w), robots_(robots)
 {
     pr_.reserve(robots_.size());
     for (auto &rh : robots_)
@@ -31,6 +30,15 @@ RosBridge::RosBridge(World &w, std::vector<RobotHandle> &robots)
         slot->pub_joint_states = create_publisher<sensor_msgs::msg::JointState>(
             ns + "/joint_states", 10);
     }
+
+    // Service: publish joint_states once when requested
+    srv_pub_js_ = create_service<std_srvs::srv::Trigger>(  "publish_joint_states",
+    [this](const std::shared_ptr<std_srvs::srv::Trigger::Request>,
+        std::shared_ptr<std_srvs::srv::Trigger::Response> res) {
+        publishJointStates();
+        res->success = true;
+        res->message = "joint_states published once";
+    });
 }
 
 void RosBridge::onCmdVel(const geometry_msgs::msg::Twist::SharedPtr msg, PerRobot &pr)
@@ -138,5 +146,5 @@ void RosBridge::publishJointStates()
 void RosBridge::spinOnce()
 {
     rclcpp::spin_some(shared_from_this());
-    publishJointStates();
+    // publishJointStates();
 }

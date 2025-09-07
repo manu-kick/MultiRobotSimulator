@@ -26,6 +26,10 @@ PlayerInfo selectOrCreatePlayer(const std::string& rankingPath);
 bool saveMatchResult(const std::string& rankingPath,
                      const PlayerInfo& player,
                      double elapsed_seconds);
+bool getBestRecordForLevel(const std::string& rankingPath,
+    int level,
+    double& best_time_out,
+    std::string& best_player_out);
 
 
 

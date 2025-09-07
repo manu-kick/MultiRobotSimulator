@@ -345,11 +345,15 @@ bool BoxObject::collides()
                 {
                     cout << "c = " << c << " r = " << r << endl;
                     cout << "\t\t !!!!Cannot move object, collision detected, world boundaries violated!!!!" << endl;
+
+                    // the arm that is helding the object should release 
                     return true;
                 }
                 if (world->at(ip) < 127)
                 {
                     cout << "\t\t !!!!Cannot move object, collision detected, world obstacles hit!!!!" << endl;
+                    // the arm that is helding the object should release 
+
                     return true;
                 }
             }

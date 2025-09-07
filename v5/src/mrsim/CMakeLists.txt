@@ -20,6 +20,8 @@ find_package(sensor_msgs REQUIRED)
 find_package(std_msgs REQUIRED)
 find_package(tf2 REQUIRED)
 find_package(tf2_ros REQUIRED)
+find_package(std_srvs REQUIRED)
+
 
 # --- OpenCV (system install) ---
 find_package(OpenCV REQUIRED)
@@ -74,7 +76,7 @@ target_link_libraries(simulator
 )
 
 ament_target_dependencies(simulator
-  rclcpp geometry_msgs sensor_msgs std_msgs tf2 tf2_ros
+  rclcpp geometry_msgs sensor_msgs std_msgs tf2 tf2_ros std_srvs
 )
 
 # --- Install like a proper ROS 2 node ---

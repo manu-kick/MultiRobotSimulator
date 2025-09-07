@@ -1,4 +1,0 @@
-gmake[2]: *** Deleting file 'CMakeFiles/simulator.dir/src/ros_bridge.cpp.o'
-gmake[2]: *** [CMakeFiles/simulator.dir/build.make:188: CMakeFiles/simulator.dir/src/ros_bridge.cpp.o] Interrupt
-gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/simulator.dir/all] Interrupt
-gmake: *** [Makefile:146: all] Interrupt

@@ -154,5 +154,45 @@ bool saveMatchResult(const std::string& rankingPath,
     return true;
 }
 
+// Return true if a record exists for 'level'; fills best_time_out & best_player_out.
+bool getBestRecordForLevel(const std::string& rankingPath,
+                           int level,
+                           double& best_time_out,
+                           std::string& best_player_out) {
+    Json::Value root;
+    if (!loadJson(rankingPath, root)) {
+        return false;
+    }
+    const Json::Value& matches = root["matches"];
+    if (!matches.isArray() || matches.empty()) {
+        return false;
+    }
+
+    bool found = false;
+    double best_t = std::numeric_limits<double>::infinity();
+    std::string best_player;
+
+    for (Json::ArrayIndex i = 0; i < matches.size(); ++i) {
+        const auto& m = matches[i];
+        // Backward compatibility: if "level" missing, skip (or treat as level 1 if you prefer)
+        if (!m.isMember("level")) continue;
+        if (m.get("level", 0).asInt() != level) continue;
+        if (!m.isMember("time")) continue;
+
+        double t = m["time"].asDouble();
+        if (t < best_t) {
+            best_t = t;
+            best_player = m.get("player", "").asString();
+            found = true;
+        }
+    }
+
+    if (found) {
+        best_time_out = best_t;
+        best_player_out = best_player;
+    }
+    return found;
+}
+
 
 

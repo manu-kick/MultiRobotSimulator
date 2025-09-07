@@ -288,6 +288,16 @@ int main(int argc, char **argv)
     cout << "Loading your favorite level " <<player.fav_level << endl;
     std::string jsonFilePath = "/home/ubuntu/Desktop/MultiRobotSimulator/v5/src/mrsim/configs/"+ std::to_string(player.fav_level) + ".json";
 
+    
+    double best_t; std::string best_p;
+    if (getBestRecordForLevel(rankingPath, player.fav_level, best_t, best_p)) {
+        cout << ">>> Current record for level " << player.fav_level
+                << ": " << best_t << " s by " << best_p << "\n";
+    } else {
+        cout << ">>> No record yet for level " << player.fav_level << ". Be the first!\n";
+    }
+    
+
     Json::Value root;
     Json::Reader reader;
 
@@ -370,6 +380,19 @@ int main(int argc, char **argv)
     cout << "Press number 1.." << robots.size() << " to select robot (0 = #10).\n";
     cout << "Selected robot: " << (selected + 1) << " [" << robots[selected].id << "]\n";
 
+
+    // Get the best time on the current level 
+    double pre_best_time = std::numeric_limits<double>::infinity();
+    std::string pre_best_holder;
+    {
+        double best_t; std::string best_p;
+        if (getBestRecordForLevel(rankingPath, player.fav_level, best_t, best_p)) {
+            pre_best_time = best_t;
+            pre_best_holder = best_p;
+        }
+    }
+
+
     int k;
     bool game_over = false;
     while (!game_over)
@@ -400,6 +423,10 @@ int main(int argc, char **argv)
                 std::cerr << "Warning: could not save match result.\n";
             }
             else{
+                if (elapsed < pre_best_time) {
+                    std::cout << "!!! NEW RECORD for level --> " << player.fav_level
+                              << "  time--> " << elapsed << " !!!\n";
+                }
                 game_over = true;
                 cout<<"Chage your favorite level in the ranking file"<<endl;
             }

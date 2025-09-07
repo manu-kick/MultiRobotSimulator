@@ -13,9 +13,9 @@
         "id": "robot1",
         "type": "freeflying",
         "initial_pose" : {
-            "x": 5,
-            "y": 5,
-            "theta": 0
+            "x": 10,
+            "y": 2,
+            "theta": 1.5
         },
         "arm":[
             {
@@ -43,6 +43,47 @@
                 "length": 2
             }
         ]
+    }
+],
+"objects": [
+    {
+        "id": "item1",
+        "type": "box",
+        "initial_pose": {
+            "x": 10,
+            "y": 15,
+            "theta": 0
+        },
+        "prehensile_points": [
+            {
+                "id": "pp1_1",
+                "value": 87.5
+            }
+        ],
+        "goal": [
+            {
+                "x": 60,
+                "y": 40
+            },
+            {
+                "x": 70,
+                "y": 40
+            },
+            {
+                "x": 70,
+                "y": 50
+            },
+            {
+                "x": 60,
+                "y": 50
+            }
+           
+        ]
+        ,
+        "size": {
+            "width": 50,
+            "height": 50
+        }
     }
 ]
 }

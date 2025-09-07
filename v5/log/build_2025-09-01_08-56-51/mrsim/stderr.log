@@ -1,7 +1,0 @@
-[01m[K/home/ubuntu/Desktop/MultiRobotSimulator/v5/src/mrsim/src/utils.cpp:[m[K In function ‘[01m[KPlayerInfo selectOrCreatePlayer(const string&)[m[K’:
-[01m[K/home/ubuntu/Desktop/MultiRobotSimulator/v5/src/mrsim/src/utils.cpp:121:45:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[Kdefault_lv[m[K’ from ‘[01m[Kunsigned int[m[K’ to ‘[01m[Kint[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wnarrowing-Wnarrowing]8;;[m[K]
-  121 |     return PlayerInfo{max_id + 1, selected, [01;35m[Kdefault_lv[m[K};
-      |                                             [01;35m[K^~~~~~~~~~[m[K
-gmake[2]: *** [CMakeFiles/simulator.dir/build.make:188: CMakeFiles/simulator.dir/src/ros_bridge.cpp.o] Interrupt
-gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/simulator.dir/all] Interrupt
-gmake: *** [Makefile:146: all] Interrupt

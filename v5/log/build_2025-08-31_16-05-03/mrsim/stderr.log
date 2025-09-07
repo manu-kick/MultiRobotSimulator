@@ -1,9 +1,0 @@
-[01m[K/home/ubuntu/Desktop/MultiRobotSimulator/v5/src/mrsim/src/simulator.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
-[01m[K/home/ubuntu/Desktop/MultiRobotSimulator/v5/src/mrsim/src/simulator.cpp:288:115:[m[K [01;31m[Kerror: [m[Kinvalid operands of types ‘[01m[Kconst char*[m[K’ and ‘[01m[Kconst char [6][m[K’ to binary ‘[01m[Koperator+[m[K’
-  288 |     std::string jsonFilePath = [32m[K"/home/ubuntu/Desktop/MultiRobotSimulator/v5/src/mrsim/configs/"+ player.fav_level[m[K [01;31m[K+[m[K [34m[K".json"[m[K;
-      |                                [32m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K [01;31m[K^[m[K [34m[K~~~~~~~[m[K
-      |                                                                                                [32m[K|[m[K                    [34m[K|[m[K
-      |                                                                                                [32m[Kconst char*[m[K          [34m[Kconst char [6][m[K
-gmake[2]: *** [CMakeFiles/simulator.dir/build.make:76: CMakeFiles/simulator.dir/src/simulator.cpp.o] Error 1
-gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/simulator.dir/all] Error 2
-gmake: *** [Makefile:146: all] Error 2

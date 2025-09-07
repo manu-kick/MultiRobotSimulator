@@ -1,24 +1,25 @@
-#pragma once
-#include <memory>
-#include <vector>
-#include <rclcpp/rclcpp.hpp>
-#include <geometry_msgs/msg/twist.hpp>
-#include <sensor_msgs/msg/joint_state.hpp>
-#include <std_msgs/msg/bool.hpp>
-#include "sim_common.h"
-#include "arm.h"
-#include "freeflying.h"
-#include "car.h"
-#include "world.h"
+ #pragma once
+ #include <memory>
+ #include <vector>
+ #include <rclcpp/rclcpp.hpp>
+ #include <geometry_msgs/msg/twist.hpp>
+ #include <sensor_msgs/msg/joint_state.hpp>
+ #include <std_msgs/msg/bool.hpp>
+ #include <std_srvs/srv/trigger.hpp>
+ #include "sim_common.h"
+ #include "arm.h"
+ #include "freeflying.h"
+ #include "car.h"
+ #include "world.h"
 
-class RosBridge : public rclcpp::Node {
-public:
+ class RosBridge : public rclcpp::Node {
+  public:
   RosBridge(World& world, std::vector<RobotHandle>& robots);
 
   // Call this once per GUI frame (non-blocking)
   void spinOnce();
 
-private:
+  private:
   World& world_;
   std::vector<RobotHandle>& robots_;
 
@@ -36,4 +37,7 @@ private:
   void onGripper(const std_msgs::msg::Bool::SharedPtr msg, PerRobot& pr);
 
   void publishJointStates();
-};
+
+  // Service: publish /joint_states once on demand
+  rclcpp::Service<std_srvs::srv::Trigger>::SharedPtr srv_pub_js_;
+ };
