@@ -1,6 +1,6 @@
 # MultiRobotSimulator
 
-![Alt text](Sim.png "Simulator Screenshot")
+![Simulator screenshot](/v5/Sim.png "Simulator Screenshot")
 
 ## DESCRIPTION
 This is the MultiRobotSimulator project for the Robot Programming course from prof. Grisetti, Sapienza University of Rome. It is based on a minimal simulator created duting the course.
