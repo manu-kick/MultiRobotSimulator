@@ -1,0 +1,4 @@
+source;share/mrsim/local_setup.bash
+source;share/mrsim/local_setup.dsv
+source;share/mrsim/local_setup.sh
+source;share/mrsim/local_setup.zsh

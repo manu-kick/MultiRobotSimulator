@@ -67,7 +67,7 @@ void World::show()
     if (items[i])
       items[i]->draw();
 
-  cv::imshow("grid", _display_image);
+  cv::imshow("MultiRobotSimulator", _display_image);
 }
 
 void World::timeTick(float dt)

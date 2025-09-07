@@ -1,30 +1,41 @@
 # MultiRobotSimulator
 
+![Alt text](Sim.png "Simulator Screenshot")
 
+## DESCRIPTION
+This is the MultiRobotSimulator project for the Robot Programming course from prof. Grisetti, Sapienza University of Rome. It is based on a minimal simulator created duting the course.
+
+The goal is to use the robots (car and unicycle) to move the objects in their deignated goal area, avoiding collisions and doing it in the fastest way.
+There are a few level already in the system and there is a ranking procedure that tracks the diffrent players and their matches.
+
+## INSTRUCTIONS
 Run the container 
 docker run -it --rm -p 6080:80 tiryoh/ros2-desktop-vnc:humble
 
 Open Browser on http://localhost:6080/
 First thing to do is to check that the current permission on the files are read and write for your current user.
-Open a new terminal, navigate into /v5/src/mrsim/rankings and run : sudo chown <username_system> ranking.json
+Open a new terminal, and run :
+sudo chown -R  <username>: <username> <path_to_rankings_folder>
+chmod u+rw <path_to_rankings_folder>/ranking.json
 
 
-
-
-Run the simulator using a fresh terminal in which you run from the /v5 directory:
+In the same terminal, move into the v5 directory and run:
 source /opt/ros/humble/setup.bash
 colcon build --symlink-install --packages-select mrsim
 source install/setup.bash
 
-ros2 run mrsim simulator <your_path_to_config_folder>/configs/<configuration_file>.json
+Then you run the simulator:
+ros2 run mrsim simulator 
+
+## CONTROL
 Then when the simulator is running, you can run either control the robot using keyboard, following the commands below:
-by default the first robot (robot0) is controlled, then:
+by default the first robot is controlled, then:
 - Up/Down arrows: increase/decrease linear velocity
 - Left/Right arrows: increase/decrease angular velocity
 - space: stop the robot
 - 1,2,3,...: switch to control robot1, robot2,...
 - Tab: enable arm control, switch link selection
-- e: magnet gripper on the prehensile point of an object
+- e: magnet gripper on the prehensile point of an object / release the magnet
 - b: return to robot control when in arm control mode
 - r: reset the robot position to initial position
 - esc: exit the simulator
